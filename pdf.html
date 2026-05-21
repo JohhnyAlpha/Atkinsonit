@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Atkinson IT Consultancy – Engineering Clarity in Complex Systems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Atkinson IT Consultancy – Systems Engineering, Infrastructure, and Technical Leadership for complex environments." />
+  <style>
+    :root {
+      --brand-blue: #0A2A43;
+      --steel-grey: #4A5A67;
+      --accent-orange: #E67E22;
+      --text-main: #333333;
+      --bg-light: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg-light);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    header {
+      border-bottom: 3px solid var(--brand-blue);
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.75rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo-block {
+      background: var(--brand-blue);
+      color: #FFFFFF;
+      padding: 0.6rem 1.2rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      font-size: 1rem;
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      margin: 0;
+      color: var(--brand-blue);
+    }
+
+    header p.tagline {
+      margin: 0.2rem 0 0;
+      color: var(--steel-grey);
+      font-weight: 500;
+    }
+
+    main section {
+      margin-bottom: 1.75rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.75rem;
+      color: var(--brand-blue);
+      border-left: 4px solid var(--accent-orange);
+      padding-left: 0.5rem;
+    }
+
+    p {
+      margin: 0 0 0.75rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin: 0.25rem 0 0.75rem;
+    }
+
+    li {
+      margin-bottom: 0.35rem;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    .matrix {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.25rem;
+      font-size: 0.95rem;
+    }
+
+    .matrix th,
+    .matrix td {
+      border: 1px solid #E0E4EA;
+      padding: 0.55rem 0.6rem;
+      vertical-align: top;
+    }
+
+    .matrix th {
+      background: #F5F7FA;
+      color: var(--brand-blue);
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .matrix td:first-child {
+      font-weight: 600;
+      color: var(--steel-grey);
+      width: 32%;
+    }
+
+    .contact-block {
+      border-top: 2px solid #E0E4EA;
+      padding-top: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .contact-block strong {
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+
+    .contact-line {
+      margin: 0.1rem 0;
+    }
+
+    a {
+      color: var(--brand-blue);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding: 1.1rem;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header h1 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="logo-block">ATKINSON IT</div>
+      <div>
+        <h1>Atkinson IT Consultancy</h1>
+        <p class="tagline">Systems Engineering • Infrastructure • Technical Leadership</p>
+      </div>
+    </header>
+
+    <main>
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>
+          Atkinson IT Consultancy delivers clarity, structure, and technical leadership across complex systems landscapes.
+          Our mission is simple: <em>Engineering Clarity in Complex Systems</em> — turning intricate infrastructure into
+          dependable, comprehensible, high‑performance environments.
+        </p>
+      </section>
+
+      <section id="services">
+        <h2>Services</h2>
+        <ul>
+          <li>
+            <strong>Systems Engineering</strong> — holistic design, integration, and lifecycle thinking across hardware,
+            software, and networks.
+          </li>
+          <li>
+            <strong>Infrastructure Reliability</strong> — uptime, resilience, observability, and scalability for critical
+            platforms and services.
+          </li>
+          <li>
+            <strong>Technical Leadership</strong> — guiding teams and organisations through complex transformation and
+            modernisation programmes.
+          </li>
+          <li>
+            <strong>Consultancy &amp; Advisory</strong> — strategic insight for organisations navigating digital evolution
+            and systems change.
+          </li>
+        </ul>
+      </section>
+
+      <section id="capabilities">
+        <h2>Capabilities Matrix</h2>
+        <table class="matrix" aria-label="Capabilities matrix">
+          <thead>
+            <tr>
+              <th scope="col">Domain</th>
+              <th scope="col">Expertise Highlights</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Systems Integration</td>
+              <td>Multi‑vendor interoperability, legacy migration, and end‑to‑end systems thinking.</td>
+            </tr>
+            <tr>
+              <td>Infrastructure Design</td>
+              <td>Data‑centre architecture, network topology, and resilient infrastructure patterns.</td>
+            </tr>
+            <tr>
+              <td>Automation &amp; Control</td>
+              <td>Telemetry, monitoring, process optimisation, and operational tooling.</td>
+            </tr>
+            <tr>
+              <td>Leadership &amp; Governance</td>
+              <td>CTO‑level oversight, stakeholder alignment, and decision‑ready technical narratives.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-block">
+          <strong>Atkinson IT Consultancy</strong>
+          <p class="contact-line">Engineering Clarity in Complex Systems</p>
+          <p class="contact-line">
+            🌐 <a href="https://www.atkinsonit.co.uk" rel="noopener">www.atkinsonit.co.uk</a>
+          </p>
+          <p class="contact-line">
+            ✉️ <a href="mailto:contact@atkinsonit.co.uk">contact@atkinsonit.co.uk</a>
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
