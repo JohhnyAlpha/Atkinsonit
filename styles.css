@@ -1,0 +1,81 @@
+/* ================================
+   TESTIMONIALS PAGE STYLING
+   Matches existing Atkinson IT site
+   ================================ */
+
+.testimonial {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #f7f9fc; /* light neutral background */
+    border-left: 4px solid #1f3b73; /* deep navy accent */
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.testimonial h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    color: #1f3b73; /* deep navy */
+    font-weight: 600;
+}
+
+.testimonial h2 .small {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #555;
+}
+
+.testimonial blockquote {
+    margin: 1rem 0 0 0;
+    padding-left: 1.2rem;
+    border-left: 3px solid #4a90e2; /* accent blue */
+    font-style: italic;
+    color: #333;
+    line-height: 1.6;
+}
+
+.homepage-testimonial {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: #eef2f7;
+    border-radius: 6px;
+    border-left: 4px solid #4a90e2;
+}
+
+.homepage-testimonial h2 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    color: #1f3b73;
+}
+
+.homepage-testimonial blockquote {
+    margin: 0;
+    padding-left: 1.2rem;
+    border-left: 3px solid #1f3b73;
+    font-style: italic;
+    color: #333;
+}
+
+.homepage-testimonial footer {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.homepage-testimonial .button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.2rem;
+    background: #1f3b73;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+.homepage-testimonial .button:hover {
+    background: #4a90e2;
+}
+
