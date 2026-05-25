@@ -13,6 +13,7 @@
       "telephone": "+44 7825 261499",
       "email": "contact@atkinsonit.co.uk",
       "logo": "https://www.atkinsonit.co.uk/logo.svg",
+      "taxID": "17240782",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Staines-upon-Thames",
