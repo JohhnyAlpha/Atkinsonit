@@ -1,0 +1,130 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "LocalBusiness",
+        "ITConsultant"
+      ],
+      "@id": "https://www.atkinsonit.co.uk/#org",
+      "name": "Atkinson IT Ltd",
+      "url": "https://www.atkinsonit.co.uk/",
+      "telephone": "+44 7825 261499",
+      "email": "contact@atkinsonit.co.uk",
+      "logo": "https://www.atkinsonit.co.uk/logo.svg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Staines-upon-Thames",
+        "addressRegion": "Surrey",
+        "addressCountry": "GB"
+      },
+      "areaServed": [
+        "Staines",
+        "Egham",
+        "Ashford",
+        "Chertsey",
+        "Surrey"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/bernie-atkinson-82bb251/",
+        "https://www.facebook.com/61590161440339",
+        "https://share.google/CFWGvGBobkF3CI4ZC"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.atkinsonit.co.uk/#website",
+      "url": "https://www.atkinsonit.co.uk/",
+      "name": "Atkinson IT Ltd",
+      "publisher": {
+        "@id": "https://www.atkinsonit.co.uk/#org"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Small Business IT Support",
+      "provider": {
+        "@id": "https://www.atkinsonit.co.uk/#org"
+      },
+      "areaServed": [
+        "Staines",
+        "Egham",
+        "Ashford",
+        "Chertsey",
+        "Surrey"
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Windows 11 Upgrades",
+      "provider": {
+        "@id": "https://www.atkinsonit.co.uk/#org"
+      },
+      "areaServed": [
+        "Staines",
+        "Egham",
+        "Ashford",
+        "Chertsey",
+        "Surrey"
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Networking & Infrastructure",
+      "provider": {
+        "@id": "https://www.atkinsonit.co.uk/#org"
+      },
+      "areaServed": [
+        "Staines",
+        "Egham",
+        "Ashford",
+        "Chertsey",
+        "Surrey"
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Backup & Disaster Recovery",
+      "provider": {
+        "@id": "https://www.atkinsonit.co.uk/#org"
+      },
+      "areaServed": [
+        "Staines",
+        "Egham",
+        "Ashford",
+        "Chertsey",
+        "Surrey"
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Linux Deployment & Automation",
+      "provider": {
+        "@id": "https://www.atkinsonit.co.uk/#org"
+      },
+      "areaServed": [
+        "Staines",
+        "Egham",
+        "Ashford",
+        "Chertsey",
+        "Surrey"
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Legacy Hardware & System Support",
+      "provider": {
+        "@id": "https://www.atkinsonit.co.uk/#org"
+      },
+      "areaServed": [
+        "Staines",
+        "Egham",
+        "Ashford",
+        "Chertsey",
+        "Surrey"
+      ]
+    }
+  ]
+}
+
