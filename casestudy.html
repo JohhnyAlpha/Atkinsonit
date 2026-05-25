@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study — ATMoS Scientific Modelling | Atkinson IT Ltd</title>
+  <meta name="description" content="Case study: ATMoS scientific modelling on repurposed legacy hardware — Atkinson IT Ltd demonstrates Linux deployment, automation, and legacy system optimisation.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #F5F7FA; color: #333; }
+    nav { background: #0A2A43; padding: 0.5rem 1rem; display: flex; align-items: center; justify-content: space-between; }
+    nav .brand { display: flex; align-items: center; gap: 0.5rem; color: #fff; font-weight: bold; }
+    nav img { height: 32px; }
+    nav .links a { color: #CFE2F3; margin: 0 0.5rem; text-decoration: none; font-weight: bold; font-size: 0.95rem; }
+    nav .links a:hover { color: #FFFFFF; }
+
+    .container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+    h1, h2, h3 { color: #0A2A43; }
+    .section { margin-bottom: 2rem; }
+    .box { background: #FFFFFF; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+
+    footer { background: #0A2A43; color: #FFFFFF; text-align: center; padding: 1.5rem; margin-top: 3rem; }
+    footer a { color: #CFE2F3; text-decoration: none; }
+    footer a:hover { color: #FFFFFF; }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div class="brand">
+    <img src="logo.svg" alt="Atkinson IT logo">
+    <span>Atkinson IT Ltd</span>
+  </div>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="capabilities.html">Capabilities</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="casestudy.html">Case Study</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="container">
+  <h1>Case Study: ATMoS Scientific Modelling on Repurposed Legacy Hardware</h1>
+  <p><em>A Case Study by Atkinson IT Ltd</em></p>
+
+  <div class="section box">
+    <h2>Project Overview</h2>
+    <p>As part of a STEM degree in Planetary Science & Astronomy, Atkinson IT Ltd’s founder, Bernard Atkinson, needed to run a full atmospheric escape modelling pipeline using ATMoS — a demanding scientific modelling suite used in planetary science research.</p>
+    <p>ATMoS was incompatible with modern Apple Silicon Macs, so Bernard rebuilt an older Intel-based iMac from the ground up — transforming obsolete equipment into a stable, Linux-based scientific workstation capable of running 108 independent simulations.</p>
+    <p>This project demonstrates Atkinson IT Ltd’s ability to:</p>
+    <ul>
+      <li>Revive legacy hardware</li>
+      <li>Deploy Linux systems for specialist workloads</li>
+      <li>Work around platform incompatibilities</li>
+      <li>Automate complex modelling pipelines</li>
+      <li>Securely transfer and process large datasets</li>
+    </ul>
+  </div>
+
+  <div class="section box">
+    <h2>The Challenge</h2>
+    <p>The project faced two major obstacles:</p>
+    <ol>
+      <li><strong>ATMoS incompatibility with Apple Silicon (ARM/RISC)</strong> — ATMoS requires x86_64 architecture, Linux-compatible scientific libraries, and a stable POSIX environment.</li>
+      <li><strong>Outdated Intel iMac</strong> — unsupported macOS versions, dependency conflicts, poor performance, and inability to run ATMoS natively.</li>
+    </ol>
+    <p>The solution required a complete rebuild, Linux deployment, scientific library installation, automated batch processing, and secure data transfer.</p>
+  </div>
+
+  <div class="section box">
+    <h2>The Solution</h2>
+
+    <h3>1. System Rebuild & Linux Deployment</h3>
+    <p>The Intel iMac was wiped, rebuilt, and configured with Ubuntu Linux for stability and performance — optimised for scientific workloads.</p>
+
+    <h3>2. Scientific Environment Setup</h3>
+    <p>Installed Python 3.x, ATMoS suite, and scientific libraries (NumPy, SciPy, Pandas, Matplotlib) in isolated environments to avoid dependency conflicts.</p>
+
+    <h3>3. Automated Multi‑Run Pipeline</h3>
+    <p>Developed a Python-driven workflow to run 108 simulations, manage parameter sweeps, collect outputs, and generate visualisations — turning a manual process into a repeatable automated pipeline.</p>
+
+    <h3>4. Secure Data Transfer</h3>
+    <p>Configured SSH for secure remote access and used Cyberduck (SFTP) for encrypted transfer of raw outputs, processed datasets, and graphs.</p>
+
+    <h3>5. Data Analysis & Visualisation</h3>
+    <p>Generated radiation flux curves, atmospheric escape rate graphs, time-dependent evolution plots, and comparative scenario charts — forming the analytical backbone of the dissertation.</p>
+  </div>
+
+  <div class="section box">
+    <h2>Results</h2>
+    <ul>
+      <li>Legacy Intel iMac became a fully functional scientific workstation</li>
+      <li>108 atmospheric simulations completed successfully</li>
+      <li>Automated Python scripts processed all outputs</li>
+      <li>Secure SSH/SFTP workflow ensured smooth data transfer</li>
+      <li>Delivered publication-quality graphs and datasets</li>
+      <li>Successfully worked around ATMoS’s incompatibility with ARM/RISC Macs</li>
+      <li>Contributed to a strong academic result (expected 2:1, with a realistic chance of a First)</li>
+    </ul>
+  </div>
+
+  <div class="section box">
+    <h2>Skills Demonstrated</h2>
+    <ul>
+      <li>Linux deployment & optimisation</li>
+      <li>Legacy hardware repurposing</li>
+      <li>Scientific software installation</li>
+      <li>Python automation</li>
+      <li>Batch processing pipelines</li>
+      <li>SSH configuration</li>
+      <li>Secure SFTP data transfer</li>
+      <li>Data analysis & visualisation</li>
+      <li>Systems engineering</li>
+      <li>Troubleshooting complex dependencies</li>
+      <li>Working around platform incompatibilities (ARM vs x86_64)</li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
+  <p>
+    <a href="index.html">Home</a> |
+    <a href="services.html">Services</a> |
+    <a href="about.html">About</a> |
+    <a href="capabilities.html">Capabilities</a> |
+    <a href="testimonials.html">Testimonials</a> |
+    <a href="casestudy.html">Case Study</a> |
+    <a href="#contact">Contact</a>
+  </p>
+</footer>
+
+</body>
+</html>
+
