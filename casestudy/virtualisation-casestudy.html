@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Virtualisation & Server Consolidation Case Study | Atkinson IT Ltd</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Case study: VMware consolidation project reducing 100+ physical servers to 15 virtual hosts with zero downtime.">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <h1 class="logo"><a href="/index.html">Atkinson IT Ltd</a></h1>
+        <nav class="main-nav">
+            <a href="/index.html">Home</a>
+            <a href="/it-services.html">IT Services</a>
+            <a href="/engineering-services.html">Engineering Services</a>
+            <a href="/casestudy.html">Case Studies</a>
+            <a href="/testimonials.html">Testimonials</a>
+            <a href="/index.html#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <h1>Virtualisation & Server Consolidation Case Study</h1>
+    <p><em>A Case Study by Atkinson IT Ltd</em></p>
+
+    <h2>Overview</h2>
+    <p>
+        A large organisation was operating several hundred physical servers delivering web services, databases, and
+        line‑of‑business applications. The environment had grown organically, resulting in high costs, poor utilisation,
+        inconsistent performance, and no safe upgrade path.
+    </p>
+    <p>
+        The business needed a modern, scalable, resilient virtualisation platform capable of supporting mixed workloads
+        with zero downtime.
+    </p>
+
+    <h2>The Challenge</h2>
+    <ul>
+        <li>Hundreds of underutilised physical servers</li>
+        <li>No centralised management</li>
+        <li>No load balancing or failover</li>
+        <li>Long provisioning times</li>
+        <li>High operational overhead</li>
+        <li>No cloning or snapshot capability</li>
+        <li>No safe upgrade path</li>
+        <li>Inconsistent network configuration across racks</li>
+    </ul>
+
+    <h2>Constraints</h2>
+    <ul>
+        <li>Migration had to occur without interrupting production services</li>
+        <li>Mixed workloads had to remain online</li>
+        <li>Existing network infrastructure needed to be reused</li>
+        <li>VLANs had to be introduced without breaking legacy systems</li>
+        <li>Development teams required clone‑ready environments</li>
+        <li>Platform needed to support auto‑migration and load balancing</li>
+    </ul>
+
+    <h2>What I Did</h2>
+    <p>
+        I designed and deployed a VMware‑based virtualisation platform running on 15 high‑capacity servers, replacing
+        hundreds of physical machines.
+    </p>
+
+    <h3>1. Hardware Consolidation</h3>
+    <ul>
+        <li>Selected 15 high‑density, multi‑CPU, high‑RAM servers</li>
+        <li>Implemented shared storage for VM mobility</li>
+        <li>Reduced physical footprint by over 85%</li>
+    </ul>
+
+    <h3>2. VMware Virtualisation Platform</h3>
+    <ul>
+        <li>Deployed VMware ESXi across all hosts</li>
+        <li>Configured vCenter for centralised management</li>
+        <li>Enabled DRS for auto‑migration and load balancing</li>
+        <li>Enabled HA for automatic failover</li>
+    </ul>
+
+    <h3>3. Virtual Networking with VLAN Tagging</h3>
+    <ul>
+        <li>Web VLAN</li>
+        <li>Database VLAN</li>
+        <li>Application VLAN</li>
+        <li>Management VLAN</li>
+        <li>Backup VLAN</li>
+        <li>Storage VLAN</li>
+    </ul>
+
+    <h3>4. NIC Teaming & Redundancy</h3>
+    <ul>
+        <li>Implemented NIC teaming for bandwidth aggregation</li>
+        <li>Provided failover protection for network paths</li>
+        <li>Ensured uninterrupted connectivity during maintenance</li>
+    </ul>
+
+    <h3>5. Load Balancing & Auto‑Migration</h3>
+    <ul>
+        <li>Workloads automatically moved to the least‑loaded host</li>
+        <li>CPU and RAM utilisation balanced across the cluster</li>
+        <li>Hot migrations enabled zero‑downtime maintenance</li>
+    </ul>
+
+    <h3>6. Clone‑Based Development Environments</h3>
+    <ul>
+        <li>Created golden images for web, DB, and app servers</li>
+        <li>Enabled rapid cloning for development and testing</li>
+        <li>Reduced provisioning time from days to minutes</li>
+    </ul>
+
+    <h3>7. Zero‑Downtime Upgrades</h3>
+    <ul>
+        <li>Hosts patched one at a time</li>
+        <li>VMs migrated automatically</li>
+        <li>No service interruptions</li>
+        <li>No out‑of‑hours maintenance windows</li>
+    </ul>
+
+    <h2>Outcome</h2>
+    <ul>
+        <li>Server count reduced by 85–90%</li>
+        <li>Performance increased by 50–200%</li>
+        <li>Power and cooling costs dropped significantly</li>
+        <li>Deployment time reduced from days to minutes</li>
+        <li>Zero‑downtime upgrades became standard</li>
+        <li>Load balancing improved reliability</li>
+        <li>Development teams gained instant clone‑ready environments</li>
+        <li>Network segmentation improved security</li>
+    </ul>
+
+    <h2>Skills Demonstrated</h2>
+    <ul>
+        <li>VMware ESXi & vCenter</li>
+        <li>vMotion & DRS auto‑migration</li>
+        <li>Server consolidation</li>
+        <li>NIC teaming</li>
+        <li>VLAN tagging (802.1Q)</li>
+        <li>Load balancing</li>
+        <li>Zero‑downtime maintenance</li>
+        <li>Clone‑based provisioning</li>
+    </ul>
+
+</main>
+
+<footer class="site-footer">
+    <p>© 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
+    <p>
+        <a href="/index.html">Home</a> |
+        <a href="/it-services.html">Services</a> |
+        <a href="/about.html">About</a> |
+        <a href="/capabilities.html">Capabilities</a> |
+        <a href="/testimonials.html">Testimonials</a> |
+        <a href="/casestudy.html">Case Studies</a> |
+        <a href="/index.html#contact">Contact</a>
+    </p>
+</footer>
+
+</body>
+</html>
+

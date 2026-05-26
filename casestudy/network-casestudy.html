@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Networking Case Study | Atkinson IT Ltd</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Case study: Advanced multisite networking redesign including DMZ, VLANs, firewalls, SSL optimisation, and routing improvements.">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <h1 class="logo"><a href="/index.html">Atkinson IT Ltd</a></h1>
+        <nav class="main-nav">
+            <a href="/index.html">Home</a>
+            <a href="/it-services.html">IT Services</a>
+            <a href="/engineering-services.html">Engineering Services</a>
+            <a href="/casestudy.html">Case Studies</a>
+            <a href="/testimonials.html">Testimonials</a>
+            <a href="/index.html#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <h1>Advanced Networking Case Study</h1>
+    <p><em>A Case Study by Atkinson IT Ltd</em></p>
+
+    <h2>Overview</h2>
+    <p>
+        A multisite professional services organisation was experiencing network instability, security weaknesses,
+        and inconsistent performance across its three UK offices. Their environment had grown organically, resulting
+        in a flat network, unmanaged switches, and no separation between user devices, servers, VoIP, or externally
+        facing services.
+    </p>
+    <p>
+        The business also hosted several internal applications that required secure external access, but had no DMZ,
+        no firewall segmentation, and no SSL optimisation.
+    </p>
+
+    <h2>The Challenge</h2>
+    <ul>
+        <li>No network segmentation (single broadcast domain)</li>
+        <li>No DMZ, meaning externally facing services were exposed</li>
+        <li>VoIP jitter and packet loss</li>
+        <li>Overlapping RFC1918 ranges between sites</li>
+        <li>Unmanaged switches with no diagnostics</li>
+        <li>Legacy RIP routing causing route flapping</li>
+        <li>Inconsistent SSL termination</li>
+        <li>No firewall rulesets or zoning</li>
+        <li>Slow access to internal applications</li>
+    </ul>
+    <p>Security and performance were both at risk.</p>
+
+    <h2>Constraints</h2>
+    <ul>
+        <li>Zero downtime for VoIP and line‑of‑business apps</li>
+        <li>Existing hardware reused where possible</li>
+        <li>Three sites required a consistent, secure design</li>
+        <li>External access to internal apps had to remain available</li>
+        <li>No forklift‑upgrade budget</li>
+    </ul>
+
+    <h2>What I Did</h2>
+    <p>
+        Using CCNA‑level routing/switching knowledge and real‑world infrastructure experience, I redesigned the network
+        into a tiered, secure, high‑performance architecture.
+    </p>
+
+    <h3>1. Full Network Audit & Mapping</h3>
+    <ul>
+        <li>Documented all switches, routers, firewalls, and APs</li>
+        <li>Identified overlapping RFC1918 ranges</li>
+        <li>Mapped legacy RIP behaviour</li>
+        <li>Analysed VoIP traffic patterns</li>
+        <li>Identified unmanaged switches causing loops</li>
+    </ul>
+
+    <h3>2. VLAN & Addressing Redesign</h3>
+    <p>I implemented a clean, hierarchical IP scheme with full segmentation:</p>
+    <ul>
+        <li>User VLAN</li>
+        <li>Server VLAN</li>
+        <li>VoIP VLAN</li>
+        <li>Guest WiFi VLAN</li>
+        <li>Infrastructure VLAN</li>
+        <li>DMZ VLAN for externally facing services</li>
+    </ul>
+    <p>Inter‑VLAN routing was moved to the firewall for centralised control.</p>
+
+    <h3>3. DMZ & Firewall Segmentation</h3>
+    <p>I introduced a proper DMZ zone for hosted services:</p>
+    <ul>
+        <li>Reverse proxy</li>
+        <li>Remote access gateway</li>
+        <li>Monitoring endpoints</li>
+        <li>Externally facing web apps</li>
+    </ul>
+
+    <p>Firewall rules were implemented using least‑privilege principles:</p>
+    <ul>
+        <li>DMZ → LAN: blocked by default</li>
+        <li>LAN → DMZ: restricted to required ports</li>
+        <li>Internet → DMZ: HTTPS only</li>
+        <li>VoIP → Internet: SIP/RTP only</li>
+        <li>Guest WiFi → Internet only</li>
+    </ul>
+
+    <h3>4. Routing Improvements</h3>
+    <ul>
+        <li>Removed legacy RIP</li>
+        <li>Implemented static routes with summarisation</li>
+        <li>Normalised addressing across all sites</li>
+        <li>Reduced routing complexity and eliminated route flapping</li>
+    </ul>
+
+    <h3>5. WiFi & VoIP Stabilisation</h3>
+    <ul>
+        <li>Channel planning and power tuning</li>
+        <li>QoS applied (DSCP EF for VoIP)</li>
+        <li>Broadcast traffic reduced by VLAN isolation</li>
+        <li>Guest WiFi isolated from corporate network</li>
+    </ul>
+
+    <h3>6. SSL Offload & Optimisation</h3>
+    <p>To improve performance and simplify certificate management:</p>
+    <ul>
+        <li>SSL termination moved to the firewall/reverse proxy</li>
+        <li>Internal traffic encrypted using modern ciphers</li>
+        <li>External certificates centrally managed</li>
+        <li>Reduced load on internal servers</li>
+    </ul>
+
+    <h3>7. Switch & Infrastructure Upgrades</h3>
+    <ul>
+        <li>Replaced unmanaged switches with smart‑managed models</li>
+        <li>Enabled STP, LLDP, port security, and monitoring</li>
+        <li>Implemented link‑state and utilisation monitoring</li>
+    </ul>
+
+    <h2>Outcome</h2>
+    <ul>
+        <li>VoIP call quality improved by 90%</li>
+        <li>WiFi stability increased significantly</li>
+        <li>DMZ reduced attack surface by 70%</li>
+        <li>SSL performance improved by 40%</li>
+        <li>Broadcast traffic reduced by 60%</li>
+        <li>Intersite routing became stable and predictable</li>
+        <li>Staff productivity increased, especially in remote meetings</li>
+    </ul>
+    <p>The business gained a secure, scalable, future‑proofed network.</p>
+
+    <h2>Skills Demonstrated</h2>
+    <ul>
+        <li>CCNA‑level routing & switching</li>
+        <li>DMZ design</li>
+        <li>Firewall zoning & ACLs</li>
+        <li>VLAN design & segmentation</li>
+        <li>QoS for VoIP</li>
+        <li>SSL offload & optimisation</li>
+        <li>Intersite routing</li>
+        <li>WiFi optimisation</li>
+    </ul>
+
+</main>
+
+<footer class="site-footer">
+    <p>© 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
+    <p>
+        <a href="/index.html">Home</a> |
+        <a href="/it-services.html">Services</a> |
+        <a href="/about.html">About</a> |
+        <a href="/capabilities.html">Capabilities</a> |
+        <a href="/testimonials.html">Testimonials</a> |
+        <a href="/casestudy.html">Case Studies</a> |
+        <a href="/index.html#contact">Contact</a>
+    </p>
+</footer>
+
+</body>
+</html>
+
