@@ -78,4 +78,92 @@
 .homepage-testimonial .button:hover {
     background: #4a90e2;
 }
+/* ================================
+   GLOBAL SITE BRANDING (V1)
+   Header, Navigation, Layout, Footer
+   ================================ */
 
+/* Basic typography */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+.site-header {
+    background: #1f3b73;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.site-header .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+/* Navigation */
+.main-nav {
+    margin-top: 0.5rem;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1.2rem;
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Page headings */
+h1, h2, h3 {
+    color: #1f3b73;
+}
+
+/* Buttons */
+.button, a.button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: #1f3b73;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+.button:hover, a.button:hover {
+    background: #4a90e2;
+}
+
+/* Footer */
+.site-footer {
+    background: #1f3b73;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+.site-footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
