@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+<<<<<<< HEAD
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -39,6 +40,14 @@
 <!-- Schema -->
 <script type="application/ld+json" src="/schema.json"></script>
 
+=======
+    <meta charset="UTF-8">
+    <title>Storage & Virtualisation Case Study | Atkinson IT Ltd</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Case study: Migrating legacy RAID storage to NetApp with Fibre Channel stabilisation, VMware integration, multisite DR, and multidomain access.">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+>>>>>>> 5f214ff1daf5afd875697eac1b06d8aa79fe637a
 </head>
 
 <body>
@@ -50,10 +59,15 @@
             <a href="/index.html">Home</a>
             <a href="/it-services.html">IT Services</a>
             <a href="/engineering-services.html">Engineering Services</a>
+<<<<<<< HEAD
             <a href="/about.html">About</a>
             <a href="/capabilities.html">Capabilities</a>
             <a href="/testimonials.html">Testimonials</a>
             <a href="/casestudy.html">Case Studies</a>
+=======
+            <a href="/casestudy.html">Case Studies</a>
+            <a href="/testimonials.html">Testimonials</a>
+>>>>>>> 5f214ff1daf5afd875697eac1b06d8aa79fe637a
             <a href="/index.html#contact">Contact</a>
         </nav>
     </div>
@@ -65,6 +79,7 @@
      loading="lazy"
      style="display:none;">
 
+<<<<<<< HEAD
 <main class="case-study">
     <div class="container">
 
@@ -167,6 +182,165 @@
                 <li>Mapped user/group permissions across forests</li>
                 <li>Provided seamless access for Windows and macOS clients</li>
             </ul>
+=======
+    <h1>Storage & Virtualisation Case Study</h1>
+    <p><em>A Case Study by Atkinson IT Ltd</em></p>
+
+    <section class="box">
+        <h2>Overview</h2>
+        <p>
+            A large multisite organisation was struggling with ageing storage infrastructure built on legacy RAID arrays
+            and an early‑generation Fibre Channel SAN. The system suffered from poor performance, limited capacity, and
+            no reliable disaster recovery capability.
+        </p>
+        <p>
+            The environment also included multiple Active Directory forests, mixed Windows and macOS clients, and a growing
+            need for virtualisation. The business required a modern, resilient, scalable storage platform capable of supporting
+            VMware, multidomain file access, snapshots, and multisite replication.
+        </p>
+    </section>
+
+    <section class="box">
+        <h2>The Challenge</h2>
+        <ul>
+            <li>Legacy RAID arrays approaching end‑of‑life</li>
+            <li>Fibre Channel fabric instability</li>
+            <li>No snapshot capability</li>
+            <li>No DR replication or offsite backup</li>
+            <li>Mixed Windows/macOS clients with inconsistent access</li>
+            <li>Multiple AD forests requiring cross‑domain authentication</li>
+            <li>VMware hosts constrained by slow shared storage</li>
+            <li>No self‑service file recovery</li>
+            <li>No centralised management or monitoring</li>
+        </ul>
+        <p>This was limiting the organisation’s ability to scale, virtualise, and protect its data.</p>
+    </section>
+
+    <section class="box">
+        <h2>Constraints</h2>
+        <ul>
+            <li>Migration had to occur with minimal downtime</li>
+            <li>Existing Fibre Channel infrastructure needed to be reused</li>
+            <li>Multidomain authentication had to remain intact</li>
+            <li>macOS file access had to be preserved</li>
+            <li>VMware workloads had to remain online</li>
+            <li>DR/BCP solution required multisite replication</li>
+            <li>Budget constraints prevented a full hardware refresh</li>
+        </ul>
+    </section>
+
+    <section class="box">
+        <h2>What I Did</h2>
+        <p>
+            I designed and implemented a NetApp‑based storage architecture to replace the legacy RAID system and stabilise
+            the Fibre Channel environment.
+        </p>
+
+        <h3>1. Storage Assessment & Fibre Channel Audit</h3>
+        <ul>
+            <li>Analysed RAID performance bottlenecks</li>
+            <li>Mapped Fibre Channel zoning and identified misconfigurations</li>
+            <li>Documented VMware datastore usage</li>
+            <li>Identified cross‑domain authentication issues</li>
+            <li>Assessed macOS SMB/NFS access patterns</li>
+        </ul>
+
+        <h3>2. NetApp Deployment & Configuration</h3>
+        <p>I deployed a NetApp FAS system with:</p>
+        <ul>
+            <li>High‑performance aggregates</li>
+            <li>RAID‑DP for resilience</li>
+            <li>Multiprotocol support (CIFS/SMB + NFS)</li>
+            <li>Fibre Channel target mode for VMware</li>
+            <li>Snapshots enabled for all volumes</li>
+        </ul>
+        <p>This provided a single, unified storage platform for all workloads.</p>
+
+        <h3>3. VMware Integration</h3>
+        <ul>
+            <li>Configured NetApp LUNs for VMware datastores</li>
+            <li>Migrated VMs using Storage vMotion</li>
+            <li>Improved IOPS and latency across all hosts</li>
+            <li>Enabled thin provisioning and deduplication</li>
+        </ul>
+        <p>VMware performance improved dramatically.</p>
+
+        <h3>4. Multi‑Domain Access & Virtual File Servers</h3>
+        <p>The organisation had disparate AD forests with no trust relationships. To solve this:</p>
+        <ul>
+            <li>Implemented NetApp vFiler / SVM instances</li>
+            <li>Bound each SVM to the appropriate domain</li>
+            <li>Mapped user/group permissions across forests</li>
+            <li>Provided seamless access for Windows and macOS clients</li>
+        </ul>
+        <p>This allowed each business unit to retain its own identity structure.</p>
+
+        <h3>5. Snapshots & Self‑Service Recovery</h3>
+        <ul>
+            <li>Hourly, daily, and weekly snapshots</li>
+            <li>Shadow Copies for Windows</li>
+            <li>Snapshot browsing for macOS</li>
+            <li>User‑driven file recovery without IT intervention</li>
+        </ul>
+        <p>This reduced support tickets and improved resilience.</p>
+
+        <h3>6. Multi‑Site Mirroring & Offsite DR</h3>
+        <ul>
+            <li>Implemented SnapMirror between primary sites</li>
+            <li>Configured a tertiary offsite NetApp for cold‑standby DR</li>
+            <li>Scheduled replication windows to avoid peak usage</li>
+            <li>Tested failover and failback procedures</li>
+        </ul>
+
+        <p>This created a three‑tier resilience model:</p>
+        <ul>
+            <li>Local snapshots</li>
+            <li>Intersite replication</li>
+            <li>Offsite tertiary DR storage</li>
+        </ul>
+
+        <h3>7. Fibre Channel Stabilisation</h3>
+        <ul>
+            <li>Cleaned up zoning</li>
+            <li>Removed legacy WWPN entries</li>
+            <li>Normalised fabric configuration</li>
+            <li>Improved path redundancy</li>
+        </ul>
+        <p>This eliminated SAN instability.</p>
+    </section>
+
+    <section class="box">
+        <h2>Outcome</h2>
+        <ul>
+            <li>VMware performance increased by 60–80%</li>
+            <li>Stable file access for Windows and macOS</li>
+            <li>Cross‑domain authentication worked seamlessly</li>
+            <li>Self‑service recovery reduced support load by 40%</li>
+            <li>Snapshots protected against accidental deletion</li>
+            <li>SnapMirror enabled real DR capability</li>
+            <li>Tertiary offsite storage enabled full BCP compliance</li>
+            <li>SAN stability improved significantly</li>
+        </ul>
+        <p>
+            The organisation gained a modern, resilient, scalable storage platform that supported virtualisation,
+            multidomain access, and enterprise‑grade DR.
+        </p>
+    </section>
+
+    <section class="box">
+        <h2>Skills Demonstrated</h2>
+        <ul>
+            <li>NetApp architecture</li>
+            <li>Fibre Channel zoning</li>
+            <li>VMware datastore design</li>
+            <li>Multidomain authentication</li>
+            <li>Snapshots & SnapMirror</li>
+            <li>RAID‑DP & aggregates</li>
+            <li>macOS + Windows mixed environments</li>
+            <li>DR/BCP storage design</li>
+        </ul>
+    </section>
+>>>>>>> 5f214ff1daf5afd875697eac1b06d8aa79fe637a
 
             <h3>Snapshots &amp; self‑service recovery</h3>
             <ul>
@@ -269,7 +443,11 @@
     <p>© 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
     <p>
         <a href="/index.html">Home</a> |
+<<<<<<< HEAD
         <a href="/it-services.html">IT Services</a> |
+=======
+        <a href="/it-services.html">Services</a> |
+>>>>>>> 5f214ff1daf5afd875697eac1b06d8aa79fe637a
         <a href="/about.html">About</a> |
         <a href="/capabilities.html">Capabilities</a> |
         <a href="/testimonials.html">Testimonials</a> |
