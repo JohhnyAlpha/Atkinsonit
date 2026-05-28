@@ -78,6 +78,14 @@
 .homepage-testimonial .button:hover {
     background: #4a90e2;
 }
+/* Generic content block (used on homepage for Free Consultation section) */
+.block {
+    background: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
 /* ================================
    GLOBAL SITE BRANDING (V1)
    Header, Navigation, Layout, Footer

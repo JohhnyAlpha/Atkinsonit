@@ -2,17 +2,16 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": [
-        "Organization",
-        "LocalBusiness",
-        "ITConsultant"
-      ],
+      "@type": ["Organization", "LocalBusiness", "ITConsultant"],
       "@id": "https://www.atkinsonit.co.uk/#org",
       "name": "Atkinson IT Ltd",
+      "legalName": "Atkinson IT Ltd",
       "url": "https://www.atkinsonit.co.uk/",
+      "description": "Atkinson IT Ltd provides SME IT support, server and storage engineering, RAID recovery, SAN design, cloud migration, networking, virtualisation, Linux deployment and systems engineering across Surrey, Berkshire and West London.",
       "telephone": "+44 7825 261499",
       "email": "contact@atkinsonit.co.uk",
       "logo": "https://www.atkinsonit.co.uk/logo.svg",
+      "image": "https://www.atkinsonit.co.uk/logo.svg",
       "taxID": "17240782",
       "address": {
         "@type": "PostalAddress",
@@ -21,109 +20,157 @@
         "addressCountry": "GB"
       },
       "areaServed": [
-        "Staines",
+        "Staines-upon-Thames",
         "Egham",
         "Ashford",
         "Chertsey",
-        "Surrey"
+        "Surrey",
+        "Berkshire",
+        "West London"
       ],
       "sameAs": [
-        "https://www.linkedin.com/in/bernie-atkinson-82bb251/",
-        "https://www.facebook.com/61590161440339",
-        "https://share.google/CFWGvGBobkF3CI4ZC"
+        "https://www.linkedin.com/company/atkinson-it-ltd",
+        "https://www.facebook.com/atkinsonit"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Bernard Atkinson",
+        "jobTitle": "Founder",
+        "description": "Systems engineer specialising in server support, storage engineering, RAID systems, cloud migration, networking, virtualisation, Linux, and scientific computing."
+      },
+      "knowsAbout": [
+        "IT support",
+        "server support",
+        "server hardware diagnostics",
+        "enterprise servers",
+        "RAID arrays",
+        "RAID recovery",
+        "RAID-1",
+        "RAID-5",
+        "RAID-6",
+        "RAID-10",
+        "storage engineering",
+        "SAN design",
+        "Fibre Channel SAN",
+        "iSCSI SAN",
+        "NetApp storage",
+        "SnapMirror",
+        "VMware storage performance",
+        "VMware ESXi",
+        "vCenter",
+        "vMotion",
+        "DR and BCP",
+        "cloud migration",
+        "Microsoft 365",
+        "Office 365",
+        "hybrid identity",
+        "networking",
+        "VLANs",
+        "DMZ",
+        "firewalls",
+        "WiFi optimisation",
+        "Linux deployment",
+        "legacy hardware",
+        "Python automation",
+        "scientific computing",
+        "static websites"
       ]
     },
+
     {
       "@type": "WebSite",
       "@id": "https://www.atkinsonit.co.uk/#website",
       "url": "https://www.atkinsonit.co.uk/",
       "name": "Atkinson IT Ltd",
-      "publisher": {
-        "@id": "https://www.atkinsonit.co.uk/#org"
-      }
+      "publisher": { "@id": "https://www.atkinsonit.co.uk/#org" }
     },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://www.atkinsonit.co.uk/ai-summary.html",
+      "url": "https://www.atkinsonit.co.uk/ai-summary.html",
+      "name": "AI Summary — Atkinson IT Ltd",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "about": { "@id": "https://www.atkinsonit.co.uk/#org" }
+    },
+
     {
       "@type": "Service",
+      "@id": "https://www.atkinsonit.co.uk/#service-it-support",
       "name": "Small Business IT Support",
-      "provider": {
-        "@id": "https://www.atkinsonit.co.uk/#org"
-      },
-      "areaServed": [
-        "Staines",
-        "Egham",
-        "Ashford",
-        "Chertsey",
-        "Surrey"
-      ]
+      "provider": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "areaServed": ["Surrey", "Berkshire", "West London"]
     },
     {
       "@type": "Service",
-      "name": "Windows 11 Upgrades",
-      "provider": {
-        "@id": "https://www.atkinsonit.co.uk/#org"
-      },
-      "areaServed": [
-        "Staines",
-        "Egham",
-        "Ashford",
-        "Chertsey",
-        "Surrey"
-      ]
+      "@id": "https://www.atkinsonit.co.uk/#service-cloud",
+      "name": "Cloud Migration & Microsoft 365",
+      "provider": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "areaServed": ["Surrey", "Berkshire", "West London"]
     },
     {
       "@type": "Service",
+      "@id": "https://www.atkinsonit.co.uk/#service-networking",
       "name": "Networking & Infrastructure",
-      "provider": {
-        "@id": "https://www.atkinsonit.co.uk/#org"
-      },
-      "areaServed": [
-        "Staines",
-        "Egham",
-        "Ashford",
-        "Chertsey",
-        "Surrey"
+      "provider": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "areaServed": ["Surrey", "Berkshire", "West London"]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.atkinsonit.co.uk/#service-storage",
+      "name": "Storage, Backup & Disaster Recovery",
+      "provider": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "areaServed": ["Surrey", "Berkshire", "West London"],
+      "serviceType": [
+        "RAID support",
+        "RAID recovery",
+        "SAN engineering",
+        "NetApp SnapMirror",
+        "Fibre Channel troubleshooting"
       ]
     },
     {
       "@type": "Service",
-      "name": "Backup & Disaster Recovery",
-      "provider": {
-        "@id": "https://www.atkinsonit.co.uk/#org"
-      },
-      "areaServed": [
-        "Staines",
-        "Egham",
-        "Ashford",
-        "Chertsey",
-        "Surrey"
+      "@id": "https://www.atkinsonit.co.uk/#service-virtualisation",
+      "name": "Virtualisation & Server Consolidation",
+      "provider": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "areaServed": ["Surrey", "Berkshire", "West London"],
+      "serviceType": [
+        "VMware ESXi",
+        "vCenter",
+        "vMotion",
+        "DRS load balancing",
+        "server consolidation"
       ]
     },
     {
       "@type": "Service",
+      "@id": "https://www.atkinsonit.co.uk/#service-linux",
       "name": "Linux Deployment & Automation",
-      "provider": {
-        "@id": "https://www.atkinsonit.co.uk/#org"
-      },
-      "areaServed": [
-        "Staines",
-        "Egham",
-        "Ashford",
-        "Chertsey",
-        "Surrey"
-      ]
+      "provider": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "areaServed": ["Surrey", "Berkshire", "West London"]
     },
     {
       "@type": "Service",
-      "name": "Legacy Hardware & System Support",
-      "provider": {
-        "@id": "https://www.atkinsonit.co.uk/#org"
-      },
-      "areaServed": [
-        "Staines",
-        "Egham",
-        "Ashford",
-        "Chertsey",
-        "Surrey"
+      "@id": "https://www.atkinsonit.co.uk/#service-websites",
+      "name": "Static Website Build & AI‑Friendly Content",
+      "provider": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "areaServed": ["Surrey", "Berkshire", "West London"]
+    },
+
+    {
+      "@type": "CreativeWork",
+      "@id": "https://www.atkinsonit.co.uk/#case-studies",
+      "name": "Case Studies",
+      "creator": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "hasPart": [
+        { "@type": "CreativeWork", "name": "Cloud Migration Case Study" },
+        { "@type": "CreativeWork", "name": "DR & BCP Case Study" },
+        { "@type": "CreativeWork", "name": "Networking Case Study" },
+        { "@type": "CreativeWork", "name": "Storage Case Study" },
+        { "@type": "CreativeWork", "name": "Virtualisation Case Study" },
+        { "@type": "CreativeWork", "name": "Legacy Hardware Case Study" },
+        { "@type": "CreativeWork", "name": "Website Build Case Study" }
       ]
     }
   ]

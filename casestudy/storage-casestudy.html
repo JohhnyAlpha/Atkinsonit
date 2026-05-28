@@ -1,123 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Case Study — ATMoS Scientific Modelling | Atkinson IT Ltd</title>
-  <meta name="description" content="Case study: ATMoS scientific modelling on repurposed legacy hardware — Atkinson IT Ltd demonstrates Linux deployment, automation, and legacy system optimisation.">
-  <link rel="stylesheet" href="/styles.css">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Storage & Virtualisation Case Study — Atkinson IT Ltd</title>
+
+<!-- Robots -->
+<meta name="robots" content="index, follow">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://www.atkinsonit.co.uk/casestudy/storage-casestudy.html">
+
+<!-- SEO -->
+<meta name="description" content="How Atkinson IT Ltd modernised storage infrastructure using NetApp, stabilised Fibre Channel, improved VMware performance, and delivered multisite DR with SnapMirror.">
+<meta name="author" content="Atkinson IT Ltd">
+
+<!-- OpenGraph -->
+<meta property="og:title" content="Storage & Virtualisation Case Study — Atkinson IT Ltd">
+<meta property="og:description" content="A detailed case study of NetApp modernisation, VMware optimisation, and multisite DR using SnapMirror.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.atkinsonit.co.uk/casestudy/storage-casestudy.html">
+<meta property="og:image" content="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://images.unsplash.com">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" href="/favicon.png">
+
+<!-- Styles -->
+<link rel="stylesheet" href="/styles.css">
+
+<!-- Schema -->
+<script type="application/ld+json" src="/schema.json"></script>
+
 </head>
 
 <body>
 
 <header class="site-header">
-  <div class="container">
-    <h1 class="logo"><a href="/index.html">Atkinson IT Ltd</a></h1>
-    <nav class="main-nav">
-      <a href="/index.html">Home</a>
-      <a href="/it-services.html">IT Services</a>
-      <a href="/engineering-services.html">Engineering Services</a>
-      <a href="/about.html">About</a>
-      <a href="/capabilities.html">Capabilities</a>
-      <a href="/testimonials.html">Testimonials</a>
-      <a href="/casestudy.html">Case Studies</a>
-      <a href="/index.html#contact">Contact</a>
-    </nav>
-  </div>
+    <div class="container">
+        <h1 class="logo"><a href="/index.html">Atkinson IT Ltd</a></h1>
+        <nav class="main-nav">
+            <a href="/index.html">Home</a>
+            <a href="/it-services.html">IT Services</a>
+            <a href="/engineering-services.html">Engineering Services</a>
+            <a href="/about.html">About</a>
+            <a href="/capabilities.html">Capabilities</a>
+            <a href="/testimonials.html">Testimonials</a>
+            <a href="/casestudy.html">Case Studies</a>
+            <a href="/index.html#contact">Contact</a>
+        </nav>
+    </div>
 </header>
 
-<main class="container">
+<!-- Hidden hero image for accessibility -->
+<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80"
+     alt=""
+     loading="lazy"
+     style="display:none;">
 
-  <h1>Case Study: ATMoS Scientific Modelling on Repurposed Legacy Hardware</h1>
-  <p><em>A Case Study by Atkinson IT Ltd</em></p>
+<main class="case-study">
+    <div class="container">
 
-  <div class="section box">
-    <h2>Project Overview</h2>
-    <p>As part of a STEM degree in Planetary Science & Astronomy, Atkinson IT Ltd’s founder, Bernard Atkinson, needed to run a full atmospheric escape modelling pipeline using ATMoS — a demanding scientific modelling suite used in planetary science research.</p>
-    <p>ATMoS was incompatible with modern Apple Silicon Macs, so Bernard rebuilt an older Intel-based iMac from the ground up — transforming obsolete equipment into a stable, Linux-based scientific workstation capable of running 108 independent simulations.</p>
-    <p>This project demonstrates Atkinson IT Ltd’s ability to:</p>
-    <ul>
-      <li>Revive legacy hardware</li>
-      <li>Deploy Linux systems for specialist workloads</li>
-      <li>Work around platform incompatibilities</li>
-      <li>Automate complex modelling pipelines</li>
-      <li>Securely transfer and process large datasets</li>
-    </ul>
-  </div>
+        <h1>Storage & Virtualisation Case Study</h1>
+        <p><em>A case study by Atkinson IT Ltd</em></p>
 
-  <div class="section box">
-    <h2>The Challenge</h2>
-    <p>The project faced two major obstacles:</p>
-    <ol>
-      <li><strong>ATMoS incompatibility with Apple Silicon (ARM/RISC)</strong> — ATMoS requires x86_64 architecture, Linux-compatible scientific libraries, and a stable POSIX environment.</li>
-      <li><strong>Outdated Intel iMac</strong> — unsupported macOS versions, dependency conflicts, poor performance, and inability to run ATMoS natively.</li>
-    </ol>
-    <p>The solution required a complete rebuild, Linux deployment, scientific library installation, automated batch processing, and secure data transfer.</p>
-  </div>
+        <section>
+            <h2>Project overview</h2>
+            <p>
+                A large multisite organisation was struggling with ageing storage infrastructure built on legacy RAID arrays
+                and an early‑generation Fibre Channel SAN. The system suffered from poor performance, limited capacity, and
+                no reliable disaster recovery capability.
+            </p>
+            <p>
+                The environment also included multiple Active Directory forests, mixed Windows and macOS clients, and a growing
+                need for virtualisation. The business required a modern, resilient, scalable storage platform capable of supporting
+                VMware, multidomain file access, snapshots, and multisite replication.
+            </p>
+        </section>
 
-  <div class="section box">
-    <h2>The Solution</h2>
+        <section>
+            <h2>Client context</h2>
+            <p>The organisation operated:</p>
+            <ul>
+                <li>Legacy RAID arrays approaching end‑of‑life</li>
+                <li>Early‑generation Fibre Channel SAN</li>
+                <li>VMware virtualisation with performance constraints</li>
+                <li>Mixed Windows/macOS clients</li>
+                <li>Multiple AD forests with no trust relationships</li>
+            </ul>
+            <p>The existing platform could not scale, could not support modern workloads, and had no DR capability.</p>
+        </section>
 
-    <h3>1. System Rebuild & Linux Deployment</h3>
-    <p>The Intel iMac was wiped, rebuilt, and configured with Ubuntu Linux for stability and performance — optimised for scientific workloads.</p>
+        <section>
+            <h2>Challenges</h2>
+            <ul>
+                <li>Fibre Channel fabric instability</li>
+                <li>No snapshot capability</li>
+                <li>No DR replication or offsite backup</li>
+                <li>Mixed Windows/macOS access issues</li>
+                <li>Multiple AD forests requiring cross‑domain authentication</li>
+                <li>VMware hosts constrained by slow shared storage</li>
+                <li>No self‑service file recovery</li>
+                <li>No centralised management or monitoring</li>
+            </ul>
+            <p>The organisation needed a modern, unified storage platform.</p>
+        </section>
 
-    <h3>2. Scientific Environment Setup</h3>
-    <p>Installed Python 3.x, ATMoS suite, and scientific libraries (NumPy, SciPy, Pandas, Matplotlib) in isolated environments to avoid dependency conflicts.</p>
+        <section>
+            <h2>Objectives</h2>
+            <p>The project needed to deliver:</p>
+            <ul>
+                <li>Minimal downtime during migration</li>
+                <li>Reuse of existing Fibre Channel infrastructure</li>
+                <li>Support for VMware workloads</li>
+                <li>Cross‑domain authentication for multiple AD forests</li>
+                <li>macOS and Windows file access</li>
+                <li>Snapshots and self‑service recovery</li>
+                <li>Multisite DR with SnapMirror</li>
+                <li>Scalable, resilient storage for future growth</li>
+            </ul>
+        </section>
 
-    <h3>3. Automated Multi‑Run Pipeline</h3>
-    <p>Developed a Python-driven workflow to run 108 simulations, manage parameter sweeps, collect outputs, and generate visualisations — turning a manual process into a repeatable automated pipeline.</p>
+        <section>
+            <h2>Technical approach</h2>
 
-    <h3>4. Secure Data Transfer</h3>
-    <p>Configured SSH for secure remote access and used Cyberduck (SFTP) for encrypted transfer of raw outputs, processed datasets, and graphs.</p>
+            <h3>Storage assessment &amp; Fibre Channel audit</h3>
+            <ul>
+                <li>Analysed RAID performance bottlenecks</li>
+                <li>Mapped Fibre Channel zoning and identified misconfigurations</li>
+                <li>Documented VMware datastore usage</li>
+                <li>Identified cross‑domain authentication issues</li>
+                <li>Assessed macOS SMB/NFS access patterns</li>
+            </ul>
 
-    <h3>5. Data Analysis & Visualisation</h3>
-    <p>Generated radiation flux curves, atmospheric escape rate graphs, time-dependent evolution plots, and comparative scenario charts — forming the analytical backbone of the dissertation.</p>
-  </div>
+            <h3>NetApp deployment &amp; configuration</h3>
+            <p>I deployed a NetApp FAS system with:</p>
+            <ul>
+                <li>High‑performance aggregates</li>
+                <li>RAID‑DP for resilience</li>
+                <li>Multiprotocol support (CIFS/SMB + NFS)</li>
+                <li>Fibre Channel target mode for VMware</li>
+                <li>Snapshots enabled for all volumes</li>
+            </ul>
+            <p>This provided a unified storage platform for all workloads.</p>
 
-  <div class="section box">
-    <h2>Results</h2>
-    <ul>
-      <li>Legacy Intel iMac became a fully functional scientific workstation</li>
-      <li>108 atmospheric simulations completed successfully</li>
-      <li>Automated Python scripts processed all outputs</li>
-      <li>Secure SSH/SFTP workflow ensured smooth data transfer</li>
-      <li>Delivered publication-quality graphs and datasets</li>
-      <li>Successfully worked around ATMoS’s incompatibility with ARM/RISC Macs</li>
-      <li>Contributed to a strong academic result (expected 2:1, with a realistic chance of a First)</li>
-    </ul>
-  </div>
+            <h3>VMware integration</h3>
+            <ul>
+                <li>Configured NetApp LUNs for VMware datastores</li>
+                <li>Migrated VMs using Storage vMotion</li>
+                <li>Improved IOPS and latency across all hosts</li>
+                <li>Enabled thin provisioning and deduplication</li>
+            </ul>
 
-  <div class="section box">
-    <h2>Skills Demonstrated</h2>
-    <ul>
-      <li>Linux deployment & optimisation</li>
-      <li>Legacy hardware repurposing</li>
-      <li>Scientific software installation</li>
-      <li>Python automation</li>
-      <li>Batch processing pipelines</li>
-      <li>SSH configuration</li>
-      <li>Secure SFTP data transfer</li>
-      <li>Data analysis & visualisation</li>
-      <li>Systems engineering</li>
-      <li>Troubleshooting complex dependencies</li>
-      <li>Working around platform incompatibilities (ARM vs x86_64)</li>
-    </ul>
-  </div>
+            <h3>Multi‑domain access &amp; virtual file servers</h3>
+            <p>To support multiple AD forests with no trust relationships:</p>
+            <ul>
+                <li>Implemented NetApp SVM/vFiler instances</li>
+                <li>Bound each SVM to the appropriate domain</li>
+                <li>Mapped user/group permissions across forests</li>
+                <li>Provided seamless access for Windows and macOS clients</li>
+            </ul>
 
+            <h3>Snapshots &amp; self‑service recovery</h3>
+            <ul>
+                <li>Hourly, daily, and weekly snapshots</li>
+                <li>Shadow Copies for Windows</li>
+                <li>Snapshot browsing for macOS</li>
+                <li>User‑driven file recovery without IT intervention</li>
+            </ul>
+
+            <h3>Multi‑site mirroring &amp; offsite DR</h3>
+            <ul>
+                <li>Implemented SnapMirror between primary sites</li>
+                <li>Configured tertiary offsite NetApp for cold‑standby DR</li>
+                <li>Scheduled replication windows to avoid peak usage</li>
+                <li>Tested failover and failback procedures</li>
+            </ul>
+
+            <h3>Fibre Channel stabilisation</h3>
+            <ul>
+                <li>Cleaned up zoning</li>
+                <li>Removed legacy WWPN entries</li>
+                <li>Normalised fabric configuration</li>
+                <li>Improved path redundancy</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Solution delivered</h2>
+            <p>
+                Atkinson IT Ltd delivered a modern, resilient, unified storage platform based on NetApp, stabilised the
+                Fibre Channel fabric, improved VMware performance, and implemented multisite DR with SnapMirror.
+            </p>
+        </section>
+
+        <section>
+            <h2>Results &amp; impact</h2>
+            <ul>
+                <li>VMware performance increased by 60–80%</li>
+                <li>Stable file access for Windows and macOS</li>
+                <li>Cross‑domain authentication worked seamlessly</li>
+                <li>Self‑service recovery reduced support load by 40%</li>
+                <li>Snapshots protected against accidental deletion</li>
+                <li>SnapMirror enabled real DR capability</li>
+                <li>Tertiary offsite storage enabled full BCP compliance</li>
+                <li>SAN stability improved significantly</li>
+            </ul>
+            <p>The organisation gained a scalable, enterprise‑grade storage platform.</p>
+        </section>
+
+        <section>
+            <h2>Technologies used</h2>
+            <ul>
+                <li>NetApp FAS</li>
+                <li>RAID‑DP &amp; aggregates</li>
+                <li>Snapshots &amp; SnapMirror</li>
+                <li>Fibre Channel SAN</li>
+                <li>VMware vSphere</li>
+                <li>SMB/NFS multiprotocol access</li>
+                <li>Active Directory (multi‑forest)</li>
+                <li>macOS + Windows mixed environments</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Skills demonstrated</h2>
+            <ul>
+                <li>NetApp architecture &amp; deployment</li>
+                <li>Fibre Channel zoning &amp; fabric design</li>
+                <li>VMware datastore design</li>
+                <li>Multidomain authentication</li>
+                <li>Snapshots &amp; SnapMirror configuration</li>
+                <li>Storage performance optimisation</li>
+                <li>macOS + Windows integration</li>
+                <li>DR/BCP storage design</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Atkinson IT commentary</h2>
+            <p>
+                This project demonstrates how modern storage architecture can transform performance, resilience, and
+                manageability. By combining NetApp, VMware optimisation, and multisite DR, Atkinson IT Ltd delivered a
+                future‑proofed platform that supports the organisation’s long‑term growth.
+            </p>
+        </section>
+
+        <section>
+            <h2>Need help with storage or virtualisation?</h2>
+            <p>
+                If your organisation needs to modernise storage, stabilise Fibre Channel, or improve VMware performance,
+                Atkinson IT Ltd can help.
+            </p>
+            <p><a href="/index.html#contact">Request a consultation</a></p>
+        </section>
+
+    </div>
 </main>
 
 <footer class="site-footer">
-  <p>&copy; 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
-  <p>
-    <a href="/index.html">Home</a> |
-    <a href="/it-services.html">Services</a> |
-    <a href="/about.html">About</a> |
-    <a href="/capabilities.html">Capabilities</a> |
-    <a href="/testimonials.html">Testimonials</a> |
-    <a href="/casestudy.html">Case Studies</a> |
-    <a href="/index.html#contact">Contact</a>
-  </p>
+    <p>© 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
+    <p>
+        <a href="/index.html">Home</a> |
+        <a href="/it-services.html">IT Services</a> |
+        <a href="/about.html">About</a> |
+        <a href="/capabilities.html">Capabilities</a> |
+        <a href="/testimonials.html">Testimonials</a> |
+        <a href="/casestudy.html">Case Studies</a> |
+        <a href="/index.html#contact">Contact</a>
+    </p>
 </footer>
 
 </body>
