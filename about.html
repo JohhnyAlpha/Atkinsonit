@@ -1,153 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>About — Atkinson IT Ltd</title>
+  <title>About — Atkinson IT Ltd</title>
 
-<!-- Robots -->
-<meta name="robots" content="index, follow">
+  <!-- Robots -->
+  <meta name="robots" content="index, follow">
 
-<!-- Canonical -->
-<link rel="canonical" href="https://www.atkinsonit.co.uk/about.html">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.atkinsonit.co.uk/about.html">
 
-<!-- SEO -->
-<meta name="description" content="Learn about Atkinson IT Ltd, led by Bernard Atkinson — 25+ years in infrastructure, systems engineering and 8 years as CTO of a FTSE 100 subsidiary.">
-<meta name="keywords" content="Atkinson IT, Bernard Atkinson, IT consultancy, CTO, infrastructure, systems engineering">
-<meta name="author" content="Atkinson IT Ltd">
+  <!-- SEO -->
+  <meta name="description" content="Atkinson IT Ltd is led by Bernard Atkinson, an engineering-driven technology leader with 25+ years of experience designing resilient, low-stress IT systems. We bring calm, clarity, and architectural discipline to organisations that want reliable, predictable technology.">
+  <meta name="keywords" content="Atkinson IT, IT consultancy, systems engineering, IT architecture, resilience engineering, SME IT support, CTO services">
 
-<!-- OpenGraph -->
-<meta property="og:title" content="About — Atkinson IT Ltd">
-<meta property="og:description" content="Atkinson IT brings decades of engineering and leadership experience to complex technical environments.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.atkinsonit.co.uk/about.html">
-<meta property="og:image" content="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80">
-<meta property="og:image:width" content="1600">
-<meta property="og:image:height" content="900">
+  <meta name="author" content="Atkinson IT Ltd">
 
-<!-- Preconnect -->
-<link rel="preconnect" href="https://images.unsplash.com">
+  <!-- OpenGraph -->
+  <meta property="og:title" content="About — Atkinson IT Ltd">
+  <meta property="og:description" content="Practical, resilient IT designed by someone who has already solved the hard problems.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.atkinsonit.co.uk/about.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80">
 
-<!-- Favicon -->
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="icon" type="image/png" href="favicon.png">
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://images.unsplash.com">
 
-<!-- Main Schema -->
-<script type="application/ld+json" src="schema.json"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="favicon.png">
 
-<style>
-body { margin: 0; font-family: Arial, sans-serif; background: #F5F7FA; color: #333; }
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Atkinson IT Ltd",
+    "url": "https://www.atkinsonit.co.uk/",
+    "logo": "https://www.atkinsonit.co.uk/logo.svg",
+    "description": "Atkinson IT Ltd provides practical IT consultancy, architecture, and support, led by Bernard Atkinson with over 25 years of experience in infrastructure, systems engineering, and operational reliability.",
+    "founder": {
+      "@type": "Person",
+      "name": "Bernard Atkinson",
+      "jobTitle": "Founder & Principal Consultant",
+      "description": "Engineering-driven technology leader with more than 25 years of experience designing resilient, low-stress IT systems."
+    },
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Surrey, Berkshire, Hampshire, West London"
+    }
+  }
+  </script>
 
-nav { background: #0A2A43; padding: 0.5rem 1rem; display: flex; align-items: center; justify-content: space-between; }
-nav .brand { display: flex; align-items: center; gap: 0.5rem; color: #fff; font-weight: bold; }
-nav img { height: 32px; }
-nav .links a { color: #CFE2F3; margin: 0 0.5rem; text-decoration: none; font-weight: bold; font-size: 0.95rem; }
-nav .links a:hover { color: #FFFFFF; }
-
-.container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
-
-h1 { color: #0A2A43; }
-
-.block {
-  background: #FFFFFF;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  margin-bottom: 2rem;
-}
-
-footer {
-  background: #0A2A43;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 1.5rem;
-  margin-top: 3rem;
-}
-footer a { color: #CFE2F3; text-decoration: none; }
-footer a:hover { color: #FFFFFF; }
-</style>
-
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #F5F7FA; color: #333; line-height: 1.6; }
+    nav { background: #0A2A43; padding: 0.5rem 1rem; display: flex; align-items: center; justify-content: space-between; }
+    nav .brand { display: flex; align-items: center; gap: 0.5rem; color: #fff; font-weight: bold; }
+    nav img { height: 32px; }
+    nav .links a { color: #CFE2F3; margin: 0 0.5rem; text-decoration: none; font-weight: bold; font-size: 0.95rem; }
+    nav .links a:hover, nav .links a.active { color: #FFFFFF; }
+    .container { max-width: 960px; margin: 2rem auto; padding: 0 1rem 3rem; }
+    h1, h2, h3 { color: #0A2A43; margin-top: 0; }
+    .block { background: #FFFFFF; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); margin-bottom: 2rem; }
+    .tagline { font-style: italic; color: #555; margin-top: 0.5rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin-bottom: 0.35rem; }
+    footer { background: #0A2A43; color: #FFFFFF; text-align: center; padding: 1.5rem; }
+    footer a { color: #CFE2F3; text-decoration: none; }
+    footer a:hover { color: #FFFFFF; }
+    .pill-list { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; padding: 0; }
+    .pill-list li { background: #E3ECF5; border-radius: 999px; padding: 0.25rem 0.75rem; font-size: 0.9rem; }
+  </style>
 </head>
 
 <body>
+  <nav>
+    <div class="brand">
+      <img src="logo.svg" alt="Atkinson IT logo" loading="lazy">
+      <span>Atkinson IT Ltd</span>
+    </div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="it-services.html">Services</a>
+      <a href="about.html" class="active">About</a>
+      <a href="capabilities.html">Capabilities</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
 
-<nav>
-  <div class="brand">
-    <img src="logo.svg" alt="Atkinson IT logo" loading="lazy">
-    <span>Atkinson IT Ltd</span>
-  </div>
+  <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80"
+       alt=""
+       loading="lazy"
+       style="display:none;">
 
-  <div class="links">
-    <a href="index.html">Home</a>
-    <a href="it-services.html">Services</a>
-    <a href="about.html" class="active">About</a>
-    <a href="capabilities.html">Capabilities</a>
-    <a href="index.html#contact">Contact</a>
-  </div>
-</nav>
+  <main class="container">
 
-<!-- Hidden hero image for accessibility -->
-<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80"
-     alt=""
-     loading="lazy"
-     style="display:none;">
+    <section class="block">
+      <h1>About Atkinson IT</h1>
+      <p class="tagline">Practical, resilient IT — designed by someone who has already solved the hard problems.</p>
+      <p>
+        Atkinson IT exists to bring clarity, structure, and engineering discipline to complex technical environments.
+        We help organisations make confident decisions, build reliable systems, and navigate uncertainty with calm,
+        structured leadership grounded in real‑world experience.
+      </p>
+    </section>
 
-<div class="container">
+    <section class="block">
+      <h2>Our Mission</h2>
+      <p>
+        Our mission is simple: remove unnecessary stress from technology. We design and support systems that are
+        reliable, understandable, and resilient — so your business can focus on its work, not its IT.
+      </p>
+      <p>
+        Good IT should feel calm, predictable, and almost boring in day‑to‑day use. That’s not an accident — it’s the
+        result of thoughtful architecture and disciplined engineering.
+      </p>
+    </section>
 
-<h1>About Atkinson IT</h1>
+    <section class="block">
+      <h2>Our Background</h2>
+      <p>
+        Atkinson IT is led by <strong>Bernard Atkinson</strong>, an engineering‑driven technology leader with more than
+        <strong>25 years of experience</strong> in infrastructure, systems engineering, and operational reliability.
+        Bernard spent <strong>8 years as CTO</strong> of a major subsidiary of a FTSE‑100 company, overseeing
+        high‑availability systems, global infrastructure, and mission‑critical operations.
+      </p>
+      <p>
+        His architectural approach was forged in environments where systems were pushed far beyond their limits —
+        and had to stay online. Those experiences shaped a philosophy of resilience, simplicity, and calm engineering
+        that now underpins Atkinson IT.
+      </p>
+    </section>
 
-<div class="block">
-  <h2>Our Mission</h2>
-  <p>
-    Atkinson IT exists to bring clarity, structure, and engineering discipline to complex technical environments.
-    We help organisations make confident decisions, build reliable systems, and navigate uncertainty with calm,
-    structured leadership grounded in real‑world experience.
-  </p>
-</div>
+    <section class="block">
+      <h2>How We Work</h2>
+      <p>
+        We believe in engineering that is ethical, dependable, and grounded in practical constraints. We emphasise
+        reliability, safety, and long‑term value over quick fixes or unnecessary complexity.
+      </p>
+      <p>
+        Whether stabilising legacy infrastructure, guiding teams through high‑stakes decisions, or architecting new
+        systems, we bring a structured, systems‑thinking mindset to every engagement.
+      </p>
+      <ul>
+        <li><strong>Calm under pressure:</strong> we are used to environments where downtime is not an option.</li>
+        <li><strong>Root‑cause focus:</strong> we fix underlying problems, not just symptoms.</li>
+        <li><strong>Plain language:</strong> we explain options and trade‑offs clearly.</li>
+        <li><strong>Right‑sized solutions:</strong> we design for your scale, not for a vendor’s sales target.</li>
+      </ul>
+    </section>
 
-<div class="block">
-  <h2>Our Background</h2>
-  <p>
-    Atkinson IT is led by Bernard Atkinson, an engineering‑driven technology leader with more than
-    <strong>25 years of experience in IT infrastructure, systems engineering, and operational reliability</strong>.
-    Bernard spent <strong>8 years as CTO of a major subsidiary of a FTSE‑100 company</strong>, overseeing
-    high‑availability systems, global infrastructure, and mission‑critical operations.
-  </p>
+    <section class="block">
+      <h2>Why Choose Atkinson IT</h2>
+      <p>
+        Many IT providers focus on tools and tickets. Atkinson IT focuses on <strong>architecture and resilience</strong> —
+        the things that determine whether your systems quietly support your business or regularly get in its way.
+      </p>
 
-  <p>
-    His career spans electrical engineering, legacy systems, cloud transformation, networking, storage,
-    and multi‑disciplinary systems integration. This breadth allows Atkinson IT to bridge the gap between
-    engineering reality and organisational strategy — a perspective few consultancies can offer.
-  </p>
-</div>
+      <h3>A Different Kind of Engineering Mindset</h3>
+      <p>
+        Bernard often says he is “lazy” and wants an easy life — in practice, that means designing systems that do not
+        need constant firefighting. If something is painful or fragile, the goal is to redesign it so it becomes simple,
+        robust, and low‑maintenance.
+      </p>
 
-<div class="block">
-  <h2>Our Approach</h2>
-  <p>
-    We believe in engineering that is ethical, dependable, and grounded in practical constraints. We emphasise
-    reliability, safety, and long‑term value over quick fixes or unnecessary complexity.
-  </p>
+      <h3>Experience That Shapes Better Decisions</h3>
+      <p>
+        Bernard’s architectural approach was shaped by real‑world events where systems had to remain reliable under
+        pressure. Those experiences taught him how to simplify complexity, anticipate failure modes, and design systems
+        that evolve gracefully rather than break unexpectedly.
+      </p>
 
-  <p>
-    Whether stabilising legacy infrastructure, guiding teams through high‑stakes decisions, or architecting
-    new systems, we bring a structured, systems‑thinking mindset to every engagement.
-  </p>
-</div>
+      <h3>What This Means for You</h3>
+      <ul class="pill-list">
+        <li>Calm, experienced leadership</li>
+        <li>Resilient architecture</li>
+        <li>Clear communication</li>
+        <li>Right‑sized solutions</li>
+        <li>Long‑term reliability</li>
+      </ul>
+    </section>
 
-</div>
+    <section class="block">
+      <h2>Is Atkinson IT Right for You?</h2>
+      <p>We are a good fit if you:</p>
+      <ul>
+        <li>Value reliability over constant change for its own sake</li>
+        <li>Want clarity about your current risks and options</li>
+        <li>Prefer plain language to jargon and buzzwords</li>
+        <li>Need to modernise without disrupting day‑to‑day operations</li>
+      </ul>
+      <p>
+        If that sounds like you, we’d be happy to talk through your current environment and explore where small,
+        well‑chosen changes could make a big difference to stability and peace of mind.
+      </p>
+      <p><a href="index.html#contact">Get in touch</a> to start the conversation.</p>
+    </section>
 
-<footer>
-  <p>&copy; 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
-  <p>
-    <a href="index.html">Home</a> |
-    <a href="it-services.html">Services</a> |
-    <a href="about.html">About</a> |
-    <a href="capabilities.html">Capabilities</a> |
-    <a href="index.html#contact">Contact</a>
-  </p>
-</footer>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="it-services.html">Services</a> |
+      <a href="about.html">About</a> |
+      <a href="capabilities.html">Capabilities</a> |
+      <a href="index.html#contact">Contact</a>
+    </p>
+  </footer>
 
 </body>
 </html>
