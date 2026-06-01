@@ -3,132 +3,132 @@
 
   <!-- Core Pages -->
   <url>
-    <loc>https://www.atkinsonit.co.uk/index.html</loc>
+    <loc>https://www.atkinsonit.co.uk/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://www.atkinsonit.co.uk/it-services.html</loc>
+    <loc>https://www.atkinsonit.co.uk/it-services</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.atkinsonit.co.uk/engineering-services.html</loc>
+    <loc>https://www.atkinsonit.co.uk/engineering-services</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.atkinsonit.co.uk/about.html</loc>
+    <loc>https://www.atkinsonit.co.uk/about</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://www.atkinsonit.co.uk/capabilities.html</loc>
+    <loc>https://www.atkinsonit.co.uk/capabilities</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.atkinsonit.co.uk/testimonials.html</loc>
+    <loc>https://www.atkinsonit.co.uk/testimonials</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <!-- Services Directory -->
   <url>
-    <loc>https://www.atkinsonit.co.uk/services/small-business-it-support.html</loc>
+    <loc>https://www.atkinsonit.co.uk/services/small-business-it-support</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.atkinsonit.co.uk/services/windows-11-upgrade.html</loc>
+    <loc>https://www.atkinsonit.co.uk/services/windows-11-upgrade</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.atkinsonit.co.uk/services/networking-infrastructure.html</loc>
+    <loc>https://www.atkinsonit.co.uk/services/networking-infrastructure</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.atkinsonit.co.uk/services/backup-disaster-recovery.html</loc>
+    <loc>https://www.atkinsonit.co.uk/services/backup-disaster-recovery</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.atkinsonit.co.uk/services/linux-deployment-automation.html</loc>
+    <loc>https://www.atkinsonit.co.uk/services/linux-deployment-automation</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.atkinsonit.co.uk/services/legacy-systems.html</loc>
+    <loc>https://www.atkinsonit.co.uk/services/legacy-systems</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Case Studies Index -->
   <url>
-    <loc>https://www.atkinsonit.co.uk/casestudy.html</loc>
+    <loc>https://www.atkinsonit.co.uk/casestudy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Individual Case Studies -->
   <url>
-    <loc>https://www.atkinsonit.co.uk/casestudy/cloud-casestudy.html</loc>
+    <loc>https://www.atkinsonit.co.uk/casestudy/cloud-casestudy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.atkinsonit.co.uk/casestudy/DR-BCP-casestudy.html</loc>
+    <loc>https://www.atkinsonit.co.uk/casestudy/DR-BCP-casestudy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.atkinsonit.co.uk/casestudy/Legacy-casestudy.html</loc>
+    <loc>https://www.atkinsonit.co.uk/casestudy/Legacy-casestudy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.atkinsonit.co.uk/casestudy/network-casestudy.html</loc>
+    <loc>https://www.atkinsonit.co.uk/casestudy/network-casestudy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.atkinsonit.co.uk/casestudy/storage-casestudy.html</loc>
+    <loc>https://www.atkinsonit.co.uk/casestudy/storage-casestudy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.atkinsonit.co.uk/casestudy/virtualisation-casestudy.html</loc>
+    <loc>https://www.atkinsonit.co.uk/casestudy/virtualisation-casestudy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.atkinsonit.co.uk/casestudy/website-build.html</loc>
+    <loc>https://www.atkinsonit.co.uk/casestudy/website-build</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Contact Section -->
+  <!-- Optional: AI Summary Page -->
   <url>
-    <loc>https://www.atkinsonit.co.uk/index.html#contact</loc>
-    <changefreq>yearly</changefreq>
+    <loc>https://www.atkinsonit.co.uk/ai-summary</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
