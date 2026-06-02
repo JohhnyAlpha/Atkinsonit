@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+
+  <title>Atkinson IT Ltd — Weekly IT Updates</title>
+  <link>https://www.atkinsonit.co.uk/</link>
+  <description>Weekly SME IT updates, security insights, cloud trends, and practical guidance from Atkinson IT Ltd.</description>
+  <language>en-gb</language>
+  <lastBuildDate>Tue, 02 Jun 2026 09:00:00 +0100</lastBuildDate>
+  <pubDate>Tue, 02 Jun 2026 09:00:00 +0100</pubDate>
+  <generator>Atkinson IT Ltd Static Feed</generator>
+
+  <!-- FIRST BLOG POST -->
+  <item>
+    <title>Weekly SME IT Update — 2 June 2026</title>
+    <link>https://www.atkinsonit.co.uk/blog/2026-06-02.html</link>
+    <guid isPermaLink="true">https://www.atkinsonit.co.uk/blog/2026-06-02.html</guid>
+    <pubDate>Tue, 02 Jun 2026 09:00:00 +0100</pubDate>
+    <description><![CDATA[
+      The SME tech landscape is shifting again, and a few trends are worth keeping an eye on if you run or manage a business relying on cloud services, Microsoft 365, or hybrid infrastructure.
+      Ransomware tactics are changing, cloud costs are rising quietly, Microsoft is pushing secure-by-default, and legacy VPN appliances are becoming a liability.
+    ]]></description>
+  </item>
+
+</channel>
+</rss>
+
