@@ -4,7 +4,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Cloud Migration Case Study — Atkinson IT Ltd</title>
 
 <!-- Robots -->
@@ -21,7 +20,7 @@
 <meta property="og:title" content="Cloud Migration Case Study — Atkinson IT Ltd">
 <meta property="og:description" content="A detailed case study of a full Exchange-to-Office 365 migration with hybrid identity and zero downtime.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.atkinsonit.co.uk/casestudy/cloud-casestudy.html">
+<meta property="og:url" content="https://www.atkinsonit.co.uk/casestudy/cloud-casestudy">
 <meta property="og:image" content="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80">
 <meta property="og:image:width" content="1600">
 <meta property="og:image:height" content="900">
@@ -36,254 +35,452 @@
 <!-- Styles -->
 <link rel="stylesheet" href="/styles.css">
 
-<!-- Schema -->
-<script type="application/ld+json" src="/schema.json"></script>
+<!-- ===================================================== -->
+<!-- AI-SEO SCHEMA INSERTED HERE -->
+<!-- ===================================================== -->
+
+<!-- Case Study Article Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "articleType": "CaseStudy",
+  "headline": "Cloud Migration Case Study",
+  "description": "A real-world cloud migration project delivered by Atkinson IT Ltd, moving a multi-site organisation from fragmented legacy Exchange environments to Office 365 with hybrid identity, SharePoint, OneDrive, and Teams — all with zero downtime.",
+  "author": {
+    "@type": "Person",
+    "name": "Bernard Atkinson",
+    "jobTitle": "Founder & Senior IT Consultant",
+    "url": "https://www.atkinsonit.co.uk/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Atkinson IT Ltd",
+    "url": "https://www.atkinsonit.co.uk"
+  },
+  "mainEntityOfPage": "https://www.atkinsonit.co.uk/casestudy/cloud-casestudy",
+  "keywords": [
+    "cloud migration",
+    "Office 365",
+    "Exchange migration",
+    "hybrid identity",
+    "Azure AD Connect",
+    "SharePoint Online",
+    "OneDrive",
+    "Teams deployment",
+    "Atkinson IT"
+  ]
+}
+</script>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does an Exchange to Office 365 migration take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most SME and mid-size migrations take between 4–12 weeks depending on mailbox size, identity complexity, and coexistence requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can hybrid identity support multiple Active Directory forests?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Azure AD Connect can synchronise multiple forests, even with inconsistent schema, provided identity models are normalised."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you ensure zero downtime during a cloud migration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zero downtime is achieved through hybrid Exchange coexistence, staged mailbox moves, Autodiscover redirection, and careful DNS planning."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What tools are used to migrate file shares to SharePoint?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The SharePoint Migration Tool (SPMT) is typically used to migrate departmental data, preserving permissions and metadata."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Teams require SharePoint to function?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Teams stores its files in SharePoint document libraries, so SharePoint architecture is essential for a successful Teams rollout."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.atkinsonit.co.uk"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Case Studies",
+      "item": "https://www.atkinsonit.co.uk/casestudy"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Cloud Migration Case Study",
+      "item": "https://www.atkinsonit.co.uk/casestudy/cloud-casestudy"
+    }
+  ]
+}
+</script>
+
+<!-- Service Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Cloud Migration & Modern Workplace Engineering",
+  "provider": {
+    "@type": "Organization",
+    "name": "Atkinson IT Ltd",
+    "url": "https://www.atkinsonit.co.uk"
+  },
+  "serviceType": "Cloud Migration",
+  "areaServed": "Surrey, Berkshire, West London",
+  "url": "https://www.atkinsonit.co.uk/casestudy/cloud-casestudy",
+  "description": "Cloud migration services including Exchange to Office 365, hybrid identity, SharePoint, OneDrive, Teams, and security modernisation."
+}
+</script>
 
 </head>
 
 <body>
 
 <header class="site-header">
-    <div class="container">
-        <h1 class="logo"><a href="/index.html">Atkinson IT Ltd</a></h1>
-        <nav class="main-nav">
-            <a href="/index.html">Home</a>
-            <a href="/it-services.html">IT Services</a>
-            <a href="/engineering-services.html">Engineering Services</a>
-            <a href="/about.html">About</a>
-            <a href="/capabilities.html">Capabilities</a>
-            <a href="/testimonials.html">Testimonials</a>
-            <a href="/casestudy.html">Case Studies</a>
-            <a href="/index.html#contact">Contact</a>
-        </nav>
-    </div>
+<div class="container">
+<h1 class="logo"><a href="/index.html">Atkinson IT Ltd</a></h1>
+
+<nav class="main-nav">
+<a href="/index.html">Home</a>
+<a href="/it-services.html">IT Services</a>
+<a href="/engineering-services.html">Engineering Services</a>
+<a href="/about.html">About</a>
+<a href="/capabilities.html">Capabilities</a>
+<a href="/testimonials.html">Testimonials</a>
+<a href="/casestudy.html">Case Studies</a>
+<a href="/index.html#contact">Contact</a>
+</nav>
+
+</div>
 </header>
 
-<!-- Hidden hero image for accessibility -->
+<!-- Hidden hero image -->
 <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80"
-     alt=""
-     loading="lazy"
-     style="display:none;">
+alt=""
+loading="lazy"
+style="display:none;">
 
 <main class="case-study">
-    <div class="container">
-        <h1>Cloud Migration Case Study</h1>
-        <p><em>A case study by Atkinson IT Ltd</em></p>
+<div class="container">
 
-        <section>
-            <h2>Project overview</h2>
-            <p>
-                A large multi‑site organisation operating several legacy Microsoft Exchange environments across disparate
-                Active Directory forests needed to modernise its messaging and collaboration platform. The objective was to
-                migrate all users to Office 365 with hybrid identity, SharePoint, OneDrive, and Teams — all delivered with
-                zero downtime and full coexistence throughout the transition. Atkinson IT Ltd designed and delivered the full
-                migration strategy, enabling a seamless shift to a modern cloud‑based productivity platform.
-            </p>
-        </section>
+<h1>Cloud Migration Case Study</h1>
+<p><em>A case study by Atkinson IT Ltd</em></p>
 
-        <section>
-            <h2>Client context</h2>
-            <p>The organisation operated:</p>
-            <ul>
-                <li>Multiple Exchange versions across different geographic sites</li>
-                <li>Several AD forests with inconsistent schema and identity models</li>
-                <li>Ageing hardware approaching end‑of‑life</li>
-                <li>Fragmented collaboration tools and limited mailbox capacity</li>
-                <li>A mix of Windows and macOS clients</li>
-                <li>No unified document storage or mobile device management</li>
-            </ul>
-            <p>The business required a modern, secure, scalable cloud platform without disrupting day‑to‑day operations.</p>
-        </section>
+<!-- ===================================================== -->
+<!-- ORIGINAL CONTENT (UNCHANGED) -->
+<!-- ===================================================== -->
 
-        <section>
-            <h2>Challenges</h2>
-            <p>The project faced several technical and operational challenges:</p>
-            <ul>
-                <li>Multiple legacy Exchange versions</li>
-                <li>Disparate AD forests with inconsistent schema</li>
-                <li>Ageing hardware and storage</li>
-                <li>No modern collaboration tools</li>
-                <li>Limited mailbox quotas and slow search</li>
-                <li>No mobile device management</li>
-                <li>No unified document storage</li>
-                <li>Complex DNS and Autodiscover configuration</li>
-                <li>Mixed Windows/macOS user base</li>
-            </ul>
-        </section>
+<section>
+<h2>Project overview</h2>
+<p>
+A large multi‑site organisation operating several legacy Microsoft Exchange environments across disparate
+Active Directory forests needed to modernise its messaging and collaboration platform. The objective was to
+migrate all users to Office 365 with hybrid identity, SharePoint, OneDrive, and Teams — all delivered with
+zero downtime and full coexistence throughout the transition. Atkinson IT Ltd designed and delivered the full
+migration strategy, enabling a seamless shift to a modern cloud‑based productivity platform.
+</p>
+</section>
 
-        <section>
-            <h2>Objectives</h2>
-            <p>Success for this project meant:</p>
-            <ul>
-                <li>Zero downtime for all users</li>
-                <li>Full coexistence during migration</li>
-                <li>Preserving multidomain identity</li>
-                <li>Replacing legacy file shares with SharePoint</li>
-                <li>Enabling OneDrive for personal storage</li>
-                <li>Deploying Teams for communication and collaboration</li>
-                <li>Improving security with MFA and Conditional Access</li>
-                <li>Phasing migration to avoid overwhelming support teams</li>
-            </ul>
-        </section>
+<section>
+<h2>Client context</h2>
+<p>The organisation operated:</p>
+<ul>
+<li>Multiple Exchange versions across different geographic sites</li>
+<li>Several AD forests with inconsistent schema and identity models</li>
+<li>Ageing hardware approaching end‑of‑life</li>
+<li>Fragmented collaboration tools and limited mailbox capacity</li>
+<li>A mix of Windows and macOS clients</li>
+<li>No unified document storage or mobile device management</li>
+</ul>
+<p>The business required a modern, secure, scalable cloud platform without disrupting day‑to‑day operations.</p>
+</section>
 
-        <section>
-            <h2>Technical approach</h2>
+<section>
+<h2>Challenges</h2>
+<p>The project faced several technical and operational challenges:</p>
+<ul>
+<li>Multiple legacy Exchange versions</li>
+<li>Disparate AD forests with inconsistent schema</li>
+<li>Ageing hardware and storage</li>
+<li>No modern collaboration tools</li>
+<li>Limited mailbox quotas and slow search</li>
+<li>No mobile device management</li>
+<li>No unified document storage</li>
+<li>Complex DNS and Autodiscover configuration</li>
+<li>Mixed Windows/macOS user base</li>
+</ul>
+</section>
 
-            <h3>Environment assessment &amp; identity planning</h3>
-            <ul>
-                <li>Audited all Exchange servers and AD forests</li>
-                <li>Identified schema inconsistencies</li>
-                <li>Mapped mail routing and Autodiscover behaviour</li>
-                <li>Designed hybrid identity using Azure AD Connect</li>
-                <li>Normalised UPNs and SMTP namespaces</li>
-            </ul>
-            <p>This established a clean foundation for coexistence.</p>
+<section>
+<h2>Objectives</h2>
+<p>Success for this project meant:</p>
+<ul>
+<li>Zero downtime for all users</li>
+<li>Full coexistence during migration</li>
+<li>Preserving multidomain identity</li>
+<li>Replacing legacy file shares with SharePoint</li>
+<li>Enabling OneDrive for personal storage</li>
+<li>Deploying Teams for communication and collaboration</li>
+<li>Improving security with MFA and Conditional Access</li>
+<li>Phasing migration to avoid overwhelming support teams</li>
+</ul>
+</section>
 
-            <h3>Hybrid Exchange deployment</h3>
-            <ul>
-                <li>Installed hybrid Exchange servers</li>
-                <li>Configured secure mail routing between on‑prem and Office 365</li>
-                <li>Enabled Autodiscover redirection</li>
-                <li>Implemented OAuth‑based authentication</li>
-                <li>Validated coexistence for calendars, free/busy, and mail flow</li>
-            </ul>
-            <p>This enabled seamless mailbox moves.</p>
+<section>
+<h2>Technical approach</h2>
 
-            <h3>Mailbox migration</h3>
-            <ul>
-                <li>Prioritised VIPs and critical teams</li>
-                <li>Used batch migration for large groups</li>
-                <li>Migrated mailboxes using MRS (Mailbox Replication Service)</li>
-                <li>Ensured mobile devices reconnected automatically</li>
-                <li>Validated Outlook profiles and Autodiscover</li>
-            </ul>
-            <p>Users experienced zero downtime.</p>
+<h3>Environment assessment & identity planning</h3>
+<ul>
+<li>Audited all Exchange servers and AD forests</li>
+<li>Identified schema inconsistencies</li>
+<li>Mapped mail routing and Autodiscover behaviour</li>
+<li>Designed hybrid identity using Azure AD Connect</li>
+<li>Normalised UPNs and SMTP namespaces</li>
+</ul>
+<p>This established a clean foundation for coexistence.</p>
 
-            <h3>SharePoint &amp; OneDrive rollout</h3>
-            <ul>
-                <li>Designed SharePoint site collections to replace legacy file shares</li>
-                <li>Migrated departmental data using the SharePoint Migration Tool</li>
-                <li>Enabled OneDrive for personal storage</li>
-                <li>Implemented retention policies and versioning</li>
-                <li>Delivered user training and adoption guidance</li>
-            </ul>
-            <p>This modernised collaboration across the organisation.</p>
+<h3>Hybrid Exchange deployment</h3>
+<ul>
+<li>Installed hybrid Exchange servers</li>
+<li>Configured secure mail routing between on‑prem and Office 365</li>
+<li>Enabled Autodiscover redirection</li>
+<li>Implemented OAuth‑based authentication</li>
+<li>Validated coexistence for calendars, free/busy, and mail flow</li>
+</ul>
+<p>This enabled seamless mailbox moves.</p>
 
-            <h3>Teams integration</h3>
-            <ul>
-                <li>Enabled Teams for chat, meetings, and collaboration</li>
-                <li>Integrated Teams with SharePoint document libraries</li>
-                <li>Configured compliance and retention policies</li>
-            </ul>
-            <p>Teams became the organisation’s communication hub.</p>
+<h3>Mailbox migration</h3>
+<ul>
+<li>Prioritised VIPs and critical teams</li>
+<li>Used batch migration for large groups</li>
+<li>Migrated mailboxes using MRS (Mailbox Replication Service)</li>
+<li>Ensured mobile devices reconnected automatically</li>
+<li>Validated Outlook profiles and Autodiscover</li>
+</ul>
+<p>Users experienced zero downtime.</p>
 
-            <h3>DNS, security &amp; compliance</h3>
-            <ul>
-                <li>Updated MX, SPF, DKIM, and DMARC records</li>
-                <li>Implemented MFA and Conditional Access</li>
-                <li>Enabled mailbox auditing and retention</li>
-                <li>Configured antimalware and antiphishing policies</li>
-            </ul>
-            <p>Security posture improved significantly.</p>
+<h3>SharePoint & OneDrive rollout</h3>
+<ul>
+<li>Designed SharePoint site collections to replace legacy file shares</li>
+<li>Migrated departmental data using the SharePoint Migration Tool</li>
+<li>Enabled OneDrive for personal storage</li>
+<li>Implemented retention policies and versioning</li>
+<li>Delivered user training and adoption guidance</li>
+</ul>
+<p>This modernised collaboration across the organisation.</p>
 
-            <h3>Decommissioning legacy Exchange</h3>
-            <ul>
-                <li>Migrated all mailboxes and public folders</li>
-                <li>Removed hybrid servers after validation</li>
-                <li>Decommissioned legacy hardware</li>
-                <li>Cleaned up DNS and Autodiscover entries</li>
-            </ul>
-            <p>The organisation became fully cloud‑based.</p>
-        </section>
+<h3>Teams integration</h3>
+<ul>
+<li>Enabled Teams for chat, meetings, and collaboration</li>
+<li>Integrated Teams with SharePoint document libraries</li>
+<li>Configured compliance and retention policies</li>
+</ul>
+<p>Teams became the organisation’s communication hub.</p>
 
-        <section>
-            <h2>Solution delivered</h2>
-            <p>
-                Atkinson IT Ltd delivered a complete cloud migration solution, moving the organisation from fragmented
-                legacy Exchange environments to a unified Office 365 platform with hybrid identity, modern collaboration
-                tools, and significantly improved security. The migration was executed with zero downtime and full
-                coexistence throughout.
-            </p>
-        </section>
+<h3>DNS, security & compliance</h3>
+<ul>
+<li>Updated MX, SPF, DKIM, and DMARC records</li>
+<li>Implemented MFA and Conditional Access</li>
+<li>Enabled mailbox auditing and retention</li>
+<li>Configured antimalware and antiphishing policies</li>
+</ul>
+<p>Security posture improved significantly.</p>
 
-        <section>
-            <h2>Results &amp; impact</h2>
-            <p>The project delivered measurable benefits:</p>
-            <ul>
-                <li>100% of users migrated to Office 365</li>
-                <li>Zero downtime during the entire project</li>
-                <li>Dramatically increased mailbox sizes</li>
-                <li>Improved search performance</li>
-                <li>SharePoint replaced legacy file shares</li>
-                <li>OneDrive enabled mobile productivity</li>
-                <li>Teams unified communication and collaboration</li>
-                <li>Security strengthened with MFA and Conditional Access</li>
-                <li>Legacy Exchange servers fully decommissioned</li>
-                <li>Significant reduction in operational overhead</li>
-            </ul>
-        </section>
+<h3>Decommissioning legacy Exchange</h3>
+<ul>
+<li>Migrated all mailboxes and public folders</li>
+<li>Removed hybrid servers after validation</li>
+<li>Decommissioned legacy hardware</li>
+<li>Cleaned up DNS and Autodiscover entries</li>
+</ul>
+<p>The organisation became fully cloud‑based.</p>
+</section>
 
-        <section>
-            <h2>Technologies used</h2>
-            <ul>
-                <li>Microsoft Exchange (legacy and hybrid)</li>
-                <li>Office 365 / Microsoft 365</li>
-                <li>Azure AD Connect</li>
-                <li>SharePoint Online</li>
-                <li>OneDrive for Business</li>
-                <li>Microsoft Teams</li>
-                <li>Mailbox Replication Service (MRS)</li>
-                <li>DNS (MX, SPF, DKIM, DMARC)</li>
-                <li>Conditional Access and MFA</li>
-            </ul>
-        </section>
+<section>
+<h2>Solution delivered</h2>
+<p>
+Atkinson IT Ltd delivered a complete cloud migration solution, moving the organisation from fragmented
+legacy Exchange environments to a unified Office 365 platform with hybrid identity, modern collaboration
+tools, and significantly improved security. The migration was executed with zero downtime and full
+coexistence throughout.
+</p>
+</section>
 
-        <section>
-            <h2>Skills demonstrated</h2>
-            <ul>
-                <li>Exchange → Office 365 migration</li>
-                <li>Hybrid identity design</li>
-                <li>SharePoint architecture</li>
-                <li>OneDrive deployment</li>
-                <li>Teams integration</li>
-                <li>DNS &amp; Autodiscover configuration</li>
-                <li>Security &amp; compliance implementation</li>
-                <li>Legacy system decommissioning</li>
-            </ul>
-        </section>
+<section>
+<h2>Results & impact</h2>
+<p>The project delivered measurable benefits:</p>
+<ul>
+<li>100% of users migrated to Office 365</li>
+<li>Zero downtime during the entire project</li>
+<li>Dramatically increased mailbox sizes</li>
+<li>Improved search performance</li>
+<li>SharePoint replaced legacy file shares</li>
+<li>OneDrive enabled mobile productivity</li>
+<li>Teams unified communication and collaboration</li>
+<li>Security strengthened with MFA and Conditional Access</li>
+<li>Legacy Exchange servers fully decommissioned</li>
+<li>Significant reduction in operational overhead</li>
+</ul>
+</section>
 
-        <section>
-            <h2>Atkinson IT commentary</h2>
-            <p>
-                This project showcased the value of careful planning, phased execution, and deep understanding of hybrid
-                identity and coexistence. By modernising the organisation’s messaging and collaboration stack, Atkinson IT Ltd
-                delivered a secure, scalable, cloud‑based platform that significantly improved productivity while reducing
-                operational overhead.
-            </p>
-        </section>
+<section>
+<h2>Technologies used</h2>
+<ul>
+<li>Microsoft Exchange (legacy and hybrid)</li>
+<li>Office 365 / Microsoft 365</li>
+<li>Azure AD Connect</li>
+<li>SharePoint Online</li>
+<li>OneDrive for Business</li>
+<li>Microsoft Teams</li>
+<li>Mailbox Replication Service (MRS)</li>
+<li>DNS (MX, SPF, DKIM, DMARC)</li>
+<li>Conditional Access and MFA</li>
+</ul>
+</section>
 
-        <section>
-            <h2>Planning a cloud migration?</h2>
-            <p>
-                If your organisation is planning a cloud migration or needs help modernising its collaboration tools,
-                Atkinson IT Ltd can deliver a seamless, secure transition.
-            </p>
-            <p><a href="/index.html#contact">Request a consultation</a></p>
-        </section>
-    </div>
+<section>
+<h2>Skills demonstrated</h2>
+<ul>
+<li>Exchange → Office 365 migration</li>
+<li>Hybrid identity design</li>
+<li>SharePoint architecture</li>
+<li>OneDrive deployment</li>
+<li>Teams integration</li>
+<li>DNS & Autodiscover configuration</li>
+<li>Security & compliance implementation</li>
+<li>Legacy system decommissioning</li>
+</ul>
+</section>
+
+<section>
+<h2>Atkinson IT commentary</h2>
+<p>
+This project showcased the value of careful planning, phased execution, and deep understanding of hybrid
+identity and coexistence. By modernising the organisation’s messaging and collaboration stack, Atkinson IT Ltd
+delivered a secure, scalable, cloud‑based platform that significantly improved productivity while reducing
+operational overhead.
+</p>
+</section>
+
+<!-- ===================================================== -->
+<!-- NEW SECTIONS ADDED FOR AI-SEO (MATCHING YOUR TONE) -->
+<!-- ===================================================== -->
+
+<section>
+<h2>Lessons learned</h2>
+<p>
+Large-scale cloud migrations succeed when identity, coexistence, and user experience are treated as first‑class
+engineering concerns rather than afterthoughts. This project reinforced the importance of establishing a clean
+identity foundation before moving any workloads, validating coexistence thoroughly, and phasing migrations to
+avoid unnecessary disruption. A methodical approach ensured the organisation gained the full benefits of the
+modern Microsoft 365 platform without operational risk.
+</p>
+</section>
+
+<section>
+<h2>Frequently asked questions</h2>
+
+<h3>How disruptive is a cloud migration for end users?</h3>
+<p>
+With the right coexistence model, mailbox moves and service transitions can be completed with no noticeable
+impact. In this project, users continued working normally throughout.
+</p>
+
+<h3>Do hybrid Exchange servers need to remain in place permanently?</h3>
+<p>
+No. Once all mailboxes and public folders are migrated and coexistence is no longer required, hybrid servers
+can be safely decommissioned.
+</p>
+
+<h3>What happens to legacy file shares during a migration?</h3>
+<p>
+They are typically replaced with SharePoint site collections and OneDrive, allowing for better structure,
+versioning, and remote access.
+</p>
+
+<h3>Is Teams adoption difficult for organisations?</h3>
+<p>
+Teams adoption is straightforward when supported by clear guidance and when SharePoint is structured properly
+from the outset.
+</p>
+
+<h3>Can Atkinson IT support smaller organisations with similar migrations?</h3>
+<p>
+Yes. The same principles apply regardless of size, and smaller organisations often benefit even more from a
+modern cloud platform.
+</p>
+
+</section>
+
+<section>
+<h2>Related case studies</h2>
+<ul>
+<li><a href="/casestudy/storage-casestudy.html">Storage & Virtualisation Case Study</a></li>
+<li><a href="/casestudy/DR-BCP-casestudy.html">Disaster Recovery & BCP Case Study</a></li>
+<li><a href="/casestudy/network-casestudy.html">Advanced Networking Case Study</a></li>
+</ul>
+</section>
+
+<section>
+<h2>Planning a cloud migration?</h2>
+<p>
+If your organisation is planning a cloud migration or needs help modernising its collaboration tools,
+Atkinson IT Ltd can deliver a seamless, secure transition.
+</p>
+<p><a href="/index.html#contact">Request a consultation</a></p>
+</section>
+
+</div>
 </main>
 
 <footer class="site-footer">
-    <p>© 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
-    <p>
-        <a href="/index.html">Home</a> |
-        <a href="/it-services.html">IT Services</a> |
-        <a href="/about.html">About</a> |
-        <a href="/capabilities.html">Capabilities</a> |
-        <a href="/testimonials.html">Testimonials</a> |
-        <a href="/casestudy.html">Case Studies</a> |
-        <a href="/index.html#contact">Contact</a>
-    </p>
+<p>© 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
+<p>
+<a href="/index.html">Home</a> |
+<a href="/it-services.html">IT Services</a> |
+<a href="/about.html">About</a> |
+<a href="/capabilities.html">Capabilities</a> |
+<a href="/testimonials.html">Testimonials</a> |
+<a href="/casestudy.html">Case Studies</a> |
+<a href="/index.html#contact">Contact</a>
+</p>
 </footer>
 
 </body>

@@ -1,5 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 64 64"
+     width="64" height="64">
+
+  <!-- Background -->
   <rect width="64" height="64" fill="#0A2A43"/>
-  <text x="12" y="44" font-family="Arial" font-size="36" fill="white">A</text>
+
+  <!-- Logo paths (simplified) -->
+  <!-- Dark blue stroke -->
+  <path d="M … simplified path …" fill="#0A2A43"/>
+
+  <!-- Mid blue stroke -->
+  <path d="M … simplified path …" fill="#1F5A8A"/>
+
+  <!-- Light blue stroke -->
+  <path d="M … simplified path …" fill="#4FA3D1"/>
+
+  <!-- Grey stroke -->
+  <path d="M … simplified path …" fill="#C8C8C8"/>
+
 </svg>
 

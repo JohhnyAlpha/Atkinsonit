@@ -4,7 +4,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Disaster Recovery & Business Continuity Case Study — Atkinson IT Ltd</title>
 
 <!-- Robots -->
@@ -21,7 +20,7 @@
 <meta property="og:title" content="Disaster Recovery & Business Continuity Case Study — Atkinson IT Ltd">
 <meta property="og:description" content="A detailed case study of emergency recovery, NetApp deployment, and long-term DR/BCP architecture.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.atkinsonit.co.uk/casestudy/DR-BCP-casestudy.html">
+<meta property="og:url" content="https://www.atkinsonit.co.uk/casestudy/DR-BCP-casestudy">
 <meta property="og:image" content="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80">
 <meta property="og:image:width" content="1600">
 <meta property="og:image:height" content="900">
@@ -36,247 +35,436 @@
 <!-- Styles -->
 <link rel="stylesheet" href="/styles.css">
 
-<!-- Schema -->
-<script type="application/ld+json" src="/schema.json"></script>
+<!-- ===================================================== -->
+<!-- AI-SEO SCHEMA INSERTED HERE -->
+<!-- ===================================================== -->
+
+<!-- Case Study Article Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "articleType": "CaseStudy",
+  "headline": "Disaster Recovery & Business Continuity Case Study",
+  "description": "A real-world DR/BCP project delivered by Atkinson IT Ltd, restoring backup capability within 48 hours after a flooded server room, deploying an emergency NetApp backup platform, and implementing a long-term multi-tier DR/BCP architecture.",
+  "author": {
+    "@type": "Person",
+    "name": "Bernard Atkinson",
+    "jobTitle": "Founder & Senior IT Consultant",
+    "url": "https://www.atkinsonit.co.uk/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Atkinson IT Ltd",
+    "url": "https://www.atkinsonit.co.uk"
+  },
+  "mainEntityOfPage": "https://www.atkinsonit.co.uk/casestudy/DR-BCP-casestudy",
+  "keywords": [
+    "disaster recovery",
+    "business continuity",
+    "NetApp SnapMirror",
+    "backup recovery",
+    "DR architecture",
+    "BCP design",
+    "enterprise tape library",
+    "Atkinson IT"
+  ]
+}
+</script>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How quickly can backup capability be restored after a disaster?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With the right planning and available hardware, it is often possible to restore operational backup capability within 24–72 hours, even after a major incident such as a flooded server room."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is a multi-tier DR/BCP architecture important?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A multi-tier architecture combining local snapshots, tape, and offsite replication provides fast recovery, long-term retention, and resilience against site-level disasters."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can NetApp be used as both a temporary and long-term DR platform?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. NetApp can be deployed quickly as an emergency backup target and later repurposed as an offsite DR platform using technologies such as SnapMirror."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a critical-first recovery strategy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A critical-first strategy prioritises the protection and recovery of systems that are essential to business operations, such as financial systems, authentication, and core databases, before lower-priority workloads."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do all organisations need a tertiary DR site?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not all organisations require a tertiary site, but those with high availability or regulatory requirements often benefit from an additional cold-standby or offsite tier to further reduce risk."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.atkinsonit.co.uk"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Case Studies",
+      "item": "https://www.atkinsonit.co.uk/casestudy"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Disaster Recovery & Business Continuity Case Study",
+      "item": "https://www.atkinsonit.co.uk/casestudy/DR-BCP-casestudy"
+    }
+  ]
+}
+</script>
+
+<!-- Service Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Disaster Recovery & Business Continuity Architecture",
+  "provider": {
+    "@type": "Organization",
+    "name": "Atkinson IT Ltd",
+    "url": "https://www.atkinsonit.co.uk"
+  },
+  "serviceType": "Disaster Recovery and Business Continuity",
+  "areaServed": "Surrey, Berkshire, West London",
+  "url": "https://www.atkinsonit.co.uk/casestudy/DR-BCP-casestudy",
+  "description": "Design and implementation of DR/BCP architectures, emergency recovery, multi-tier backup strategies, and offsite replication."
+}
+</script>
 
 </head>
 
 <body>
 
 <header class="site-header">
-    <div class="container">
-        <h1 class="logo"><a href="/index.html">Atkinson IT Ltd</a></h1>
-        <nav class="main-nav">
-            <a href="/index.html">Home</a>
-            <a href="/it-services.html">IT Services</a>
-            <a href="/engineering-services.html">Engineering Services</a>
-            <a href="/about.html">About</a>
-            <a href="/capabilities.html">Capabilities</a>
-            <a href="/testimonials.html">Testimonials</a>
-            <a href="/casestudy.html">Case Studies</a>
-            <a href="/index.html#contact">Contact</a>
-        </nav>
-    </div>
+<div class="container">
+<h1 class="logo"><a href="/index.html">Atkinson IT Ltd</a></h1>
+
+<nav class="main-nav">
+<a href="/index.html">Home</a>
+<a href="/it-services.html">IT Services</a>
+<a href="/engineering-services.html">Engineering Services</a>
+<a href="/about.html">About</a>
+<a href="/capabilities.html">Capabilities</a>
+<a href="/testimonials.html">Testimonials</a>
+<a href="/casestudy.html">Case Studies</a>
+<a href="/index.html#contact">Contact</a>
+</nav>
+
+</div>
 </header>
 
 <!-- Hidden hero image for accessibility -->
 <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80"
-     alt=""
-     loading="lazy"
-     style="display:none;">
+alt=""
+loading="lazy"
+style="display:none;">
 
 <main class="case-study">
-    <div class="container">
+<div class="container">
 
-        <h1>Disaster Recovery & Business Continuity Case Study</h1>
-        <p><em>A case study by Atkinson IT Ltd</em></p>
+<h1>Disaster Recovery & Business Continuity Case Study</h1>
+<p><em>A case study by Atkinson IT Ltd</em></p>
 
-        <section>
-            <h2>Project overview</h2>
-            <p>
-                A division of a FTSE100 organisation suffered a severe disaster when water ingress from adjacent building
-                works flooded one of its two server rooms. The incident destroyed the IBM Tivoli TSM tape subsystem,
-                eliminating all onsite backup copies and rendering the room unusable. With critical systems at risk and no
-                operational backup platform, the organisation required a fully functional recovery solution within 48 hours.
-            </p>
-        </section>
+<section>
+<h2>Project overview</h2>
+<p>
+A division of a FTSE100 organisation suffered a severe disaster when water ingress from adjacent building
+works flooded one of its two server rooms. The incident destroyed the IBM Tivoli TSM tape subsystem,
+eliminating all onsite backup copies and rendering the room unusable. With critical systems at risk and no
+operational backup platform, the organisation required a fully functional recovery solution within 48 hours.
+</p>
+</section>
 
-        <section>
-            <h2>Client context</h2>
-            <p>The organisation operated a large, mixed‑platform environment including:</p>
-            <ul>
-                <li>Hundreds of Windows and Linux servers</li>
-                <li>VMware virtualisation</li>
-                <li>Multidomain authentication</li>
-                <li>Enterprise file services</li>
-                <li>IBM Tivoli TSM tape‑based backups</li>
-            </ul>
-            <p>The loss of the tape library removed the only onsite backup tier, leaving the business exposed to data loss.</p>
-        </section>
+<section>
+<h2>Client context</h2>
+<p>The organisation operated a large, mixed‑platform environment including:</p>
+<ul>
+<li>Hundreds of Windows and Linux servers</li>
+<li>VMware virtualisation</li>
+<li>Multidomain authentication</li>
+<li>Enterprise file services</li>
+<li>IBM Tivoli TSM tape‑based backups</li>
+</ul>
+<p>The loss of the tape library removed the only onsite backup tier, leaving the business exposed to data loss.</p>
+</section>
 
-        <section>
-            <h2>Challenges</h2>
-            <ul>
-                <li>IBM robotic tape library destroyed by water</li>
-                <li>All onsite backup copies lost</li>
-                <li>Server room unusable due to flooding</li>
-                <li>No operational backup or recovery capability</li>
-                <li>Replacement hardware months away</li>
-                <li>Critical systems at immediate risk</li>
-                <li>Large, complex, multidomain environment</li>
-            </ul>
-            <p>This was a genuine business‑critical emergency requiring immediate action.</p>
-        </section>
+<section>
+<h2>Challenges</h2>
+<ul>
+<li>IBM robotic tape library destroyed by water</li>
+<li>All onsite backup copies lost</li>
+<li>Server room unusable due to flooding</li>
+<li>No operational backup or recovery capability</li>
+<li>Replacement hardware months away</li>
+<li>Critical systems at immediate risk</li>
+<li>Large, complex, multidomain environment</li>
+</ul>
+<p>This was a genuine business‑critical emergency requiring immediate action.</p>
+</section>
 
-        <section>
-            <h2>Objectives</h2>
-            <p>The recovery effort needed to achieve:</p>
-            <ul>
-                <li>Operational backup capability within 48 hours</li>
-                <li>Critical‑first protection strategy</li>
-                <li>Support for Windows, Linux, VMware, and file services</li>
-                <li>A long‑term DR/BCP architecture</li>
-                <li>Minimal disruption to production workloads</li>
-                <li>Safe migration path to a new tape library</li>
-            </ul>
-        </section>
+<section>
+<h2>Objectives</h2>
+<p>The recovery effort needed to achieve:</p>
+<ul>
+<li>Operational backup capability within 48 hours</li>
+<li>Critical‑first protection strategy</li>
+<li>Support for Windows, Linux, VMware, and file services</li>
+<li>A long‑term DR/BCP architecture</li>
+<li>Minimal disruption to production workloads</li>
+<li>Safe migration path to a new tape library</li>
+</ul>
+</section>
 
-        <section>
-            <h2>Technical approach</h2>
+<section>
+<h2>Technical approach</h2>
 
-            <h3>Emergency NetApp backup platform (48‑hour deployment)</h3>
-            <p>To restore backup capability immediately:</p>
-            <ul>
-                <li>Deployed a NetApp storage system as a temporary backup target</li>
-                <li>Configured high‑capacity aggregates for rapid ingestion</li>
-                <li>Integrated with existing servers and VMware hosts</li>
-                <li>Enabled snapshots for instant recovery</li>
-                <li>Implemented SnapMirror for offsite replication</li>
-                <li>Prioritised critical systems for first‑wave protection</li>
-            </ul>
-            <p>This restored backup capability within the 2‑day deadline.</p>
+<h3>Emergency NetApp backup platform (48‑hour deployment)</h3>
+<p>To restore backup capability immediately:</p>
+<ul>
+<li>Deployed a NetApp storage system as a temporary backup target</li>
+<li>Configured high‑capacity aggregates for rapid ingestion</li>
+<li>Integrated with existing servers and VMware hosts</li>
+<li>Enabled snapshots for instant recovery</li>
+<li>Implemented SnapMirror for offsite replication</li>
+<li>Prioritised critical systems for first‑wave protection</li>
+</ul>
+<p>This restored backup capability within the 2‑day deadline.</p>
 
-            <h3>Critical‑first migration</h3>
-            <p>Systems were triaged into tiers to maximise resilience:</p>
+<h3>Critical‑first migration</h3>
+<p>Systems were triaged into tiers to maximise resilience:</p>
 
-            <p><strong>Tier 1 — Critical</strong></p>
-            <ul>
-                <li>Financial systems</li>
-                <li>Authentication services</li>
-                <li>Core databases</li>
-                <li>Line‑of‑business applications</li>
-                <li>VMware management infrastructure</li>
-            </ul>
+<p><strong>Tier 1 — Critical</strong></p>
+<ul>
+<li>Financial systems</li>
+<li>Authentication services</li>
+<li>Core databases</li>
+<li>Line‑of‑business applications</li>
+<li>VMware management infrastructure</li>
+</ul>
 
-            <p><strong>Tier 2 — Important</strong></p>
-            <ul>
-                <li>Departmental file shares</li>
-                <li>Secondary applications</li>
-                <li>Internal web services</li>
-            </ul>
+<p><strong>Tier 2 — Important</strong></p>
+<ul>
+<li>Departmental file shares</li>
+<li>Secondary applications</li>
+<li>Internal web services</li>
+</ul>
 
-            <p><strong>Tier 3 — Low priority</strong></p>
-            <ul>
-                <li>Archive data</li>
-                <li>Legacy systems</li>
-                <li>Non‑production workloads</li>
-            </ul>
+<p><strong>Tier 3 — Low priority</strong></p>
+<ul>
+<li>Archive data</li>
+<li>Legacy systems</li>
+<li>Non‑production workloads</li>
+</ul>
 
-            <h3>New tape library design & commissioning</h3>
-            <p>I oversaw the design and commissioning of a new server room and multi‑cabinet IBM tape library with:</p>
-            <ul>
-                <li>Robotised tape handling</li>
-                <li>Integration with Tivoli TSM</li>
-                <li>Redundant power and cooling</li>
-                <li>Fire suppression</li>
-                <li>Fibre Channel zoning and power distribution</li>
-                <li>Environmental controls and tape robot calibration</li>
-            </ul>
-            <p>This became the long‑term archival tier.</p>
+<h3>New tape library design & commissioning</h3>
+<p>I oversaw the design and commissioning of a new server room and multi‑cabinet IBM tape library with:</p>
+<ul>
+<li>Robotised tape handling</li>
+<li>Integration with Tivoli TSM</li>
+<li>Redundant power and cooling</li>
+<li>Fire suppression</li>
+<li>Fibre Channel zoning and power distribution</li>
+<li>Environmental controls and tape robot calibration</li>
+</ul>
+<p>This became the long‑term archival tier.</p>
 
-            <h3>Reverse migration & DR architecture</h3>
-            <p>After the new tape subsystem was commissioned:</p>
-            <ul>
-                <li>Backups were migrated back to tape</li>
-                <li>The NetApp system was repurposed offsite</li>
-                <li>SnapMirror replication configured for DR</li>
-                <li>A tertiary cold‑standby DR site established</li>
-                <li>Regular failover tests implemented</li>
-            </ul>
+<h3>Reverse migration & DR architecture</h3>
+<p>After the new tape subsystem was commissioned:</p>
+<ul>
+<li>Backups were migrated back to tape</li>
+<li>The NetApp system was repurposed offsite</li>
+<li>SnapMirror replication configured for DR</li>
+<li>A tertiary cold‑standby DR site established</li>
+<li>Regular failover tests implemented</li>
+</ul>
 
-            <p>This created a three‑tier resilience model:</p>
-            <ul>
-                <li>Local snapshots (instant recovery)</li>
-                <li>Tape library (long‑term retention)</li>
-                <li>Offsite NetApp (DR/BCP replication)</li>
-            </ul>
-        </section>
+<p>This created a three‑tier resilience model:</p>
+<ul>
+<li>Local snapshots (instant recovery)</li>
+<li>Tape library (long‑term retention)</li>
+<li>Offsite NetApp (DR/BCP replication)</li>
+</ul>
+</section>
 
-        <section>
-            <h2>Solution delivered</h2>
-            <p>
-                Atkinson IT Ltd delivered a complete emergency recovery and long‑term DR/BCP solution, restoring backup
-                capability within 48 hours, protecting critical systems first, and implementing a modern, multi‑tier
-                resilience architecture.
-            </p>
-        </section>
+<section>
+<h2>Solution delivered</h2>
+<p>
+Atkinson IT Ltd delivered a complete emergency recovery and long‑term DR/BCP solution, restoring backup
+capability within 48 hours, protecting critical systems first, and implementing a modern, multi‑tier
+resilience architecture.
+</p>
+</section>
 
-        <section>
-            <h2>Results &amp; impact</h2>
-            <ul>
-                <li>Full backup capability restored within 48 hours</li>
-                <li>Zero data loss despite the disaster</li>
-                <li>Critical systems protected first</li>
-                <li>New enterprise‑grade tape library commissioned</li>
-                <li>Offsite DR replication established</li>
-                <li>Long‑term BCP architecture implemented</li>
-                <li>Improved RTO/RPO across all systems</li>
-                <li>Modern, multi‑tier backup strategy deployed</li>
-            </ul>
-            <p>This transformed a near‑catastrophic incident into a resilient, future‑proofed DR/BCP platform.</p>
-        </section>
+<section>
+<h2>Results &amp; impact</h2>
+<ul>
+<li>Full backup capability restored within 48 hours</li>
+<li>Zero data loss despite the disaster</li>
+<li>Critical systems protected first</li>
+<li>New enterprise‑grade tape library commissioned</li>
+<li>Offsite DR replication established</li>
+<li>Long‑term BCP architecture implemented</li>
+<li>Improved RTO/RPO across all systems</li>
+<li>Modern, multi‑tier backup strategy deployed</li>
+</ul>
+<p>This transformed a near‑catastrophic incident into a resilient, future‑proofed DR/BCP platform.</p>
+</section>
 
-        <section>
-            <h2>Technologies used</h2>
-            <ul>
-                <li>NetApp storage & SnapMirror</li>
-                <li>IBM Tivoli TSM</li>
-                <li>Fibre Channel SAN</li>
-                <li>VMware virtualisation</li>
-                <li>Windows & Linux servers</li>
-                <li>Multisite replication</li>
-                <li>Enterprise tape library systems</li>
-            </ul>
-        </section>
+<section>
+<h2>Technologies used</h2>
+<ul>
+<li>NetApp storage & SnapMirror</li>
+<li>IBM Tivoli TSM</li>
+<li>Fibre Channel SAN</li>
+<li>VMware virtualisation</li>
+<li>Windows & Linux servers</li>
+<li>Multisite replication</li>
+<li>Enterprise tape library systems</li>
+</ul>
+</section>
 
-        <section>
-            <h2>Skills demonstrated</h2>
-            <ul>
-                <li>Disaster recovery leadership</li>
-                <li>BCP architecture design</li>
-                <li>NetApp SnapMirror configuration</li>
-                <li>TSM/Tivoli integration</li>
-                <li>Fibre Channel design</li>
-                <li>Multisite DR replication</li>
-                <li>Server room design</li>
-                <li>Critical‑first migration strategy</li>
-            </ul>
-        </section>
+<section>
+<h2>Skills demonstrated</h2>
+<ul>
+<li>Disaster recovery leadership</li>
+<li>BCP architecture design</li>
+<li>NetApp SnapMirror configuration</li>
+<li>TSM/Tivoli integration</li>
+<li>Fibre Channel design</li>
+<li>Multisite DR replication</li>
+<li>Server room design</li>
+<li>Critical‑first migration strategy</li>
+</ul>
+</section>
 
-        <section>
-            <h2>Atkinson IT commentary</h2>
-            <p>
-                This project demonstrated the importance of rapid decision‑making, technical depth, and structured
-                prioritisation during a crisis. By combining emergency recovery with long‑term architectural planning,
-                Atkinson IT Ltd delivered a resilient, modern DR/BCP solution that significantly strengthened the
-                organisation’s operational continuity.
-            </p>
-        </section>
+<section>
+<h2>Atkinson IT commentary</h2>
+<p>
+This project demonstrated the importance of rapid decision‑making, technical depth, and structured
+prioritisation during a crisis. By combining emergency recovery with long‑term architectural planning,
+Atkinson IT Ltd delivered a resilient, modern DR/BCP solution that significantly strengthened the
+organisation’s operational continuity.
+</p>
+</section>
 
-        <section>
-            <h2>Need help with DR or BCP?</h2>
-            <p>
-                If your organisation needs to improve resilience, modernise backups, or recover from a critical incident,
-                Atkinson IT Ltd can help.
-            </p>
-            <p><a href="/index.html#contact">Request a consultation</a></p>
-        </section>
+<section>
+<h2>Lessons learned</h2>
+<p>
+This engagement highlighted how quickly a single point of failure in backup infrastructure can become a
+business‑critical incident. By treating DR and BCP as core architecture rather than an afterthought, and by
+prioritising critical systems first, it is possible to turn a severe outage into an opportunity to modernise
+resilience. A structured, tiered approach to recovery and long‑term design ensures that future incidents are
+managed from a position of strength rather than panic.
+</p>
+</section>
 
-    </div>
+<section>
+<h2>Frequently asked questions</h2>
+
+<h3>What is the first step after losing a backup platform?</h3>
+<p>
+The first step is to stabilise the situation: understand the scope of data at risk, identify remaining
+recovery options, and establish an emergency backup target as quickly as possible.
+</p>
+
+<h3>Do we always need new hardware to restore backup capability?</h3>
+<p>
+Not necessarily. In many cases, existing storage platforms or quickly‑deployed systems such as NetApp can be
+used as an interim backup target while longer‑term hardware is procured.
+</p>
+
+<h3>How do you decide which systems to protect first?</h3>
+<p>
+A critical‑first strategy focuses on systems that directly impact revenue, authentication, core data, and
+operational continuity. Everything else is sequenced after those workloads are safe.
+</p>
+
+<h3>Is tape still relevant in modern DR/BCP designs?</h3>
+<p>
+Yes. Tape remains valuable for long‑term retention and cost‑effective archival, especially when combined with
+snapshots and offsite replication in a multi‑tier design.
+</p>
+
+<h3>Can Atkinson IT help design DR/BCP before a disaster occurs?</h3>
+<p>
+Absolutely. The same principles used in this emergency project can be applied proactively to design and
+implement a robust DR/BCP architecture before an incident happens.
+</p>
+
+</section>
+
+<section>
+<h2>Related case studies</h2>
+<ul>
+<li><a href="/casestudy/storage-casestudy.html">Storage & Virtualisation Case Study</a></li>
+<li><a href="/casestudy/cloud-casestudy.html">Cloud Migration Case Study</a></li>
+<li><a href="/casestudy/network-casestudy.html">Advanced Networking Case Study</a></li>
+</ul>
+</section>
+
+<section>
+<h2>Need help with DR or BCP?</h2>
+<p>
+If your organisation needs to improve resilience, modernise backups, or recover from a critical incident,
+Atkinson IT Ltd can help.
+</p>
+<p><a href="/index.html#contact">Request a consultation</a></p>
+</section>
+
+</div>
 </main>
 
 <footer class="site-footer">
-    <p>© 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
-    <p>
-        <a href="/index.html">Home</a> |
-        <a href="/it-services.html">Services</a> |
-        <a href="/about.html">About</a> |
-        <a href="/capabilities.html">Capabilities</a> |
-        <a href="/testimonials.html">Testimonials</a> |
-        <a href="/casestudy.html">Case Studies</a> |
-        <a href="/index.html#contact">Contact</a>
-    </p>
+<p>© 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
+<p>
+<a href="/index.html">Home</a> |
+<a href="/it-services.html">Services</a> |
+<a href="/about.html">About</a> |
+<a href="/capabilities.html">Capabilities</a> |
+<a href="/testimonials.html">Testimonials</a> |
+<a href="/casestudy.html">Case Studies</a> |
+<a href="/index.html#contact">Contact</a>
+</p>
 </footer>
 
 </body>
+</html>
+
 </html>

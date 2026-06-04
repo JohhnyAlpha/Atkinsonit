@@ -4,7 +4,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Legacy Hardware Scientific Modelling Case Study — Atkinson IT Ltd</title>
 
 <!-- Robots -->
@@ -21,7 +20,7 @@
 <meta property="og:title" content="Legacy Hardware Scientific Modelling Case Study — Atkinson IT Ltd">
 <meta property="og:description" content="A detailed case study of repurposing legacy Intel hardware for scientific modelling using Linux, Python automation, and ATMoS.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.atkinsonit.co.uk/casestudy/Legacy-casestudy.html">
+<meta property="og:url" content="https://www.atkinsonit.co.uk/casestudy/Legacy-casestudy">
 <meta property="og:image" content="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80">
 <meta property="og:image:width" content="1600">
 <meta property="og:image:height" content="900">
@@ -36,213 +35,403 @@
 <!-- Styles -->
 <link rel="stylesheet" href="/styles.css">
 
-<!-- Schema -->
-<script type="application/ld+json" src="/schema.json"></script>
+<!-- ===================================================== -->
+<!-- AI-SEO SCHEMA INSERTED HERE -->
+<!-- ===================================================== -->
+
+<!-- Case Study Article Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "articleType": "CaseStudy",
+  "headline": "ATMoS Scientific Modelling on Repurposed Legacy Hardware",
+  "description": "A real-world scientific modelling project delivered by Atkinson IT Ltd, repurposing legacy Intel hardware into a Linux-based scientific workstation capable of running 108 ATMoS simulations with Python automation.",
+  "author": {
+    "@type": "Person",
+    "name": "Bernard Atkinson",
+    "jobTitle": "Founder & Senior IT Consultant",
+    "url": "https://www.atkinsonit.co.uk/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Atkinson IT Ltd",
+    "url": "https://www.atkinsonit.co.uk"
+  },
+  "mainEntityOfPage": "https://www.atkinsonit.co.uk/casestudy/Legacy-casestudy",
+  "keywords": [
+    "legacy hardware",
+    "Linux deployment",
+    "scientific modelling",
+    "ATMoS",
+    "Python automation",
+    "batch processing",
+    "x86_64 scientific computing",
+    "Atkinson IT"
+  ]
+}
+</script>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can legacy hardware still be used for scientific workloads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. With the right Linux distribution, dependency management, and optimisation, older x86_64 hardware can still run demanding scientific modelling workloads effectively."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why was Linux required for ATMoS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ATMoS depends on specific scientific libraries and an x86_64 Linux environment, making it incompatible with modern ARM-based Apple Silicon systems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How were 108 simulations automated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Python-driven batch processing pipeline was created to run parameter sweeps, collect outputs, and generate visualisations automatically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to transfer large scientific datasets over SFTP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. SFTP provides encrypted transfer, ensuring that raw outputs and processed datasets remain secure during transit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Atkinson IT help with scientific computing environments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. Atkinson IT can deploy Linux environments, automate modelling pipelines, and optimise legacy hardware for research workloads."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.atkinsonit.co.uk"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Case Studies",
+      "item": "https://www.atkinsonit.co.uk/casestudy"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "ATMoS Scientific Modelling Case Study",
+      "item": "https://www.atkinsonit.co.uk/casestudy/Legacy-casestudy"
+    }
+  ]
+}
+</script>
+
+<!-- Service Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Legacy Hardware Repurposing & Scientific Computing",
+  "provider": {
+    "@type": "Organization",
+    "name": "Atkinson IT Ltd",
+    "url": "https://www.atkinsonit.co.uk"
+  },
+  "serviceType": "Scientific Computing & Linux Engineering",
+  "areaServed": "Surrey, Berkshire, West London",
+  "url": "https://www.atkinsonit.co.uk/casestudy/Legacy-casestudy",
+  "description": "Repurposing legacy hardware, deploying Linux scientific environments, automating modelling pipelines, and supporting research workloads."
+}
+</script>
 
 </head>
 
 <body>
 
 <header class="site-header">
-    <div class="container">
-        <h1 class="logo"><a href="/index.html">Atkinson IT Ltd</a></h1>
-        <nav class="main-nav">
-            <a href="/index.html">Home</a>
-            <a href="/it-services.html">IT Services</a>
-            <a href="/engineering-services.html">Engineering Services</a>
-            <a href="/about.html">About</a>
-            <a href="/capabilities.html">Capabilities</a>
-            <a href="/testimonials.html">Testimonials</a>
-            <a href="/casestudy.html">Case Studies</a>
-            <a href="/index.html#contact">Contact</a>
-        </nav>
-    </div>
+<div class="container">
+<h1 class="logo"><a href="/index.html">Atkinson IT Ltd</a></h1>
+
+<nav class="main-nav">
+<a href="/index.html">Home</a>
+<a href="/it-services.html">IT Services</a>
+<a href="/engineering-services.html">Engineering Services</a>
+<a href="/about.html">About</a>
+<a href="/capabilities.html">Capabilities</a>
+<a href="/testimonials.html">Testimonials</a>
+<a href="/casestudy.html">Case Studies</a>
+<a href="/index.html#contact">Contact</a>
+</nav>
+
+</div>
 </header>
 
-<!-- Hidden hero image for accessibility -->
+<!-- Hidden hero image -->
 <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80"
-     alt=""
-     loading="lazy"
-     style="display:none;">
+alt=""
+loading="lazy"
+style="display:none;">
 
 <main class="case-study">
-    <div class="container">
+<div class="container">
 
-        <h1>Case Study: ATMoS Scientific Modelling on Repurposed Legacy Hardware</h1>
-        <p><em>A case study by Atkinson IT Ltd</em></p>
+<h1>Case Study: ATMoS Scientific Modelling on Repurposed Legacy Hardware</h1>
+<p><em>A case study by Atkinson IT Ltd</em></p>
 
-        <section>
-            <h2>Project overview</h2>
-            <p>
-                As part of a STEM degree in Planetary Science & Astronomy, Atkinson IT Ltd’s founder, Bernard Atkinson,
-                needed to run a full atmospheric escape modelling pipeline using ATMoS — a demanding scientific modelling
-                suite used in planetary research. ATMoS was incompatible with modern Apple Silicon Macs, requiring an
-                x86_64 Linux environment with specific scientific libraries.
-            </p>
-            <p>
-                To overcome this, Bernard rebuilt an ageing Intel‑based iMac from the ground up, transforming obsolete
-                hardware into a stable Linux‑based scientific workstation capable of running 108 independent simulations.
-            </p>
-        </section>
+<section>
+<h2>Project overview</h2>
+<p>
+As part of a STEM degree in Planetary Science & Astronomy, Atkinson IT Ltd’s founder, Bernard Atkinson,
+needed to run a full atmospheric escape modelling pipeline using ATMoS — a demanding scientific modelling
+suite used in planetary research. ATMoS was incompatible with modern Apple Silicon Macs, requiring an
+x86_64 Linux environment with specific scientific libraries.
+</p>
+<p>
+To overcome this, Bernard rebuilt an ageing Intel‑based iMac from the ground up, transforming obsolete
+hardware into a stable Linux‑based scientific workstation capable of running 108 independent simulations.
+</p>
+</section>
 
-        <section>
-            <h2>Client context</h2>
-            <p>The modelling work required:</p>
-            <ul>
-                <li>A stable x86_64 Linux environment</li>
-                <li>Scientific Python libraries and dependencies</li>
-                <li>Automated batch processing for large simulation sets</li>
-                <li>Secure transfer of large datasets</li>
-                <li>Reliable visualisation and analysis tools</li>
-            </ul>
-            <p>The only available hardware was an outdated Intel iMac no longer supported by modern macOS versions.</p>
-        </section>
+<section>
+<h2>Client context</h2>
+<p>The modelling work required:</p>
+<ul>
+<li>A stable x86_64 Linux environment</li>
+<li>Scientific Python libraries and dependencies</li>
+<li>Automated batch processing for large simulation sets</li>
+<li>Secure transfer of large datasets</li>
+<li>Reliable visualisation and analysis tools</li>
+</ul>
+<p>The only available hardware was an outdated Intel iMac no longer supported by modern macOS versions.</p>
+</section>
 
-        <section>
-            <h2>Challenges</h2>
-            <ul>
-                <li>ATMoS incompatible with Apple Silicon (ARM/RISC)</li>
-                <li>Legacy Intel iMac with unsupported OS and dependency conflicts</li>
-                <li>Need for a stable Linux scientific environment</li>
-                <li>Large‑scale simulation workload (108 runs)</li>
-                <li>Secure transfer of large datasets and outputs</li>
-            </ul>
-            <p>
-                The solution required a complete rebuild, Linux deployment, scientific library installation, automated
-                batch processing, and secure data transfer.
-            </p>
-        </section>
+<section>
+<h2>Challenges</h2>
+<ul>
+<li>ATMoS incompatible with Apple Silicon (ARM/RISC)</li>
+<li>Legacy Intel iMac with unsupported OS and dependency conflicts</li>
+<li>Need for a stable Linux scientific environment</li>
+<li>Large‑scale simulation workload (108 runs)</li>
+<li>Secure transfer of large datasets and outputs</li>
+</ul>
+<p>
+The solution required a complete rebuild, Linux deployment, scientific library installation, automated
+batch processing, and secure data transfer.
+</p>
+</section>
 
-        <section>
-            <h2>Objectives</h2>
-            <p>The project needed to deliver:</p>
-            <ul>
-                <li>A fully functional Linux scientific workstation</li>
-                <li>ATMoS compatibility on x86_64 hardware</li>
-                <li>Automated multi‑run simulation pipeline</li>
-                <li>Secure SSH/SFTP data transfer</li>
-                <li>Publication‑quality graphs and datasets</li>
-            </ul>
-        </section>
+<section>
+<h2>Objectives</h2>
+<p>The project needed to deliver:</p>
+<ul>
+<li>A fully functional Linux scientific workstation</li>
+<li>ATMoS compatibility on x86_64 hardware</li>
+<li>Automated multi‑run simulation pipeline</li>
+<li>Secure SSH/SFTP data transfer</li>
+<li>Publication‑quality graphs and datasets</li>
+</ul>
+</section>
 
-        <section>
-            <h2>Technical approach</h2>
+<section>
+<h2>Technical approach</h2>
 
-            <h3>System rebuild &amp; Linux deployment</h3>
-            <p>
-                The Intel iMac was wiped and rebuilt with Ubuntu Linux, optimised for scientific workloads and long‑term
-                stability.
-            </p>
+<h3>System rebuild & Linux deployment</h3>
+<p>
+The Intel iMac was wiped and rebuilt with Ubuntu Linux, optimised for scientific workloads and long‑term
+stability.
+</p>
 
-            <h3>Scientific environment setup</h3>
-            <p>
-                Installed Python 3.x, ATMoS, and scientific libraries (NumPy, SciPy, Pandas, Matplotlib) in isolated
-                environments to avoid dependency conflicts.
-            </p>
+<h3>Scientific environment setup</h3>
+<p>
+Installed Python 3.x, ATMoS, and scientific libraries (NumPy, SciPy, Pandas, Matplotlib) in isolated
+environments to avoid dependency conflicts.
+</p>
 
-            <h3>Automated multi‑run pipeline</h3>
-            <p>
-                Developed a Python‑driven workflow to run 108 simulations, manage parameter sweeps, collect outputs, and
-                generate visualisations — converting a manual process into a repeatable automated pipeline.
-            </p>
+<h3>Automated multi‑run pipeline</h3>
+<p>
+Developed a Python‑driven workflow to run 108 simulations, manage parameter sweeps, collect outputs, and
+generate visualisations — converting a manual process into a repeatable automated pipeline.
+</p>
 
-            <h3>Secure data transfer</h3>
-            <p>
-                Configured SSH for secure remote access and used SFTP (via Cyberduck) for encrypted transfer of raw
-                outputs, processed datasets, and graphs.
-            </p>
+<h3>Secure data transfer</h3>
+<p>
+Configured SSH for secure remote access and used SFTP (via Cyberduck) for encrypted transfer of raw
+outputs, processed datasets, and graphs.
+</p>
 
-            <h3>Data analysis &amp; visualisation</h3>
-            <p>
-                Generated radiation flux curves, atmospheric escape rate graphs, time‑dependent evolution plots, and
-                comparative scenario charts — forming the analytical backbone of the dissertation.
-            </p>
-        </section>
+<h3>Data analysis & visualisation</h3>
+<p>
+Generated radiation flux curves, atmospheric escape rate graphs, time‑dependent evolution plots, and
+comparative scenario charts — forming the analytical backbone of the dissertation.
+</p>
 
-        <section>
-            <h2>Solution delivered</h2>
-            <p>
-                Atkinson IT Ltd delivered a fully functional scientific modelling environment on repurposed legacy
-                hardware, enabling complex ATMoS simulations to run reliably despite platform incompatibilities.
-            </p>
-        </section>
+</section>
 
-        <section>
-            <h2>Results &amp; impact</h2>
-            <ul>
-                <li>Legacy Intel iMac transformed into a scientific workstation</li>
-                <li>108 atmospheric simulations completed successfully</li>
-                <li>Automated Python scripts processed all outputs</li>
-                <li>Secure SSH/SFTP workflow ensured smooth data transfer</li>
-                <li>Publication‑quality graphs and datasets produced</li>
-                <li>Successfully worked around ATMoS’s incompatibility with ARM/RISC Macs</li>
-                <li>Contributed to a strong academic result (expected 2:1, with a realistic chance of a First)</li>
-            </ul>
-        </section>
+<section>
+<h2>Solution delivered</h2>
+<p>
+Atkinson IT Ltd delivered a fully functional scientific modelling environment on repurposed legacy
+hardware, enabling complex ATMoS simulations to run reliably despite platform incompatibilities.
+</p>
+</section>
 
-        <section>
-            <h2>Technologies used</h2>
-            <ul>
-                <li>Ubuntu Linux</li>
-                <li>Python 3.x</li>
-                <li>NumPy, SciPy, Pandas, Matplotlib</li>
-                <li>ATMoS scientific modelling suite</li>
-                <li>SSH &amp; SFTP</li>
-                <li>Legacy Intel hardware</li>
-                <li>Automated batch processing</li>
-            </ul>
-        </section>
+<section>
+<h2>Results & impact</h2>
+<ul>
+<li>Legacy Intel iMac transformed into a scientific workstation</li>
+<li>108 atmospheric simulations completed successfully</li>
+<li>Automated Python scripts processed all outputs</li>
+<li>Secure SSH/SFTP workflow ensured smooth data transfer</li>
+<li>Publication‑quality graphs and datasets produced</li>
+<li>Successfully worked around ATMoS’s incompatibility with ARM/RISC Macs</li>
+<li>Contributed to a strong academic result (expected 2:1, with a realistic chance of a First)</li>
+</ul>
+</section>
 
-        <section>
-            <h2>Skills demonstrated</h2>
-            <ul>
-                <li>Linux deployment &amp; optimisation</li>
-                <li>Legacy hardware repurposing</li>
-                <li>Scientific software installation</li>
-                <li>Python automation</li>
-                <li>Batch processing pipelines</li>
-                <li>SSH configuration</li>
-                <li>Secure SFTP data transfer</li>
-                <li>Data analysis &amp; visualisation</li>
-                <li>Systems engineering</li>
-                <li>Troubleshooting complex dependencies</li>
-                <li>Working around platform incompatibilities (ARM vs x86_64)</li>
-            </ul>
-        </section>
+<section>
+<h2>Technologies used</h2>
+<ul>
+<li>Ubuntu Linux</li>
+<li>Python 3.x</li>
+<li>NumPy, SciPy, Pandas, Matplotlib</li>
+<li>ATMoS scientific modelling suite</li>
+<li>SSH & SFTP</li>
+<li>Legacy Intel hardware</li>
+<li>Automated batch processing</li>
+</ul>
+</section>
 
-        <section>
-            <h2>Atkinson IT commentary</h2>
-            <p>
-                This project highlights the value of technical creativity and deep systems knowledge. By repurposing
-                legacy hardware and building a tailored Linux environment, Atkinson IT Ltd delivered a reliable scientific
-                modelling platform that overcame modern hardware limitations and enabled complex research workloads.
-            </p>
-        </section>
+<section>
+<h2>Skills demonstrated</h2>
+<ul>
+<li>Linux deployment & optimisation</li>
+<li>Legacy hardware repurposing</li>
+<li>Scientific software installation</li>
+<li>Python automation</li>
+<li>Batch processing pipelines</li>
+<li>SSH configuration</li>
+<li>Secure SFTP data transfer</li>
+<li>Data analysis & visualisation</li>
+<li>Systems engineering</li>
+<li>Troubleshooting complex dependencies</li>
+<li>Working around platform incompatibilities (ARM vs x86_64)</li>
+</ul>
+</section>
 
-        <section>
-            <h2>Need help with legacy systems?</h2>
-            <p>
-                If you need to revive legacy hardware, deploy Linux for specialist workloads, or automate scientific or
-                engineering pipelines, Atkinson IT Ltd can help.
-            </p>
-            <p><a href="/index.html#contact">Request a consultation</a></p>
-        </section>
+<section>
+<h2>Atkinson IT commentary</h2>
+<p>
+This project highlights the value of technical creativity and deep systems knowledge. By repurposing
+legacy hardware and building a tailored Linux environment, Atkinson IT Ltd delivered a reliable scientific
+modelling platform that overcame modern hardware limitations and enabled complex research workloads.
+</p>
+</section>
 
-    </div>
+<!-- ===================================================== -->
+<!-- NEW AI-SEO SECTIONS -->
+<!-- ===================================================== -->
+
+<section>
+<h2>Lessons learned</h2>
+<p>
+This project demonstrated how effective legacy hardware can be when paired with the right operating system,
+scientific libraries, and automation. With careful optimisation, even unsupported systems can deliver
+high‑value scientific output. The key is understanding the workload, building a stable environment, and
+automating everything that can be automated.
+</p>
+</section>
+
+<section>
+<h2>Frequently asked questions</h2>
+
+<h3>Can legacy hardware still run modern scientific workloads?</h3>
+<p>
+Yes — provided the workload is CPU‑bound rather than GPU‑bound, and the environment is configured correctly.
+Linux dramatically extends the useful life of older x86_64 systems.
+</p>
+
+<h3>Why not use a virtual machine instead?</h3>
+<p>
+ATMoS required direct access to scientific libraries and hardware‑level performance that would have been
+compromised inside a VM.
+</p>
+
+<h3>How were 108 simulations managed?</h3>
+<p>
+A Python automation pipeline handled parameter sweeps, execution, output collection, and graph generation.
+</p>
+
+<h3>Is SFTP secure enough for research data?</h3>
+<p>
+Yes. SFTP provides encrypted transfer and is widely used in scientific and academic environments.
+</p>
+
+<h3>Can Atkinson IT help with scientific computing setups?</h3>
+<p>
+Absolutely — from Linux deployment to automation pipelines and data workflows.
+</p>
+
+</section>
+
+<section>
+<h2>Related case studies</h2>
+<ul>
+<li><a href="/casestudy/cloud-casestudy.html">Cloud Migration Case Study</a></li>
+<li><a href="/casestudy/storage-casestudy.html">Storage & Virtualisation Case Study</a></li>
+<li><a href="/casestudy/network-casestudy.html">Advanced Networking Case Study</a></li>
+</ul>
+</section>
+
+<section>
+<h2>Need help with legacy systems?</h2>
+<p>
+If you need to revive legacy hardware, deploy Linux for specialist workloads, or automate scientific or
+engineering pipelines, Atkinson IT Ltd can help.
+</p>
+<p><a href="/index.html#contact">Request a consultation</a></p>
+</section>
+
+</div>
 </main>
 
 <footer class="site-footer">
-    <p>© 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
-    <p>
-        <a href="/index.html">Home</a> |
-        <a href="/it-services.html">Services</a> |
-        <a href="/about.html">About</a> |
-        <a href="/capabilities.html">Capabilities</a> |
-        <a href="/testimonials.html">Testimonials</a> |
-        <a href="/casestudy.html">Case Studies</a> |
-        <a href="/index.html#contact">Contact</a>
-    </p>
+<p>© 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
+<p>
+<a href="/index.html">Home</a> |
+<a href="/it-services.html">Services</a> |
+<a href="/about.html">About</a> |
+<a href="/capabilities.html">Capabilities</a> |
+<a href="/testimonials.html">Testimonials</a> |
+<a href="/casestudy.html">Case Studies</a> |
+<a href="/index.html#contact">Contact</a>
+</p>
 </footer>
 
 </body>
+</html>
+
 </html>
