@@ -24,8 +24,6 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.atkinsonit.co.uk/capabilities.html">
 <meta property="og:image" content="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80">
-<meta property="og:image:width" content="1600">
-<meta property="og:image:height" content="900">
 
 <!-- Preconnect -->
 <link rel="preconnect" href="https://images.unsplash.com">
@@ -34,20 +32,79 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="icon" type="image/png" href="favicon.png">
 
-<!-- Schema -->
+<!-- Global Schema -->
 <script type="application/ld+json" src="schema.json"></script>
+
+<!-- Page-Specific Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Capabilities",
+  "description": "Infrastructure engineering, CTO leadership, systems engineering, legacy systems, reliability and diagnostics.",
+  "url": "https://www.atkinsonit.co.uk/capabilities"
+}
+</script>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you work with both legacy and modern systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we specialise in environments that mix legacy platforms with modern infrastructure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you support high‑reliability or safety‑critical systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely — reliability engineering, diagnostics and risk‑based decision‑making are core strengths."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer short‑term advisory or leadership engagements?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — from one‑off consultations to ongoing technical leadership support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you help modernise or migrate legacy platforms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we support cloud adoption, hybrid infrastructure and modernisation of older systems."
+      }
+    }
+  ]
+}
+</script>
 
 <style>
 body { margin: 0; font-family: Arial, sans-serif; background: #F5F7FA; color: #333; }
-
 nav { background: #0A2A43; padding: 0.5rem 1rem; display: flex; align-items: center; justify-content: space-between; }
 nav .brand { display: flex; align-items: center; gap: 0.5rem; color: #fff; font-weight: bold; }
 nav img { height: 32px; }
 nav .links a { color: #CFE2F3; margin: 0 0.5rem; text-decoration: none; font-weight: bold; font-size: 0.95rem; }
 nav .links a:hover { color: #FFFFFF; }
 
-.container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+.breadcrumbs {
+  background: #E8EEF3;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+}
+.breadcrumbs a { color: #0A2A43; text-decoration: none; }
+.breadcrumbs span { color: #555; }
 
+.container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
 h1 { color: #0A2A43; }
 
 .section { margin-bottom: 3rem; }
@@ -82,121 +139,145 @@ footer a:hover { color: #FFFFFF; }
 <body>
 
 <nav>
-  <div class="brand">
-    <img src="logo.svg" alt="Atkinson IT logo" loading="lazy">
-    <span>Atkinson IT Ltd</span>
-  </div>
+<div class="brand">
+<img src="logo.svg" alt="Atkinson IT logo" loading="lazy">
+<span>Atkinson IT Ltd</span>
+</div>
 
-  <div class="links">
-    <a href="index.html">Home</a>
-    <a href="it-services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="capabilities.html" class="active">Capabilities</a>
-    <a href="index.html#contact">Contact</a>
-  </div>
+<div class="links">
+<a href="index.html">Home</a>
+<a href="it-services.html">Services</a>
+<a href="about.html">About</a>
+<a href="capabilities.html" class="active">Capabilities</a>
+<a href="index.html#contact">Contact</a>
+</div>
+</nav>
+
+<!-- Breadcrumbs -->
+<nav class="breadcrumbs">
+  <a href="index.html">Home</a> ›
+  <span>Capabilities</span>
 </nav>
 
 <!-- Hidden hero image for accessibility -->
 <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80"
-     alt=""
-     loading="lazy"
-     style="display:none;">
+alt=""
+loading="lazy"
+style="display:none;">
 
 <div class="container">
 
 <h1>Capabilities</h1>
 
 <div class="block">
-  <h2>Overview</h2>
-  <p>
-    Atkinson IT brings together more than <strong>25 years of hands‑on infrastructure engineering</strong> and
-    <strong>8 years of CTO‑level leadership</strong> within a major FTSE‑100 subsidiary. Our capabilities span
-    systems engineering, infrastructure reliability, diagnostics, legacy systems, and technical leadership in
-    high‑stakes environments.
-  </p>
+<h2>Overview</h2>
+<p>
+Atkinson IT brings together more than <strong>25 years of hands‑on infrastructure engineering</strong> and
+<strong>8 years of CTO‑level leadership</strong> within a major FTSE‑100 subsidiary. Our capabilities span
+systems engineering, infrastructure reliability, diagnostics, legacy systems, and technical leadership in
+high‑stakes environments.
+</p>
 </div>
 
 <section class="section">
-  <h2>Capabilities Matrix</h2>
+<h2>Capabilities Matrix</h2>
 
-  <table>
-    <tr>
-      <th>Capability</th>
-      <th>Experience</th>
-      <th>Summary</th>
-    </tr>
+<table>
+<tr>
+<th>Capability</th>
+<th>Experience</th>
+<th>Summary</th>
+</tr>
 
-    <tr>
-      <td><strong>Infrastructure Engineering</strong></td>
-      <td>25+ years</td>
-      <td>Networking, storage, servers, virtualisation, high‑availability systems, disaster recovery.</td>
-    </tr>
+<tr>
+<td><strong>Infrastructure Engineering</strong></td>
+<td>25+ years</td>
+<td>Networking, storage, servers, virtualisation, high‑availability systems, disaster recovery.</td>
+</tr>
 
-    <tr>
-      <td><strong>CTO‑level Leadership</strong></td>
-      <td>8 years</td>
-      <td>Technology strategy, governance, operational leadership, and oversight of mission‑critical systems.</td>
-    </tr>
+<tr>
+<td><strong>CTO‑level Leadership</strong></td>
+<td>8 years</td>
+<td>Technology strategy, governance, operational leadership, and oversight of mission‑critical systems.</td>
+</tr>
 
-    <tr>
-      <td><strong>Systems Engineering</strong></td>
-      <td>Advanced</td>
-      <td>Architecture, integration, verification, lifecycle engineering, and cross‑disciplinary system design.</td>
-    </tr>
+<tr>
+<td><strong>Systems Engineering</strong></td>
+<td>Advanced</td>
+<td>Architecture, integration, verification, lifecycle engineering, and cross‑disciplinary system design.</td>
+</tr>
 
-    <tr>
-      <td><strong>Legacy Systems</strong></td>
-      <td>Expert</td>
-      <td>Electrical, industrial, and vintage computing systems including C64, Amiga, DOS, CP/M, AS/400.</td>
-    </tr>
+<tr>
+<td><strong>Legacy Systems</strong></td>
+<td>Expert</td>
+<td>Electrical, industrial, and vintage computing systems including C64, Amiga, DOS, CP/M, AS/400.</td>
+</tr>
 
-    <tr>
-      <td><strong>Reliability & Diagnostics</strong></td>
-      <td>Expert</td>
-      <td>Root‑cause analysis, stabilisation, long‑term reliability engineering, and failure‑mode analysis.</td>
-    </tr>
+<tr>
+<td><strong>Reliability & Diagnostics</strong></td>
+<td>Expert</td>
+<td>Root‑cause analysis, stabilisation, long‑term reliability engineering, and failure‑mode analysis.</td>
+</tr>
 
-    <tr>
-      <td><strong>Technical Leadership</strong></td>
-      <td>Advanced</td>
-      <td>Calm, structured decision‑making in high‑pressure environments; mentoring and guiding engineering teams.</td>
-    </tr>
+<tr>
+<td><strong>Technical Leadership</strong></td>
+<td>Advanced</td>
+<td>Calm, structured decision‑making in high‑pressure environments; mentoring and guiding engineering teams.</td>
+</tr>
 
-    <tr>
-      <td><strong>Cloud & Modernisation</strong></td>
-      <td>Experienced</td>
-      <td>Cloud adoption, hybrid infrastructure, migration planning, and modernisation of legacy platforms.</td>
-    </tr>
+<tr>
+<td><strong>Cloud & Modernisation</strong></td>
+<td>Experienced</td>
+<td>Cloud adoption, hybrid infrastructure, migration planning, and modernisation of legacy platforms.</td>
+</tr>
 
-    <tr>
-      <td><strong>Security & Governance</strong></td>
-      <td>Experienced</td>
-      <td>Risk management, compliance, operational governance, and secure infrastructure design.</td>
-    </tr>
+<tr>
+<td><strong>Security & Governance</strong></td>
+<td>Experienced</td>
+<td>Risk management, compliance, operational governance, and secure infrastructure design.</td>
+</tr>
 
-  </table>
+</table>
 </section>
 
 <div class="block">
-  <h2>How We Work</h2>
-  <p>
-    Our approach is grounded in systems thinking, engineering discipline, and practical experience. We focus on
-    reliability, clarity, and long‑term value — ensuring that every solution is robust, maintainable, and aligned
-    with organisational goals.
-  </p>
+<h2>How We Work</h2>
+<p>
+Our approach is grounded in systems thinking, engineering discipline, and practical experience. We focus on
+reliability, clarity, and long‑term value — ensuring that every solution is robust, maintainable, and aligned
+with organisational goals.
+</p>
+</div>
+
+<!-- FAQ Section -->
+<div class="block">
+<h2>Frequently Asked Questions</h2>
+
+<h3>Do you work with both legacy and modern systems?</h3>
+<p>Yes — we specialise in environments that mix legacy platforms with modern infrastructure.</p>
+
+<h3>Can you support high‑reliability or safety‑critical systems?</h3>
+<p>Absolutely — reliability engineering and diagnostics are core strengths.</p>
+
+<h3>Do you offer short‑term advisory or leadership engagements?</h3>
+<p>Yes — from one‑off consultations to ongoing technical leadership support.</p>
+
+<h3>Can you help modernise or migrate legacy platforms?</h3>
+<p>Yes — we support cloud adoption, hybrid infrastructure and modernisation of older systems.</p>
+
 </div>
 
 </div>
 
 <footer>
-  <p>&copy; 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
-  <p>
-    <a href="index.html">Home</a> |
-    <a href="it-services.html">Services</a> |
-    <a href="about.html">About</a> |
-    <a href="capabilities.html">Capabilities</a> |
-    <a href="index.html#contact">Contact</a>
-  </p>
+<p>&copy; 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
+<p>
+<a href="index.html">Home</a> |
+<a href="it-services.html">Services</a> |
+<a href="about.html">About</a> |
+<a href="capabilities.html">Capabilities</a> |
+<a href="index.html#contact">Contact</a>
+</p>
 </footer>
 
 </body>

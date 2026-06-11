@@ -36,41 +36,97 @@
 <!-- Styles -->
 <link rel="stylesheet" href="/styles.css">
 
-<!-- Schema -->
+<!-- Global Schema -->
 <script type="application/ld+json" src="/schema.json"></script>
+
+<!-- Page-Specific Service Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Managed IT Services",
+  "description": "Proactive managed IT services including monitoring, patching, security, backup and remote support.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Atkinson IT Ltd",
+    "url": "https://www.atkinsonit.co.uk"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Surrey, Middlesex, Berkshire"
+  },
+  "url": "https://www.atkinsonit.co.uk/services/managed-service"
+}
+</script>
+
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.atkinsonit.co.uk/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "IT Services",
+      "item": "https://www.atkinsonit.co.uk/it-services.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Managed IT Services",
+      "item": "https://www.atkinsonit.co.uk/services/managed-service.html"
+    }
+  ]
+}
+</script>
 
 </head>
 
 <body>
 
 <header class="site-header">
-    <div class="container">
-        <h1 class="logo"><a href="/index.html">Atkinson IT Ltd</a></h1>
-        <nav class="main-nav">
-            <a href="/index.html">Home</a>
-            <a href="/it-services.html">IT Services</a>
-            <a href="/engineering-services.html">Engineering Services</a>
-            <a href="/casestudy.html">Case Studies</a>
-            <a href="/testimonials.html">Testimonials</a>
-            <a href="/index.html#contact">Contact</a>
-        </nav>
-    </div>
+<div class="container">
+<h1 class="logo"><a href="/index.html">Atkinson IT Ltd</a></h1>
+
+<nav class="main-nav">
+<a href="/index.html">Home</a>
+<a href="/it-services.html">IT Services</a>
+<a href="/engineering-services.html">Engineering Services</a>
+<a href="/casestudy.html">Case Studies</a>
+<a href="/testimonials.html">Testimonials</a>
+<a href="/index.html#contact">Contact</a>
+</nav>
+</div>
 </header>
+
+<!-- Breadcrumbs -->
+<nav class="breadcrumbs">
+  <a href="/index.html">Home</a> ›
+  <a href="/it-services.html">IT Services</a> ›
+  <span>Managed IT Services</span>
+</nav>
 
 <!-- Hidden hero image for accessibility -->
 <img src="https://images.unsplash.com/photo-1581091012184-5c8afc6a9f4d?auto=format&fit=crop&w=1600&q=80"
-     alt=""
-     loading="lazy"
-     style="display:none;">
+alt=""
+loading="lazy"
+style="display:none;">
 
 <main class="page">
 
 <!-- HERO -->
 <section class="hero hero-service">
-    <div class="container">
-        <h2>Managed IT Services</h2>
-        <p>Proactive, predictable IT support that keeps your systems secure, reliable and running smoothly.</p>
-    </div>
+<div class="container">
+<h2>Managed IT Services</h2>
+<p>Proactive, predictable IT support that keeps your systems secure, reliable and running smoothly.</p>
+</div>
 </section>
 
 <section class="content container">
@@ -79,20 +135,22 @@
 <p>You rely on technology every day. We make sure it quietly does its job, so you can focus on yours.</p>
 
 <div class="grid grid-3">
-    <article class="card">
-        <h3>Proactive, not reactive</h3>
-        <p>24/7 monitoring, automated patching and scheduled maintenance reduce incidents before they impact your team.</p>
-    </article>
 
-    <article class="card">
-        <h3>Clear, predictable service</h3>
-        <p>Fixed monthly pricing, defined service tiers and regular reporting mean no surprises and no guesswork.</p>
-    </article>
+<article class="card">
+<h3>Proactive, not reactive</h3>
+<p>24/7 monitoring, automated patching and scheduled maintenance reduce incidents before they impact your team.</p>
+</article>
 
-    <article class="card">
-        <h3>Enterprise tools, local partner</h3>
-        <p>We use modern cloud‑based platforms for monitoring, backup and security, wrapped in personal, local support.</p>
-    </article>
+<article class="card">
+<h3>Clear, predictable service</h3>
+<p>Fixed monthly pricing, defined service tiers and regular reporting mean no surprises and no guesswork.</p>
+</article>
+
+<article class="card">
+<h3>Enterprise tools, local partner</h3>
+<p>We use modern cloud‑based platforms for monitoring, backup and security, wrapped in personal, local support.</p>
+</article>
+
 </div>
 
 <h3>Managed IT service packages</h3>
@@ -100,78 +158,147 @@
 
 <h4>Tier 1 — Essential Monitoring</h4>
 <ul>
-    <li>24/7 monitoring of computers and servers</li>
-    <li>Hardware health checks (disk, CPU, RAM)</li>
-    <li>Alerts for key services and performance issues</li>
-    <li>Automated weekly maintenance tasks</li>
-    <li>Monthly health report in plain English</li>
-    <li>Optional backup and security add‑ons</li>
+<li>24/7 monitoring of computers and servers</li>
+<li>Hardware health checks (disk, CPU, RAM)</li>
+<li>Alerts for key services and performance issues</li>
+<li>Automated weekly maintenance tasks</li>
+<li>Monthly health report in plain English</li>
+<li>Optional backup and security add‑ons</li>
 </ul>
 <p><strong>Best for:</strong> Smaller businesses that want peace of mind without a full support contract.</p>
 
 <h4>Tier 2 — Managed Workstation &amp; Server Care <span class="badge">Most popular</span></h4>
 <ul>
-    <li>Everything in Essential Monitoring</li>
-    <li>Full patch management (Windows and key applications)</li>
-    <li>Automated remediation for common issues</li>
-    <li>Remote support for your users and systems</li>
-    <li>Weekly maintenance and optimisation tasks</li>
-    <li>Monthly security and compliance reporting</li>
-    <li>Software inventory and licence visibility</li>
+<li>Everything in Essential Monitoring</li>
+<li>Full patch management (Windows and key applications)</li>
+<li>Automated remediation for common issues</li>
+<li>Remote support for your users and systems</li>
+<li>Weekly maintenance and optimisation tasks</li>
+<li>Monthly security and compliance reporting</li>
+<li>Software inventory and licence visibility</li>
 </ul>
 <p><strong>Best for:</strong> Growing businesses that want predictable IT and fewer interruptions.</p>
 
 <h4>Tier 3 — Fully Managed IT &amp; Security</h4>
 <ul>
-    <li>Everything in Managed Workstation &amp; Server Care</li>
-    <li>Network monitoring (switches, firewalls, Wi‑Fi)</li>
-    <li>Backup monitoring and daily verification</li>
-    <li>Security hardening and policy enforcement</li>
-    <li>Quarterly IT strategy and roadmap reviews</li>
-    <li>Priority response SLAs</li>
-    <li>Unlimited remote support, with optional on‑site visits</li>
+<li>Everything in Managed Workstation &amp; Server Care</li>
+<li>Network monitoring (switches, firewalls, Wi‑Fi)</li>
+<li>Backup monitoring and daily verification</li>
+<li>Security hardening and policy enforcement</li>
+<li>Quarterly IT strategy and roadmap reviews</li>
+<li>Priority response SLAs</li>
+<li>Unlimited remote support, with optional on‑site visits</li>
 </ul>
 <p><strong>Best for:</strong> Organisations that rely heavily on IT and want a proactive, security‑focused partner.</p>
 
 <h3>Add‑on services</h3>
+
 <div class="grid grid-3">
-    <article class="card"><h4>Managed backup &amp; recovery</h4><p>Server, workstation and Microsoft 365 backup with daily checks and clear recovery plans.</p></article>
-    <article class="card"><h4>Security hardening</h4><p>Baseline security configuration, patch compliance, MFA guidance and regular review of key risks.</p></article>
-    <article class="card"><h4>Advanced network monitoring</h4><p>Deeper visibility of switches, firewalls, VPNs and internet links for multi‑site or uptime‑critical environments.</p></article>
-    <article class="card"><h4>DNS security &amp; web filtering</h4><p>DNS‑level protection to reduce malware, phishing and access to risky sites across your estate.</p></article>
-    <article class="card"><h4>Microsoft 365 security management</h4><p>Secure configuration of Microsoft 365, including MFA, conditional access and mailbox protection.</p></article>
-    <article class="card"><h4>Out‑of‑hours support</h4><p>Extended cover and response for businesses that operate beyond standard office hours.</p></article>
+
+<article class="card"><h4>Managed backup &amp; recovery</h4><p>Server, workstation and Microsoft 365 backup with daily checks and clear recovery plans.</p></article>
+
+<article class="card"><h4>Security hardening</h4><p>Baseline security configuration, patch compliance, MFA guidance and regular review of key risks.</p></article>
+
+<article class="card"><h4>Advanced network monitoring</h4><p>Deeper visibility of switches, firewalls, VPNs and internet links for multi‑site or uptime‑critical environments.</p></article>
+
+<article class="card"><h4>DNS security &amp; web filtering</h4><p>DNS‑level protection to reduce malware, phishing and access to risky sites across your estate.</p></article>
+
+<article class="card"><h4>Microsoft 365 security management</h4><p>Secure configuration of Microsoft 365, including MFA, conditional access and mailbox protection.</p></article>
+
+<article class="card"><h4>Out‑of‑hours support</h4><p>Extended cover and response for businesses that operate beyond standard office hours.</p></article>
+
 </div>
 
 <h3>How we work with you</h3>
+
 <ol>
-    <li><strong>Assess:</strong> Review your current IT estate, identify risks and understand how your business uses technology.</li>
-    <li><strong>Stabilise:</strong> Resolve immediate issues, apply security baselines and bring systems up to an agreed standard.</li>
-    <li><strong>Protect:</strong> Deploy monitoring, patching, backup and security controls appropriate to your chosen service tier.</li>
-    <li><strong>Optimise:</strong> Automate routine tasks, reduce noise and improve reliability and performance over time.</li>
-    <li><strong>Support:</strong> Provide ongoing remote support, regular reporting and periodic reviews to keep IT aligned with your plans.</li>
+<li><strong>Assess:</strong> Review your current IT estate, identify risks and understand how your business uses technology.</li>
+<li><strong>Stabilise:</strong> Resolve immediate issues, apply security baselines and bring systems up to an agreed standard.</li>
+<li><strong>Protect:</strong> Deploy monitoring, patching, backup and security controls appropriate to your chosen service tier.</li>
+<li><strong>Optimise:</strong> Automate routine tasks, reduce noise and improve reliability and performance over time.</li>
+<li><strong>Support:</strong> Provide ongoing remote support, regular reporting and periodic reviews to keep IT aligned with your plans.</li>
 </ol>
 
 <h3>Get started</h3>
 <p>Whether you need basic monitoring or a fully managed service, we can shape a package around how your business actually works.</p>
 <p><a class="button" href="/index.html#contact">Start a conversation</a></p>
 
-</section>
+<!-- FAQ Section -->
+<h3>Frequently Asked Questions</h3>
 
+<div class="faq-block">
+
+  <h4>Do you support very small businesses?</h4>
+  <p>Yes — many of our clients have between 1 and 10 staff and no internal IT team.</p>
+
+  <h4>Can you take over from an existing IT provider?</h4>
+  <p>Absolutely. We handle onboarding, documentation and stabilisation with minimal disruption.</p>
+
+  <h4>Do you offer remote-only support?</h4>
+  <p>Yes — most issues can be resolved remotely, with optional on‑site visits when needed.</p>
+
+  <h4>Can we mix and match add‑ons?</h4>
+  <p>Yes — backup, security and monitoring add‑ons can be combined with any service tier.</p>
+
+</div>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you support very small businesses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — many of our clients have between 1 and 10 staff and no internal IT team."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you take over from an existing IT provider?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. We handle onboarding, documentation and stabilisation with minimal disruption."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer remote-only support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — most issues can be resolved remotely, with optional on‑site visits when needed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can we mix and match add‑ons?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — backup, security and monitoring add‑ons can be combined with any service tier."
+      }
+    }
+  ]
+}
+</script>
+
+</section>
 </main>
 
 <footer class="site-footer">
-    <div class="container">
-        <p>© 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
-        <p>
-            <a href="/index.html">Home</a> |
-            <a href="/it-services.html">IT Services</a> |
-            <a href="/engineering-services.html">Engineering Services</a> |
-            <a href="/casestudy.html">Case Studies</a> |
-            <a href="/testimonials.html">Testimonials</a> |
-            <a href="/index.html#contact">Contact</a>
-        </p>
-    </div>
+<div class="container">
+<p>© 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
+<p>
+<a href="/index.html">Home</a> |
+<a href="/it-services.html">IT Services</a> |
+<a href="/engineering-services.html">Engineering Services</a> |
+<a href="/casestudy.html">Case Studies</a> |
+<a href="/testimonials.html">Testimonials</a> |
+<a href="/index.html#contact">Contact</a>
+</p>
+</div>
 </footer>
 
 </body>

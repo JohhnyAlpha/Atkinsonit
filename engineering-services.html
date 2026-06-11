@@ -34,20 +34,68 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="icon" type="image/png" href="favicon.png">
 
-<!-- Schema -->
+<!-- Global Schema -->
 <script type="application/ld+json" src="schema.json"></script>
+
+<!-- Page-Specific Service Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Engineering Services",
+  "description": "Systems engineering, infrastructure reliability, technical leadership and advisory services.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Atkinson IT Ltd",
+    "url": "https://www.atkinsonit.co.uk"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Surrey, Middlesex, Berkshire"
+  },
+  "url": "https://www.atkinsonit.co.uk/engineering-services"
+}
+</script>
+
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.atkinsonit.co.uk/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Engineering Services",
+      "item": "https://www.atkinsonit.co.uk/engineering-services.html"
+    }
+  ]
+}
+</script>
 
 <style>
 body { margin: 0; font-family: Arial, sans-serif; background: #F5F7FA; color: #333; }
-
 nav { background: #0A2A43; padding: 0.5rem 1rem; display: flex; align-items: center; justify-content: space-between; }
 nav .brand { display: flex; align-items: center; gap: 0.5rem; color: #fff; font-weight: bold; }
 nav img { height: 32px; }
 nav .links a { color: #CFE2F3; margin: 0 0.5rem; text-decoration: none; font-weight: bold; font-size: 0.95rem; }
 nav .links a:hover { color: #FFFFFF; }
 
-.container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+.breadcrumbs {
+  background: #E8EEF3;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+}
+.breadcrumbs a { color: #0A2A43; text-decoration: none; }
+.breadcrumbs span { color: #555; }
 
+.container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
 h1 { color: #0A2A43; }
 
 .service-block {
@@ -74,75 +122,142 @@ footer a:hover { color: #FFFFFF; }
 <body>
 
 <nav>
-  <div class="brand">
-    <img src="logo.svg" alt="Atkinson IT logo" loading="lazy">
-    <span>Atkinson IT Ltd</span>
-  </div>
+<div class="brand">
+<img src="logo.svg" alt="Atkinson IT logo" loading="lazy">
+<span>Atkinson IT Ltd</span>
+</div>
 
-  <div class="links">
-    <a href="index.html">Home</a>
-    <a href="it-services.html">Services</a>
-    <a href="engineering-services.html" class="active">Engineering Services</a>
-    <a href="about.html">About</a>
-    <a href="capabilities.html">Capabilities</a>
-    <a href="index.html#contact">Contact</a>
-  </div>
+<div class="links">
+<a href="index.html">Home</a>
+<a href="it-services.html">Services</a>
+<a href="engineering-services.html" class="active">Engineering Services</a>
+<a href="about.html">About</a>
+<a href="capabilities.html">Capabilities</a>
+<a href="index.html#contact">Contact</a>
+</div>
+</nav>
+
+<!-- Breadcrumbs -->
+<nav class="breadcrumbs">
+  <a href="index.html">Home</a> ›
+  <span>Engineering Services</span>
 </nav>
 
 <!-- Hidden hero image for accessibility -->
 <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80"
-     alt=""
-     loading="lazy"
-     style="display:none;">
+alt=""
+loading="lazy"
+style="display:none;">
 
 <div class="container">
 
 <h1>Our Engineering Services</h1>
 
 <div class="service-block">
-  <h2>Systems Engineering</h2>
-  <p>
-    Full lifecycle systems engineering: requirements, architecture, integration, verification, and validation.
-    We help organisations design systems that behave predictably and reliably under real‑world conditions.
-  </p>
+<h2>Systems Engineering</h2>
+<p>
+Full lifecycle systems engineering: requirements, architecture, integration, verification, and validation.
+We help organisations design systems that behave predictably and reliably under real‑world conditions.
+</p>
 </div>
 
 <div class="service-block">
-  <h2>Technical Leadership</h2>
-  <p>
-    Leadership for engineering teams facing complexity, uncertainty, or high‑stakes decisions. We bring clarity,
-    structure, and calm decision‑making to technical environments, drawing on years of CTO‑level experience.
-  </p>
+<h2>Technical Leadership</h2>
+<p>
+Leadership for engineering teams facing complexity, uncertainty, or high‑stakes decisions. We bring clarity,
+structure, and calm decision‑making to technical environments, drawing on years of CTO‑level experience.
+</p>
 </div>
 
 <div class="service-block">
-  <h2>Infrastructure & Reliability</h2>
-  <p>
-    Expertise across electrical systems, networking, storage, and legacy platforms. We diagnose, stabilise, and
-    improve critical infrastructure with a focus on reliability, safety, and long‑term maintainability.
-  </p>
+<h2>Infrastructure & Reliability</h2>
+<p>
+Expertise across electrical systems, networking, storage, and legacy platforms. We diagnose, stabilise, and
+improve critical infrastructure with a focus on reliability, safety, and long‑term maintainability.
+</p>
 </div>
 
 <div class="service-block">
-  <h2>Consultancy & Advisory</h2>
-  <p>
-    Independent, ethical advice grounded in engineering principles. We help organisations make informed, technically
-    sound decisions that align with their strategic goals and operational realities.
-  </p>
+<h2>Consultancy & Advisory</h2>
+<p>
+Independent, ethical advice grounded in engineering principles. We help organisations make informed, technically
+sound decisions that align with their strategic goals and operational realities.
+</p>
 </div>
+
+<!-- FAQ Section -->
+<h2>Frequently Asked Questions</h2>
+
+<div class="service-block">
+
+  <h3>Do you work with legacy or mixed-technology environments?</h3>
+  <p>Yes — we have deep experience across modern, legacy and hybrid systems.</p>
+
+  <h3>Can you support safety‑critical or high‑reliability systems?</h3>
+  <p>Absolutely — reliability engineering and risk‑based decision‑making are core strengths.</p>
+
+  <h3>Do you offer short‑term advisory engagements?</h3>
+  <p>Yes — from one‑off consultations to ongoing technical leadership support.</p>
+
+  <h3>Can you help stabilise failing or unreliable infrastructure?</h3>
+  <p>Yes — we diagnose root causes and implement practical, maintainable fixes.</p>
+
+</div>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you work with legacy or mixed-technology environments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we have deep experience across modern, legacy and hybrid systems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you support safety‑critical or high‑reliability systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely — reliability engineering and risk‑based decision‑making are core strengths."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer short‑term advisory engagements?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — from one‑off consultations to ongoing technical leadership support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you help stabilise failing or unreliable infrastructure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we diagnose root causes and implement practical, maintainable fixes."
+      }
+    }
+  ]
+}
+</script>
 
 </div>
 
 <footer>
-  <p>&copy; 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
-  <p>
-    <a href="index.html">Home</a> |
-    <a href="it-services.html">Services</a> |
-    <a href="engineering-services.html">Engineering Services</a> |
-    <a href="about.html">About</a> |
-    <a href="capabilities.html">Capabilities</a> |
-    <a href="index.html#contact">Contact</a>
-  </p>
+<p>&copy; 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
+<p>
+<a href="index.html">Home</a> |
+<a href="it-services.html">Services</a> |
+<a href="engineering-services.html">Engineering Services</a> |
+<a href="about.html">About</a> |
+<a href="capabilities.html">Capabilities</a> |
+<a href="index.html#contact">Contact</a>
+</p>
 </footer>
 
 </body>
