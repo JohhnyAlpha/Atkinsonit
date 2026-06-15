@@ -55,7 +55,7 @@
   <!-- Blog Index -->
   <url>
     <loc>https://www.atkinsonit.co.uk/blog.html</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -68,5 +68,11 @@
     <priority>0.6</priority>
   </url>
 
-</urlset>
+  <url>
+    <loc>https://www.atkinsonit.co.uk/blog/2026-06-15.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.6</priority>
+  </url>
 
+</urlset>
