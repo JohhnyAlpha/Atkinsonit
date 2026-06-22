@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Why SMEs Must Know What's Hosted Where — 22 June 2026 | Atkinson IT Ltd</title>
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.atkinsonit.co.uk/blog/2026-06-22">
+
+  <meta name="description" content="Many SMEs don’t know where their domain, DNS, website or email are hosted — or who holds the credentials. This week’s deep-dive explains why this matters, how unpicking one layer can break others, and what every business should record.">
+  <meta name="keywords" content="SME IT, hosting, DNS, domain registrar, website hosting, email hosting, credentials, digital asset register, Atkinson IT Ltd">
+
+  <meta property="og:title" content="Why SMEs Must Know What's Hosted Where — 22 June 2026">
+  <meta property="og:description" content="A practical breakdown of why small businesses must know where their digital services are hosted, who controls them, and how changes in one layer can break the others.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.atkinsonit.co.uk/blog/2026-06-22.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80">
+
+  <link rel="preconnect" href="https://images.unsplash.com">
+
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" href="../favicon.png">
+
+  <script type="application/ld+json" src="../schema.json"></script>
+
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #F5F7FA; color: #333; }
+    nav { background: #0A2A43; padding: 0.5rem 1rem; display: flex; align-items: center; justify-content: space-between; }
+    nav .brand { display: flex; align-items: center; gap: 0.5rem; color: #fff; font-weight: bold; }
+    nav img { height: 32px; }
+    nav .links a { color: #CFE2F3; margin: 0 0.5rem; text-decoration: none; font-weight: bold; font-size: 0.95rem; }
+    nav .links a:hover { color: #FFFFFF; }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+    .hero h1 { font-size: 2.8rem; margin: 0; text-shadow: 0 2px 6px rgba(0,0,0,0.4); }
+
+    .container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+
+    .post-content {
+      background: #FFFFFF;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      line-height: 1.7;
+    }
+
+    table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+    table th, table td { border: 1px solid #DDD; padding: 0.75rem; text-align: left; }
+    table th { background: #F0F4F8; }
+
+    footer { background: #0A2A43; color: #FFFFFF; text-align: center; padding: 1.5rem; margin-top: 3rem; }
+    footer a { color: #CFE2F3; text-decoration: none; }
+    footer a:hover { color: #FFFFFF; }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="brand">
+      <img src="../logo.svg" alt="Atkinson IT logo" loading="lazy">
+      <span>Atkinson IT Ltd</span>
+    </div>
+    <div class="links">
+      <a href="../index.html">Home</a>
+      <a href="../it-services.html">Services</a>
+      <a href="../engineering-services.html">Engineering Services</a>
+      <a href="../about.html">About</a>
+      <a href="../capabilities.html">Capabilities</a>
+      <a href="../testimonials.html">Testimonials</a>
+      <a href="../casestudy.html">Case Study</a>
+      <a href="../blog.html">Blog</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Why SMEs Must Know What's Hosted Where</h1>
+    <p>22 June 2026</p>
+  </div>
+
+  <div class="container">
+    <div class="post-content">
+
+      <h2>This week’s work: unravelling a hosting puzzle</h2>
+      <p>
+        I’ve spent a fair amount of time this week working through a client’s hosting setup — something that started as a simple question but quickly turned into a full discovery exercise.
+        Like many SMEs, they weren’t aware of how many different providers were involved, or how each layer depends on the others.
+        It’s more complex than it looks from the outside, and it’s a perfect reminder of why every business needs a clear record of what’s hosted where, and who holds the keys.
+      </p>
+
+      <h2>The invisible web of providers</h2>
+      <p>Your online presence is rarely in one place. A typical SME setup looks like this:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Function</th>
+            <th>Common Provider</th>
+            <th>What It Does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Domain Registrar</strong></td>
+            <td>IONOS, GoDaddy</td>
+            <td>Owns your domain name</td>
+          </tr>
+          <tr>
+            <td><strong>DNS Hosting</strong></td>
+            <td>Cloudflare, AWS Route 53</td>
+            <td>Directs traffic to the right servers</td>
+          </tr>
+          <tr>
+            <td><strong>Website Hosting</strong></td>
+            <td>Squarespace, Wix, WordPress</td>
+            <td>Stores and serves your website</td>
+          </tr>
+          <tr>
+            <td><strong>Email Hosting</strong></td>
+            <td>Google Workspace, Microsoft 365</td>
+            <td>Manages your business email</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Why credentials matter</h2>
+      <p>If you don’t know who holds the credentials, you don’t control your online presence.</p>
+
+      <ul>
+        <li>You can’t renew your domain (and risk losing it).</li>
+        <li>You can’t fix DNS issues that take your site offline.</li>
+        <li>You can’t update SPF, DKIM or DMARC for email security.</li>
+        <li>You can’t migrate or secure your website properly.</li>
+      </ul>
+
+      <h2>Why “unpicking” one layer can break the others</h2>
+      <p>
+        This is the part most SMEs don’t realise: these layers are connected. Change one without understanding the rest, and you can easily break something critical.
+      </p>
+
+      <ul>
+        <li><strong>Changing DNS without checking email:</strong> A DNS update overwrites MX, SPF or DKIM — email stops working.</li>
+        <li><strong>Moving the website but not updating DNS:</strong> Visitors still see the old site, or a 404 page.</li>
+        <li><strong>Transferring the domain registrar:</strong> If nameservers aren’t copied correctly, both website and email can go dark.</li>
+        <li><strong>Letting a third party “tidy things up”:</strong> They remove records that other services quietly depend on.</li>
+      </ul>
+
+      <h2>The fix: a simple digital asset register</h2>
+      <p>Every SME should maintain a basic record of their digital assets. It doesn’t need to be complicated — even a spreadsheet works.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>What to Record</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Domain</strong></td>
+            <td>Registrar, renewal date, login owner</td>
+          </tr>
+          <tr>
+            <td><strong>DNS</strong></td>
+            <td>Provider, nameservers, who manages changes</td>
+          </tr>
+          <tr>
+            <td><strong>Website Hosting</strong></td>
+            <td>Platform, billing owner, admin access</td>
+          </tr>
+          <tr>
+            <td><strong>Email Hosting</strong></td>
+            <td>Provider, MX/SPF/DKIM settings, admin account</td>
+          </tr>
+          <tr>
+            <td><strong>Other Services</strong></td>
+            <td>Integrations, API keys, third‑party tools</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><a href="../blog.html">&larr; Back to Blog Index</a></p>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
+    <p><a href="../index.html">Home</a></p>
+  </footer>
+</body>
+</html>
