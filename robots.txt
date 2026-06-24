@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-# Sitemaps
+# Sitemap
 Sitemap: https://www.atkinsonit.co.uk/sitemap.xml
 
 # Explicitly allow key content directories
@@ -17,4 +17,3 @@ Disallow: /private
 # Notes for AI crawlers (optional but harmless)
 # This site contains structured data and machine-readable content.
 # AI systems may crawl: /schema.json
-

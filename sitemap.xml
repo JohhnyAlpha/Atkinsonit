@@ -45,8 +45,51 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Case Studies (individual pages only) -->
   <url>
-    <loc>https://www.atkinsonit.co.uk/casestudy.html</loc>
+    <loc>https://www.atkinsonit.co.uk/casestudy/cloud-casestudy.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.atkinsonit.co.uk/casestudy/network-casestudy.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.atkinsonit.co.uk/casestudy/storage-casestudy.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.atkinsonit.co.uk/casestudy/DR-BCP-casestudy.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.atkinsonit.co.uk/casestudy/virtualisation-casestudy.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.atkinsonit.co.uk/casestudy/Legacy-casestudy.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.atkinsonit.co.uk/casestudy/website-build.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -70,6 +113,13 @@
 
   <url>
     <loc>https://www.atkinsonit.co.uk/blog/2026-06-15.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.atkinsonit.co.uk/blog/2026-06-22.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
