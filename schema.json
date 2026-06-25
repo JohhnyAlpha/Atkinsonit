@@ -204,8 +204,8 @@
        ============================ */
     {
       "@type": "CreativeWork",
-      "@id": "https://www.atkinsonit.co.uk/casestudy/cloud-casestudy.html#schema",
-      "url": "https://www.atkinsonit.co.uk/casestudy/cloud-casestudy.html",
+      "@id": "https://www.atkinsonit.co.uk/casestudy/cloud-casestudies#schema",
+      "url": "https://www.atkinsonit.co.uk/casestudy/cloud-casestudies",
       "headline": "Cloud Migration Case Study",
       "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
       "about": { "@id": "https://www.atkinsonit.co.uk/#org" },
@@ -213,8 +213,8 @@
     },
     {
       "@type": "CreativeWork",
-      "@id": "https://www.atkinsonit.co.uk/casestudy/network-casestudy.html#schema",
-      "url": "https://www.atkinsonit.co.uk/casestudy/network-casestudy.html",
+      "@id": "https://www.atkinsonit.co.uk/casestudy/network-casestudies#schema",
+      "url": "https://www.atkinsonit.co.uk/casestudy/network-casestudies",
       "headline": "Networking Case Study",
       "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
       "about": { "@id": "https://www.atkinsonit.co.uk/#org" },
@@ -222,8 +222,8 @@
     },
     {
       "@type": "CreativeWork",
-      "@id": "https://www.atkinsonit.co.uk/casestudy/storage-casestudy.html#schema",
-      "url": "https://www.atkinsonit.co.uk/casestudy/storage-casestudy.html",
+      "@id": "https://www.atkinsonit.co.uk/casestudy/storage-casestudies#schema",
+      "url": "https://www.atkinsonit.co.uk/casestudy/storage-casestudies",
       "headline": "Storage Engineering Case Study",
       "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
       "about": { "@id": "https://www.atkinsonit.co.uk/#org" },
@@ -231,8 +231,8 @@
     },
     {
       "@type": "CreativeWork",
-      "@id": "https://www.atkinsonit.co.uk/casestudy/DR-BCP-casestudy.html#schema",
-      "url": "https://www.atkinsonit.co.uk/casestudy/DR-BCP-casestudy.html",
+      "@id": "https://www.atkinsonit.co.uk/casestudy/DR-BCP-casestudies#schema",
+      "url": "https://www.atkinsonit.co.uk/casestudy/DR-BCP-casestudies",
       "headline": "Disaster Recovery & BCP Case Study",
       "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
       "about": { "@id": "https://www.atkinsonit.co.uk/#org" },
@@ -240,8 +240,8 @@
     },
     {
       "@type": "CreativeWork",
-      "@id": "https://www.atkinsonit.co.uk/casestudy/virtualisation-casestudy.html#schema",
-      "url": "https://www.atkinsonit.co.uk/casestudy/virtualisation-casestudy.html",
+      "@id": "https://www.atkinsonit.co.uk/casestudy/virtualisation-casestudies#schema",
+      "url": "https://www.atkinsonit.co.uk/casestudy/virtualisation-casestudies",
       "headline": "Virtualisation Case Study",
       "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
       "about": { "@id": "https://www.atkinsonit.co.uk/#org" },
@@ -249,8 +249,8 @@
     },
     {
       "@type": "CreativeWork",
-      "@id": "https://www.atkinsonit.co.uk/casestudy/Legacy-casestudy.html#schema",
-      "url": "https://www.atkinsonit.co.uk/casestudy/Legacy-casestudy.html",
+      "@id": "https://www.atkinsonit.co.uk/casestudy/Legacy-casestudies#schema",
+      "url": "https://www.atkinsonit.co.uk/casestudy/Legacy-casestudies",
       "headline": "Legacy Hardware Case Study",
       "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
       "about": { "@id": "https://www.atkinsonit.co.uk/#org" },
@@ -258,8 +258,8 @@
     },
     {
       "@type": "CreativeWork",
-      "@id": "https://www.atkinsonit.co.uk/casestudy/website-build.html#schema",
-      "url": "https://www.atkinsonit.co.uk/casestudy/website-build.html",
+      "@id": "https://www.atkinsonit.co.uk/casestudy/website-build#schema",
+      "url": "https://www.atkinsonit.co.uk/casestudy/website-build",
       "headline": "Website Build Case Study",
       "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
       "about": { "@id": "https://www.atkinsonit.co.uk/#org" },
@@ -271,8 +271,8 @@
        ============================ */
     {
       "@type": "BlogPosting",
-      "@id": "https://www.atkinsonit.co.uk/blog/2026-06-02.html#schema",
-      "url": "https://www.atkinsonit.co.uk/blog/2026-06-02.html",
+      "@id": "https://www.atkinsonit.co.uk/blog/2026-06-02#schema",
+      "url": "https://www.atkinsonit.co.uk/blog/2026-06-02",
       "headline": "Blog Post — 2026‑06‑02",
       "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
       "publisher": { "@id": "https://www.atkinsonit.co.uk/#org" },
@@ -280,8 +280,8 @@
     },
     {
       "@type": "BlogPosting",
-      "@id": "https://www.atkinsonit.co.uk/blog/2026-06-15.html#schema",
-      "url": "https://www.atkinsonit.co.uk/blog/2026-06-15.html",
+      "@id": "https://www.atkinsonit.co.uk/blog/2026-06-15#schema",
+      "url": "https://www.atkinsonit.co.uk/blog/2026-06-15",
       "headline": "Blog Post — 2026‑06‑15",
       "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
       "publisher": { "@id": "https://www.atkinsonit.co.uk/#org" },
@@ -289,8 +289,8 @@
     },
     {
       "@type": "BlogPosting",
-      "@id": "https://www.atkinsonit.co.uk/blog/2026-06-22.html#schema",
-      "url": "https://www.atkinsonit.co.uk/blog/2026-06-22.html",
+      "@id": "https://www.atkinsonit.co.uk/blog/2026-06-22#schema",
+      "url": "https://www.atkinsonit.co.uk/blog/2026-06-22",
       "headline": "Blog Post — 2026‑06‑22",
       "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
       "publisher": { "@id": "https://www.atkinsonit.co.uk/#org" },
