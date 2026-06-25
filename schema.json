@@ -1,6 +1,10 @@
 {
   "@context": "https://schema.org",
   "@graph": [
+
+    /* ============================
+       ORGANIZATION / LOCAL BUSINESS
+       ============================ */
     {
       "@type": ["Organization", "LocalBusiness", "ITConsultant"],
       "@id": "https://www.atkinsonit.co.uk/#org",
@@ -39,66 +43,111 @@
         "description": "Systems engineer specialising in server support, storage engineering, RAID systems, cloud migration, networking, virtualisation, Linux, and scientific computing."
       },
       "knowsAbout": [
-        "IT support",
-        "server support",
-        "server hardware diagnostics",
-        "enterprise servers",
-        "RAID arrays",
-        "RAID recovery",
-        "RAID-1",
-        "RAID-5",
-        "RAID-6",
-        "RAID-10",
-        "storage engineering",
-        "SAN design",
-        "Fibre Channel SAN",
-        "iSCSI SAN",
-        "NetApp storage",
-        "SnapMirror",
-        "VMware storage performance",
-        "VMware ESXi",
-        "vCenter",
-        "vMotion",
-        "DR and BCP",
-        "cloud migration",
-        "Microsoft 365",
-        "Office 365",
-        "hybrid identity",
-        "networking",
-        "VLANs",
-        "DMZ",
-        "firewalls",
-        "WiFi optimisation",
-        "Linux deployment",
-        "legacy hardware",
-        "Python automation",
-        "scientific computing",
-        "static websites"
+        "IT support", "server support", "server hardware diagnostics",
+        "enterprise servers", "RAID arrays", "RAID recovery",
+        "RAID-1", "RAID-5", "RAID-6", "RAID-10",
+        "storage engineering", "SAN design", "Fibre Channel SAN",
+        "iSCSI SAN", "NetApp storage", "SnapMirror",
+        "VMware storage performance", "VMware ESXi", "vCenter",
+        "vMotion", "DR and BCP", "cloud migration",
+        "Microsoft 365", "Office 365", "hybrid identity",
+        "networking", "VLANs", "DMZ", "firewalls",
+        "WiFi optimisation", "Linux deployment", "legacy hardware",
+        "Python automation", "scientific computing", "static websites"
       ]
     },
 
+    /* ============================
+       WEBSITE + HOMEPAGE ENHANCEMENTS
+       ============================ */
     {
       "@type": "WebSite",
       "@id": "https://www.atkinsonit.co.uk/#website",
       "url": "https://www.atkinsonit.co.uk/",
       "name": "Atkinson IT Ltd",
-      "publisher": { "@id": "https://www.atkinsonit.co.uk/#org" }
+      "publisher": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.atkinsonit.co.uk/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
     },
-
     {
       "@type": "WebPage",
-      "@id": "https://www.atkinsonit.co.uk/ai-summary.html",
-      "url": "https://www.atkinsonit.co.uk/ai-summary.html",
-      "name": "AI Summary — Atkinson IT Ltd",
+      "@id": "https://www.atkinsonit.co.uk/#home",
+      "url": "https://www.atkinsonit.co.uk/",
+      "name": "Home — Atkinson IT Ltd",
+      "description": "SME IT support, server engineering, storage, RAID, cloud migration, networking, virtualisation and Linux deployment across Surrey, Berkshire and West London.",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "about": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "mainEntity": { "@id": "https://www.atkinsonit.co.uk/#org" }
+    },
+
+    /* ============================
+       SERVICE PAGES (WebPage + Service)
+       ============================ */
+
+    /* IT Services Page */
+    {
+      "@type": "WebPage",
+      "@id": "https://www.atkinsonit.co.uk/it-services.html#page",
+      "url": "https://www.atkinsonit.co.uk/it-services.html",
+      "name": "IT Services — Atkinson IT Ltd",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "about": { "@id": "https://www.atkinsonit.co.uk/#service-it-support" },
+      "mainEntity": { "@id": "https://www.atkinsonit.co.uk/#service-it-support" }
+    },
+
+    /* Engineering Services Page */
+    {
+      "@type": "WebPage",
+      "@id": "https://www.atkinsonit.co.uk/engineering-services.html#page",
+      "url": "https://www.atkinsonit.co.uk/engineering-services.html",
+      "name": "Engineering Services — Atkinson IT Ltd",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "about": { "@id": "https://www.atkinsonit.co.uk/#service-storage" },
+      "mainEntity": { "@id": "https://www.atkinsonit.co.uk/#service-storage" }
+    },
+
+    /* About Page */
+    {
+      "@type": "WebPage",
+      "@id": "https://www.atkinsonit.co.uk/about.html#page",
+      "url": "https://www.atkinsonit.co.uk/about.html",
+      "name": "About — Atkinson IT Ltd",
       "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
       "about": { "@id": "https://www.atkinsonit.co.uk/#org" }
     },
 
+    /* Capabilities Page */
+    {
+      "@type": "WebPage",
+      "@id": "https://www.atkinsonit.co.uk/capabilities.html#page",
+      "url": "https://www.atkinsonit.co.uk/capabilities.html",
+      "name": "Capabilities — Atkinson IT Ltd",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "about": { "@id": "https://www.atkinsonit.co.uk/#org" }
+    },
+
+    /* Testimonials Page */
+    {
+      "@type": "WebPage",
+      "@id": "https://www.atkinsonit.co.uk/testimonials.html#page",
+      "url": "https://www.atkinsonit.co.uk/testimonials.html",
+      "name": "Testimonials — Atkinson IT Ltd",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "about": { "@id": "https://www.atkinsonit.co.uk/#org" }
+    },
+
+    /* ============================
+       SERVICE ENTITIES
+       ============================ */
     {
       "@type": "Service",
       "@id": "https://www.atkinsonit.co.uk/#service-it-support",
       "name": "Small Business IT Support",
       "provider": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "serviceType": "IT Support",
       "areaServed": ["Surrey", "Berkshire", "West London"]
     },
     {
@@ -106,6 +155,7 @@
       "@id": "https://www.atkinsonit.co.uk/#service-cloud",
       "name": "Cloud Migration & Microsoft 365",
       "provider": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "serviceType": "Cloud Migration",
       "areaServed": ["Surrey", "Berkshire", "West London"]
     },
     {
@@ -113,6 +163,7 @@
       "@id": "https://www.atkinsonit.co.uk/#service-networking",
       "name": "Networking & Infrastructure",
       "provider": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "serviceType": "Networking",
       "areaServed": ["Surrey", "Berkshire", "West London"]
     },
     {
@@ -120,34 +171,23 @@
       "@id": "https://www.atkinsonit.co.uk/#service-storage",
       "name": "Storage, Backup & Disaster Recovery",
       "provider": { "@id": "https://www.atkinsonit.co.uk/#org" },
-      "areaServed": ["Surrey", "Berkshire", "West London"],
-      "serviceType": [
-        "RAID support",
-        "RAID recovery",
-        "SAN engineering",
-        "NetApp SnapMirror",
-        "Fibre Channel troubleshooting"
-      ]
+      "serviceType": "Storage Engineering",
+      "areaServed": ["Surrey", "Berkshire", "West London"]
     },
     {
       "@type": "Service",
       "@id": "https://www.atkinsonit.co.uk/#service-virtualisation",
       "name": "Virtualisation & Server Consolidation",
       "provider": { "@id": "https://www.atkinsonit.co.uk/#org" },
-      "areaServed": ["Surrey", "Berkshire", "West London"],
-      "serviceType": [
-        "VMware ESXi",
-        "vCenter",
-        "vMotion",
-        "DRS load balancing",
-        "server consolidation"
-      ]
+      "serviceType": "Virtualisation",
+      "areaServed": ["Surrey", "Berkshire", "West London"]
     },
     {
       "@type": "Service",
       "@id": "https://www.atkinsonit.co.uk/#service-linux",
       "name": "Linux Deployment & Automation",
       "provider": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "serviceType": "Linux Deployment",
       "areaServed": ["Surrey", "Berkshire", "West London"]
     },
     {
@@ -155,24 +195,107 @@
       "@id": "https://www.atkinsonit.co.uk/#service-websites",
       "name": "Static Website Build & AI‑Friendly Content",
       "provider": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "serviceType": "Website Development",
       "areaServed": ["Surrey", "Berkshire", "West London"]
     },
 
+    /* ============================
+       CASE STUDIES (CreativeWork)
+       ============================ */
     {
       "@type": "CreativeWork",
-      "@id": "https://www.atkinsonit.co.uk/#case-studies",
-      "name": "Case Studies",
-      "creator": { "@id": "https://www.atkinsonit.co.uk/#org" },
-      "hasPart": [
-        { "@type": "CreativeWork", "name": "Cloud Migration Case Study" },
-        { "@type": "CreativeWork", "name": "DR & BCP Case Study" },
-        { "@type": "CreativeWork", "name": "Networking Case Study" },
-        { "@type": "CreativeWork", "name": "Storage Case Study" },
-        { "@type": "CreativeWork", "name": "Virtualisation Case Study" },
-        { "@type": "CreativeWork", "name": "Legacy Hardware Case Study" },
-        { "@type": "CreativeWork", "name": "Website Build Case Study" }
-      ]
+      "@id": "https://www.atkinsonit.co.uk/casestudy/cloud-casestudy.html#schema",
+      "url": "https://www.atkinsonit.co.uk/casestudy/cloud-casestudy.html",
+      "headline": "Cloud Migration Case Study",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "about": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "keywords": ["cloud migration", "Microsoft 365", "hybrid identity"]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://www.atkinsonit.co.uk/casestudy/network-casestudy.html#schema",
+      "url": "https://www.atkinsonit.co.uk/casestudy/network-casestudy.html",
+      "headline": "Networking Case Study",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "about": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "keywords": ["networking", "VLANs", "firewalls", "infrastructure"]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://www.atkinsonit.co.uk/casestudy/storage-casestudy.html#schema",
+      "url": "https://www.atkinsonit.co.uk/casestudy/storage-casestudy.html",
+      "headline": "Storage Engineering Case Study",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "about": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "keywords": ["RAID", "SAN", "NetApp", "storage engineering"]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://www.atkinsonit.co.uk/casestudy/DR-BCP-casestudy.html#schema",
+      "url": "https://www.atkinsonit.co.uk/casestudy/DR-BCP-casestudy.html",
+      "headline": "Disaster Recovery & BCP Case Study",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "about": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "keywords": ["disaster recovery", "business continuity", "backup"]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://www.atkinsonit.co.uk/casestudy/virtualisation-casestudy.html#schema",
+      "url": "https://www.atkinsonit.co.uk/casestudy/virtualisation-casestudy.html",
+      "headline": "Virtualisation Case Study",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "about": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "keywords": ["VMware", "vCenter", "server consolidation"]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://www.atkinsonit.co.uk/casestudy/Legacy-casestudy.html#schema",
+      "url": "https://www.atkinsonit.co.uk/casestudy/Legacy-casestudy.html",
+      "headline": "Legacy Hardware Case Study",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "about": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "keywords": ["legacy hardware", "server repair", "data recovery"]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://www.atkinsonit.co.uk/casestudy/website-build.html#schema",
+      "url": "https://www.atkinsonit.co.uk/casestudy/website-build.html",
+      "headline": "Website Build Case Study",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "about": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "keywords": ["static websites", "SEO", "AI‑friendly content"]
+    },
+
+    /* ============================
+       BLOG POSTS (BlogPosting)
+       ============================ */
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.atkinsonit.co.uk/blog/2026-06-02.html#schema",
+      "url": "https://www.atkinsonit.co.uk/blog/2026-06-02.html",
+      "headline": "Blog Post — 2026‑06‑02",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "publisher": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "about": { "@id": "https://www.atkinsonit.co.uk/#org" }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.atkinsonit.co.uk/blog/2026-06-15.html#schema",
+      "url": "https://www.atkinsonit.co.uk/blog/2026-06-15.html",
+      "headline": "Blog Post — 2026‑06‑15",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "publisher": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "about": { "@id": "https://www.atkinsonit.co.uk/#org" }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.atkinsonit.co.uk/blog/2026-06-22.html#schema",
+      "url": "https://www.atkinsonit.co.uk/blog/2026-06-22.html",
+      "headline": "Blog Post — 2026‑06‑22",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "publisher": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "about": { "@id": "https://www.atkinsonit.co.uk/#org" }
     }
+
   ]
 }
-
