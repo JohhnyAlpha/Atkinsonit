@@ -1,6 +1,5 @@
 /* ================================
    TESTIMONIALS PAGE STYLING
-   Matches existing Atkinson IT site
    ================================ */
 
 .testimonial {
@@ -35,6 +34,7 @@
     line-height: 1.6;
 }
 
+/* Homepage testimonial */
 .homepage-testimonial {
     max-width: 900px;
     margin: 4rem auto;
@@ -79,17 +79,33 @@
     background: #4a90e2;
 }
 
-/* Generic content block */
+/* ================================
+   GLOBAL BLOCKS
+   ================================ */
+
 .block {
-    background: #FFFFFF;
-    padding: 1.5rem;
+    background: #fff;
+    padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.block h1, .block h2, .block h3 {
+    color: #1f3b73;
+}
+
+.block p, .block ul {
+    color: #333;
+    line-height: 1.6;
+}
+
+.block ul {
+    margin-left: 1.5rem;
 }
 
 /* ================================
-   GLOBAL SITE BRANDING (V1)
-   Header, Navigation, Layout, Footer
+   GLOBAL BRANDING
    ================================ */
 
 body {
@@ -106,7 +122,10 @@ body {
     padding: 0 1rem;
 }
 
-/* Header */
+/* ================================
+   NAVIGATION
+   ================================ */
+
 nav {
     background: #1f3b73;
     color: #fff;
@@ -142,12 +161,18 @@ nav .links a:hover {
     text-decoration: underline;
 }
 
-/* Page headings */
+/* ================================
+   HEADINGS
+   ================================ */
+
 h1, h2, h3 {
     color: #1f3b73;
 }
 
-/* Buttons */
+/* ================================
+   BUTTONS
+   ================================ */
+
 .button, a.button {
     display: inline-block;
     padding: 0.6rem 1.2rem;
@@ -162,7 +187,10 @@ h1, h2, h3 {
     background: #4a90e2;
 }
 
-/* Footer */
+/* ================================
+   FOOTER
+   ================================ */
+
 footer {
     background: #1f3b73;
     color: #fff;
@@ -182,7 +210,7 @@ footer a:hover {
 }
 
 /* ================================
-   HERO SECTIONS (Blog + Case Studies)
+   HERO SECTIONS
    ================================ */
 
 .hero {
@@ -229,7 +257,7 @@ footer a:hover {
 }
 
 /* ================================
-   BLOG POST CONTENT
+   BLOG CONTENT
    ================================ */
 
 .post-content {
@@ -244,7 +272,7 @@ footer a:hover {
 }
 
 /* ================================
-   BLOG PREVIOUS / NEXT NAVIGATION
+   BLOG PREVIOUS/NEXT NAV
    ================================ */
 
 .post-nav {
