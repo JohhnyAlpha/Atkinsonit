@@ -40,115 +40,7 @@
 <!-- ===================================================== -->
 
 <!-- Case Study Article Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "articleType": "CaseStudy",
-  "headline": "Disaster Recovery & Business Continuity Case Study",
-  "description": "A real-world DR/BCP project delivered by Atkinson IT Ltd, restoring backup capability within 48 hours after a flooded server room, deploying an emergency NetApp backup platform, and implementing a long-term multi-tier DR/BCP architecture.",
-  "author": {
-    "@type": "Person",
-    "name": "Bernard Atkinson",
-    "jobTitle": "Founder & Senior IT Consultant",
-    "url": "https://www.atkinsonit.co.uk/about"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Atkinson IT Ltd",
-    "url": "https://www.atkinsonit.co.uk"
-  },
-  "mainEntityOfPage": "https://www.atkinsonit.co.uk/casestudy/DR-BCP-casestudy",
-  "keywords": [
-    "disaster recovery",
-    "business continuity",
-    "NetApp SnapMirror",
-    "backup recovery",
-    "DR architecture",
-    "BCP design",
-    "enterprise tape library",
-    "Atkinson IT"
-  ]
-}
-</script>
 
-<!-- FAQ Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How quickly can backup capability be restored after a disaster?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "With the right planning and available hardware, it is often possible to restore operational backup capability within 24–72 hours, even after a major incident such as a flooded server room."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why is a multi-tier DR/BCP architecture important?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A multi-tier architecture combining local snapshots, tape, and offsite replication provides fast recovery, long-term retention, and resilience against site-level disasters."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can NetApp be used as both a temporary and long-term DR platform?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. NetApp can be deployed quickly as an emergency backup target and later repurposed as an offsite DR platform using technologies such as SnapMirror."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is a critical-first recovery strategy?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A critical-first strategy prioritises the protection and recovery of systems that are essential to business operations, such as financial systems, authentication, and core databases, before lower-priority workloads."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do all organisations need a tertiary DR site?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not all organisations require a tertiary site, but those with high availability or regulatory requirements often benefit from an additional cold-standby or offsite tier to further reduce risk."
-      }
-    }
-  ]
-}
-</script>
-
-<!-- Breadcrumb Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.atkinsonit.co.uk"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Case Studies",
-      "item": "https://www.atkinsonit.co.uk/casestudy"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Disaster Recovery & Business Continuity Case Study",
-      "item": "https://www.atkinsonit.co.uk/casestudy/DR-BCP-casestudy"
-    }
-  ]
-}
-</script>
 
 <!-- Service Schema -->
 <script type="application/ld+json">
@@ -168,32 +60,67 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.atkinsonit.co.uk/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Case Studies",
+      "item": "https://www.atkinsonit.co.uk/casestudy"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Disaster Recovery & Business Continuity Case Study",
+      "item": "https://www.atkinsonit.co.uk/casestudy/DR-BCP-casestudy"
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
+<nav>
+  <div class="brand">
+    <img src="/logo.svg" alt="Atkinson IT logo" loading="lazy">
+    <span>Atkinson IT Ltd</span>
+  </div>
+
+  <div class="links">
+    <a href="/">Home</a>
+    <a href="/it-services">Services</a>
+    <a href="/engineering-services">Engineering Services</a>
+    <a href="/about">About</a>
+    <a href="/capabilities">Capabilities</a>
+    <a href="/testimonials">Testimonials</a>
+    <a href="/casestudies">Case Studies</a>
+    <a href="/blogs">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="breadcrumbs">
+  <a href="/">Home</a> <span>›</span>
+  <a href="/casestudy">Case Studies</a> <span>›</span>
+  <span>Disaster Recovery & Business Continuity Case Study</span>
+</div>
+
+
 
 <header class="site-header">
 <div class="container">
 <p class="logo"><a href="/index.html">Atkinson IT Ltd</a></p>
 
-<nav>
-<div class="brand">
-<img src="logo.svg" alt="Atkinson IT logo" loading="lazy">
-<span>Atkinson IT Ltd</span>
-</div>
 
-<div class="links">
-<a href="index.html">Home</a>
-<a href="it-services.html">Services</a>
-<a href="engineering-services.html">Engineering Services</a>
-<a href="about.html">About</a>
-<a href="capabilities.html">Capabilities</a>
-<a href="testimonials.html">Testimonials</a>
-<a href="casestudies">Case Studies</a>
-<a href="blogs">Blog</a>
-<a href="index.html#contact">Contact</a>
-</div>
-</nav>
 
 </div>
 </header>
@@ -459,19 +386,20 @@ Atkinson IT Ltd can help.
 </div>
 </main>
 
+
+
 <footer>
   <p>&copy; 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
   <p>
-    <a href="index.html">Home</a> |
-    <a href="it-services.html">Services</a> |
-    <a href="engineering-services.html">Engineering Services</a> |
-    <a href="about.html">About</a> |
-    <a href="capabilities.html">Capabilities</a> |
-    <a href="testimonials.html">Testimonials</a> |
-    <a href="casestudies">Case Studies</a> |
-    <a href="blogs">Blog</a> |
-    <a href="index.html#contact">Contact</a> |
-    <a href="privacy.html">Privacy Policy</a>
+    <a href="/">Home</a> |
+    <a href="/it-services">Services</a> |
+    <a href="/engineering-services">Engineering Services</a> |
+    <a href="/about">About</a> |
+    <a href="/capabilities">Capabilities</a> |
+    <a href="/testimonials">Testimonials</a> |
+    <a href="/casestudies">Case Studies</a> |
+    <a href="/blogs">Blog</a> |
+    <a href="/privacy">Privacy Policy</a>
   </p>
 </footer>
 

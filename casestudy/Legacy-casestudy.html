@@ -40,115 +40,7 @@
 <!-- ===================================================== -->
 
 <!-- Case Study Article Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "articleType": "CaseStudy",
-  "headline": "ATMoS Scientific Modelling on Repurposed Legacy Hardware",
-  "description": "A real-world scientific modelling project delivered by Atkinson IT Ltd, repurposing legacy Intel hardware into a Linux-based scientific workstation capable of running 108 ATMoS simulations with Python automation.",
-  "author": {
-    "@type": "Person",
-    "name": "Bernard Atkinson",
-    "jobTitle": "Founder & Senior IT Consultant",
-    "url": "https://www.atkinsonit.co.uk/about"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Atkinson IT Ltd",
-    "url": "https://www.atkinsonit.co.uk"
-  },
-  "mainEntityOfPage": "https://www.atkinsonit.co.uk/casestudy/Legacy-casestudy",
-  "keywords": [
-    "legacy hardware",
-    "Linux deployment",
-    "scientific modelling",
-    "ATMoS",
-    "Python automation",
-    "batch processing",
-    "x86_64 scientific computing",
-    "Atkinson IT"
-  ]
-}
-</script>
 
-<!-- FAQ Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Can legacy hardware still be used for scientific workloads?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. With the right Linux distribution, dependency management, and optimisation, older x86_64 hardware can still run demanding scientific modelling workloads effectively."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why was Linux required for ATMoS?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "ATMoS depends on specific scientific libraries and an x86_64 Linux environment, making it incompatible with modern ARM-based Apple Silicon systems."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How were 108 simulations automated?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A Python-driven batch processing pipeline was created to run parameter sweeps, collect outputs, and generate visualisations automatically."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is it safe to transfer large scientific datasets over SFTP?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. SFTP provides encrypted transfer, ensuring that raw outputs and processed datasets remain secure during transit."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can Atkinson IT help with scientific computing environments?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely. Atkinson IT can deploy Linux environments, automate modelling pipelines, and optimise legacy hardware for research workloads."
-      }
-    }
-  ]
-}
-</script>
-
-<!-- Breadcrumb Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.atkinsonit.co.uk"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Case Studies",
-      "item": "https://www.atkinsonit.co.uk/casestudy"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "ATMoS Scientific Modelling Case Study",
-      "item": "https://www.atkinsonit.co.uk/casestudy/Legacy-casestudy"
-    }
-  ]
-}
-</script>
 
 <!-- Service Schema -->
 <script type="application/ld+json">
@@ -168,32 +60,67 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.atkinsonit.co.uk/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Case Studies",
+      "item": "https://www.atkinsonit.co.uk/casestudy"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Case Study: ATMoS Scientific Modelling on Repurposed Legacy Hardware",
+      "item": "https://www.atkinsonit.co.uk/casestudy/Legacy-casestudy"
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
+<nav>
+  <div class="brand">
+    <img src="/logo.svg" alt="Atkinson IT logo" loading="lazy">
+    <span>Atkinson IT Ltd</span>
+  </div>
+
+  <div class="links">
+    <a href="/">Home</a>
+    <a href="/it-services">Services</a>
+    <a href="/engineering-services">Engineering Services</a>
+    <a href="/about">About</a>
+    <a href="/capabilities">Capabilities</a>
+    <a href="/testimonials">Testimonials</a>
+    <a href="/casestudies">Case Studies</a>
+    <a href="/blogs">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="breadcrumbs">
+  <a href="/">Home</a> <span>›</span>
+  <a href="/casestudy">Case Studies</a> <span>›</span>
+  <span>Case Study: ATMoS Scientific Modelling on Repurposed Legacy Hardware</span>
+</div>
+
+
 
 <header class="site-header">
 <div class="container">
 <p class="logo"><a href="/index.html">Atkinson IT Ltd</a></p>
 
-<nav>
-<div class="brand">
-<img src="logo.svg" alt="Atkinson IT logo" loading="lazy">
-<span>Atkinson IT Ltd</span>
-</div>
 
-<div class="links">
-<a href="index.html">Home</a>
-<a href="it-services.html">Services</a>
-<a href="engineering-services.html">Engineering Services</a>
-<a href="about.html">About</a>
-<a href="capabilities.html">Capabilities</a>
-<a href="testimonials.html">Testimonials</a>
-<a href="casestudies">Case Studies</a>
-<a href="blogs">Blog</a>
-<a href="index.html#contact">Contact</a>
-</div>
-</nav>
 
 </div>
 </header>
@@ -426,22 +353,23 @@ engineering pipelines, Atkinson IT Ltd can help.
 </div>
 </main>
 
+
+
+
 <footer>
   <p>&copy; 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
   <p>
-    <a href="index.html">Home</a> |
-    <a href="it-services.html">Services</a> |
-    <a href="engineering-services.html">Engineering Services</a> |
-    <a href="about.html">About</a> |
-    <a href="capabilities.html">Capabilities</a> |
-    <a href="testimonials.html">Testimonials</a> |
-    <a href="casestudies">Case Studies</a> |
-    <a href="blogs">Blog</a> |
-    <a href="index.html#contact">Contact</a> |
-    <a href="privacy.html">Privacy Policy</a>
+    <a href="/">Home</a> |
+    <a href="/it-services">Services</a> |
+    <a href="/engineering-services">Engineering Services</a> |
+    <a href="/about">About</a> |
+    <a href="/capabilities">Capabilities</a> |
+    <a href="/testimonials">Testimonials</a> |
+    <a href="/casestudies">Case Studies</a> |
+    <a href="/blogs">Blog</a> |
+    <a href="/privacy">Privacy Policy</a>
   </p>
 </footer>
-
 
 </body>
 </html>

@@ -38,106 +38,7 @@
 <!-- ===================================================== -->
 
 <!-- Case Study Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "articleType": "CaseStudy",
-  "headline": "Website Build Case Study",
-  "description": "A real-world website build delivered by Atkinson IT Ltd, using a static architecture, semantic HTML, structured data, and a modern Git-based deployment workflow.",
-  "author": {
-    "@type": "Person",
-    "name": "Bernard Atkinson",
-    "jobTitle": "Founder & Senior IT Consultant",
-    "url": "https://www.atkinsonit.co.uk/about"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Atkinson IT Ltd",
-    "url": "https://www.atkinsonit.co.uk"
-  },
-  "mainEntityOfPage": "https://www.atkinsonit.co.uk/casestudy/website-build",
-  "keywords": [
-    "static website",
-    "semantic HTML",
-    "AI-friendly content",
-    "Netlify",
-    "GitHub deployment",
-    "SEO optimisation",
-    "Atkinson IT"
-  ]
-}
-</script>
 
-<!-- FAQ Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Why build a static website instead of using a CMS?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Static websites are faster, more secure, easier to maintain, and have a dramatically smaller attack surface compared to CMS platforms."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does semantic HTML improve AI visibility?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Semantic HTML provides clear structure that AI systems can interpret, improving content extraction, summarisation, and ranking."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why use GitHub and Netlify for deployment?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "GitHub provides version control and safe change history, while Netlify offers global CDN hosting, automatic SSL, and zero-downtime deployments."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is a static site scalable for future content?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Static sites scale extremely well and can grow with additional pages, case studies, and structured content without performance loss."
-      }
-    }
-  ]
-}
-</script>
-
-<!-- Breadcrumb Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.atkinsonit.co.uk"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Case Studies",
-      "item": "https://www.atkinsonit.co.uk/casestudy"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Website Build Case Study",
-      "item": "https://www.atkinsonit.co.uk/casestudy/website-build"
-    }
-  ]
-}
-</script>
 
 <!-- Service Schema -->
 <script type="application/ld+json">
@@ -157,31 +58,66 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.atkinsonit.co.uk/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Case Studies",
+      "item": "https://www.atkinsonit.co.uk/casestudy"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Case Study: Website Build for Atkinson IT Ltd",
+      "item": "https://www.atkinsonit.co.uk/casestudy/website-build"
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
+<nav>
+  <div class="brand">
+    <img src="/logo.svg" alt="Atkinson IT logo" loading="lazy">
+    <span>Atkinson IT Ltd</span>
+  </div>
+
+  <div class="links">
+    <a href="/">Home</a>
+    <a href="/it-services">Services</a>
+    <a href="/engineering-services">Engineering Services</a>
+    <a href="/about">About</a>
+    <a href="/capabilities">Capabilities</a>
+    <a href="/testimonials">Testimonials</a>
+    <a href="/casestudies">Case Studies</a>
+    <a href="/blogs">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="breadcrumbs">
+  <a href="/">Home</a> <span>›</span>
+  <a href="/casestudy">Case Studies</a> <span>›</span>
+  <span>Case Study: Website Build for Atkinson IT Ltd</span>
+</div>
+
+
 
 <header class="site-header">
 <div class="container">
 <p class="logo"><a href="/index.html">Atkinson IT Ltd</a></p>
-<nav>
-<div class="brand">
-<img src="logo.svg" alt="Atkinson IT logo" loading="lazy">
-<span>Atkinson IT Ltd</span>
-</div>
 
-<div class="links">
-<a href="index.html">Home</a>
-<a href="it-services.html">Services</a>
-<a href="engineering-services.html">Engineering Services</a>
-<a href="about.html">About</a>
-<a href="capabilities.html">Capabilities</a>
-<a href="testimonials.html">Testimonials</a>
-<a href="casestudies">Case Studies</a>
-<a href="blogs">Blog</a>
-<a href="index.html#contact">Contact</a>
-</div>
-</nav>
 </div>
 </header>
 
@@ -402,22 +338,23 @@ Atkinson IT Ltd can help.
 </div>
 </main>
 
+
+
+
 <footer>
   <p>&copy; 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
   <p>
-    <a href="index.html">Home</a> |
-    <a href="it-services.html">Services</a> |
-    <a href="engineering-services.html">Engineering Services</a> |
-    <a href="about.html">About</a> |
-    <a href="capabilities.html">Capabilities</a> |
-    <a href="testimonials.html">Testimonials</a> |
-    <a href="casestudies">Case Studies</a> |
-    <a href="blogs">Blog</a> |
-    <a href="index.html#contact">Contact</a> |
-    <a href="privacy.html">Privacy Policy</a>
+    <a href="/">Home</a> |
+    <a href="/it-services">Services</a> |
+    <a href="/engineering-services">Engineering Services</a> |
+    <a href="/about">About</a> |
+    <a href="/capabilities">Capabilities</a> |
+    <a href="/testimonials">Testimonials</a> |
+    <a href="/casestudies">Case Studies</a> |
+    <a href="/blogs">Blog</a> |
+    <a href="/privacy">Privacy Policy</a>
   </p>
 </footer>
-
 
 </body>
 </html>

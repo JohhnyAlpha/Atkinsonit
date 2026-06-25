@@ -40,116 +40,7 @@
 <!-- ===================================================== -->
 
 <!-- Case Study Article Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "articleType": "CaseStudy",
-  "headline": "Cloud Migration Case Study",
-  "description": "A real-world cloud migration project delivered by Atkinson IT Ltd, moving a multi-site organisation from fragmented legacy Exchange environments to Office 365 with hybrid identity, SharePoint, OneDrive, and Teams — all with zero downtime.",
-  "author": {
-    "@type": "Person",
-    "name": "Bernard Atkinson",
-    "jobTitle": "Founder & Senior IT Consultant",
-    "url": "https://www.atkinsonit.co.uk/about"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Atkinson IT Ltd",
-    "url": "https://www.atkinsonit.co.uk"
-  },
-  "mainEntityOfPage": "https://www.atkinsonit.co.uk/casestudy/cloud-casestudy",
-  "keywords": [
-    "cloud migration",
-    "Office 365",
-    "Exchange migration",
-    "hybrid identity",
-    "Azure AD Connect",
-    "SharePoint Online",
-    "OneDrive",
-    "Teams deployment",
-    "Atkinson IT"
-  ]
-}
-</script>
 
-<!-- FAQ Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How long does an Exchange to Office 365 migration take?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most SME and mid-size migrations take between 4–12 weeks depending on mailbox size, identity complexity, and coexistence requirements."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can hybrid identity support multiple Active Directory forests?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Azure AD Connect can synchronise multiple forests, even with inconsistent schema, provided identity models are normalised."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do you ensure zero downtime during a cloud migration?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Zero downtime is achieved through hybrid Exchange coexistence, staged mailbox moves, Autodiscover redirection, and careful DNS planning."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What tools are used to migrate file shares to SharePoint?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The SharePoint Migration Tool (SPMT) is typically used to migrate departmental data, preserving permissions and metadata."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Teams require SharePoint to function?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Teams stores its files in SharePoint document libraries, so SharePoint architecture is essential for a successful Teams rollout."
-      }
-    }
-  ]
-}
-</script>
-
-<!-- Breadcrumb Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.atkinsonit.co.uk"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Case Studies",
-      "item": "https://www.atkinsonit.co.uk/casestudy"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Cloud Migration Case Study",
-      "item": "https://www.atkinsonit.co.uk/casestudy/cloud-casestudy"
-    }
-  ]
-}
-</script>
 
 <!-- Service Schema -->
 <script type="application/ld+json">
@@ -169,32 +60,67 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.atkinsonit.co.uk/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Case Studies",
+      "item": "https://www.atkinsonit.co.uk/casestudy"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Cloud Migration Case Study",
+      "item": "https://www.atkinsonit.co.uk/casestudy/cloud-casestudy"
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
+<nav>
+  <div class="brand">
+    <img src="/logo.svg" alt="Atkinson IT logo" loading="lazy">
+    <span>Atkinson IT Ltd</span>
+  </div>
+
+  <div class="links">
+    <a href="/">Home</a>
+    <a href="/it-services">Services</a>
+    <a href="/engineering-services">Engineering Services</a>
+    <a href="/about">About</a>
+    <a href="/capabilities">Capabilities</a>
+    <a href="/testimonials">Testimonials</a>
+    <a href="/casestudies">Case Studies</a>
+    <a href="/blogs">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="breadcrumbs">
+  <a href="/">Home</a> <span>›</span>
+  <a href="/casestudy">Case Studies</a> <span>›</span>
+  <span>Cloud Migration Case Study</span>
+</div>
+
+
 
 <header class="site-header">
 <div class="container">
 <p class="logo"><a href="/index.html">Atkinson IT Ltd</a></p>
 
-<nav>
-<div class="brand">
-<img src="logo.svg" alt="Atkinson IT logo" loading="lazy">
-<span>Atkinson IT Ltd</span>
-</div>
 
-<div class="links">
-<a href="index.html">Home</a>
-<a href="it-services.html">Services</a>
-<a href="engineering-services.html">Engineering Services</a>
-<a href="about.html">About</a>
-<a href="capabilities.html">Capabilities</a>
-<a href="testimonials.html">Testimonials</a>
-<a href="casestudies">Case Studies</a>
-<a href="blogs">Blog</a>
-<a href="index.html#contact">Contact</a>
-</div>
-</nav>
 
 </div>
 </header>
@@ -478,22 +404,23 @@ Atkinson IT Ltd can deliver a seamless, secure transition.
 </div>
 </main>
 
+
+
+
 <footer>
   <p>&copy; 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
   <p>
-    <a href="index.html">Home</a> |
-    <a href="it-services.html">Services</a> |
-    <a href="engineering-services.html">Engineering Services</a> |
-    <a href="about.html">About</a> |
-    <a href="capabilities.html">Capabilities</a> |
-    <a href="testimonials.html">Testimonials</a> |
-    <a href="casestudies">Case Studies</a> |
-    <a href="blogs">Blog</a> |
-    <a href="index.html#contact">Contact</a> |
-    <a href="privacy.html">Privacy Policy</a>
+    <a href="/">Home</a> |
+    <a href="/it-services">Services</a> |
+    <a href="/engineering-services">Engineering Services</a> |
+    <a href="/about">About</a> |
+    <a href="/capabilities">Capabilities</a> |
+    <a href="/testimonials">Testimonials</a> |
+    <a href="/casestudies">Case Studies</a> |
+    <a href="/blogs">Blog</a> |
+    <a href="/privacy">Privacy Policy</a>
   </p>
 </footer>
-
 
 </body>
 </html>

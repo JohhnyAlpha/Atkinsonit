@@ -40,115 +40,7 @@
 <!-- ===================================================== -->
 
 <!-- Case Study Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "articleType": "CaseStudy",
-  "headline": "Storage & Virtualisation Case Study",
-  "description": "A real-world storage modernisation project delivered by Atkinson IT Ltd, replacing legacy RAID arrays with NetApp, stabilising Fibre Channel, improving VMware performance, and implementing multisite DR with SnapMirror.",
-  "author": {
-    "@type": "Person",
-    "name": "Bernard Atkinson",
-    "jobTitle": "Founder & Senior IT Consultant",
-    "url": "https://www.atkinsonit.co.uk/about"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Atkinson IT Ltd",
-    "url": "https://www.atkinsonit.co.uk"
-  },
-  "mainEntityOfPage": "https://www.atkinsonit.co.uk/casestudy/storage-casestudy",
-  "keywords": [
-    "NetApp",
-    "Fibre Channel",
-    "VMware",
-    "SnapMirror",
-    "storage modernisation",
-    "disaster recovery",
-    "virtualisation",
-    "Atkinson IT"
-  ]
-}
-</script>
 
-<!-- FAQ Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Why modernise legacy RAID storage?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Legacy RAID arrays often suffer from poor performance and limited scalability. Modern platforms such as NetApp provide snapshots, replication, and better integration with virtualisation."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is SnapMirror used for?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "SnapMirror replicates data between NetApp systems, enabling multisite disaster recovery and business continuity."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can Fibre Channel be reused in modern designs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Existing Fibre Channel fabrics can be stabilised and reused with updated zoning and configuration, reducing cost while improving reliability."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do snapshots help end users?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Snapshots allow users to restore previous versions of files instantly, reducing support overhead and improving resilience."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can Atkinson IT assist with VMware storage optimisation?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely. Atkinson IT specialises in integrating NetApp storage with VMware environments for maximum performance and reliability."
-      }
-    }
-  ]
-}
-</script>
-
-<!-- Breadcrumb Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.atkinsonit.co.uk"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Case Studies",
-      "item": "https://www.atkinsonit.co.uk/casestudy"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Storage & Virtualisation Case Study",
-      "item": "https://www.atkinsonit.co.uk/casestudy/storage-casestudy"
-    }
-  ]
-}
-</script>
 
 <!-- Service Schema -->
 <script type="application/ld+json">
@@ -168,31 +60,66 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.atkinsonit.co.uk/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Case Studies",
+      "item": "https://www.atkinsonit.co.uk/casestudy"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Storage & Virtualisation Case Study",
+      "item": "https://www.atkinsonit.co.uk/casestudy/storage-casestudy"
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
+<nav>
+  <div class="brand">
+    <img src="/logo.svg" alt="Atkinson IT logo" loading="lazy">
+    <span>Atkinson IT Ltd</span>
+  </div>
+
+  <div class="links">
+    <a href="/">Home</a>
+    <a href="/it-services">Services</a>
+    <a href="/engineering-services">Engineering Services</a>
+    <a href="/about">About</a>
+    <a href="/capabilities">Capabilities</a>
+    <a href="/testimonials">Testimonials</a>
+    <a href="/casestudies">Case Studies</a>
+    <a href="/blogs">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="breadcrumbs">
+  <a href="/">Home</a> <span>›</span>
+  <a href="/casestudy">Case Studies</a> <span>›</span>
+  <span>Storage & Virtualisation Case Study</span>
+</div>
+
+
 
 <header class="site-header">
 <div class="container">
 <p class="logo"><a href="/index.html">Atkinson IT Ltd</a></p>
-<nav>
-<div class="brand">
-<img src="logo.svg" alt="Atkinson IT logo" loading="lazy">
-<span>Atkinson IT Ltd</span>
-</div>
 
-<div class="links">
-<a href="index.html">Home</a>
-<a href="it-services.html">Services</a>
-<a href="engineering-services.html">Engineering Services</a>
-<a href="about.html">About</a>
-<a href="capabilities.html">Capabilities</a>
-<a href="testimonials.html">Testimonials</a>
-<a href="casestudies">Case Studies</a>
-<a href="blogs">Blog</a>
-<a href="index.html#contact">Contact</a>
-</div>
-</nav>
 </div>
 </header>
 
@@ -459,19 +386,20 @@ Atkinson IT Ltd can help.
 </div>
 </main>
 
+
+
 <footer>
   <p>&copy; 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
   <p>
-    <a href="index.html">Home</a> |
-    <a href="it-services.html">Services</a> |
-    <a href="engineering-services.html">Engineering Services</a> |
-    <a href="about.html">About</a> |
-    <a href="capabilities.html">Capabilities</a> |
-    <a href="testimonials.html">Testimonials</a> |
-    <a href="casestudies">Case Studies</a> |
-    <a href="blogs">Blog</a> |
-    <a href="index.html#contact">Contact</a> |
-    <a href="privacy.html">Privacy Policy</a>
+    <a href="/">Home</a> |
+    <a href="/it-services">Services</a> |
+    <a href="/engineering-services">Engineering Services</a> |
+    <a href="/about">About</a> |
+    <a href="/capabilities">Capabilities</a> |
+    <a href="/testimonials">Testimonials</a> |
+    <a href="/casestudies">Case Studies</a> |
+    <a href="/blogs">Blog</a> |
+    <a href="/privacy">Privacy Policy</a>
   </p>
 </footer>
 
