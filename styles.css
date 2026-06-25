@@ -8,6 +8,7 @@ body {
     padding: 0;
     line-height: 1.6;
     color: #333;
+    background: #F5F7FA;
 }
 
 .container {
@@ -21,7 +22,7 @@ body {
    ================================ */
 
 nav {
-    background: #1f3b73;
+    background: #0A2A43;
     color: #fff;
     padding: 1rem 0;
     display: flex;
@@ -45,18 +46,19 @@ nav .brand span {
 }
 
 nav .links a {
-    color: #fff;
+    color: #CFE2F3;
     text-decoration: none;
     margin-left: 1rem;
     font-weight: 500;
 }
 
 nav .links a:hover {
+    color: #FFFFFF;
     text-decoration: underline;
 }
 
 /* ================================
-   BLOCKS
+   BLOCKS (GLOBAL CARD STYLE)
    ================================ */
 
 .block {
@@ -81,7 +83,7 @@ nav .links a:hover {
 }
 
 /* ================================
-   GRID LAYOUTS
+   GRID LAYOUTS (CASE STUDIES + BLOGS)
    ================================ */
 
 .case-grid, .blog-grid {
@@ -136,8 +138,221 @@ nav .links a:hover {
 }
 
 /* ================================
-   FOOTER
+   TESTIMONIALS
+   ================================ */
+
+.testimonial {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #f7f9fc;
+    border-left: 4px solid #1f3b73;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.testimonial h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    color: #1f3b73;
+    font-weight: 600;
+}
+
+.testimonial h2 .small {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #555;
+}
+
+.testimonial blockquote {
+    margin: 1rem 0 0 0;
+    padding-left: 1.2rem;
+    border-left: 3px solid #4a90e2;
+    font-style: italic;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ================================
+   BLOG CONTENT
+   ================================ */
+
+.post-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.post-content img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+/* ================================
+   BLOG PREVIOUS/NEXT NAV
+   ================================ */
+
+.post-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem auto;
+    max-width: 800px;
+    padding-top: 2rem;
+    border-top: 1px solid #ddd;
+}
+
+.post-nav a {
+    color: #1f3b73;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.post-nav a:hover {
+    text-decoration: underline;
+}
+
+.post-nav .disabled {
+    visibility: hidden;
+}
+
+/* ================================
+   BUTTONS
+   ================================ */
+
+.button, a.button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: #1f3b73;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+.button:hover, a.button:hover {
+    background: #4a90e2;
+}
+
+/* ================================
+   FOOTER (UNIFIED DARK NAVY)
    ================================ */
 
 footer {
-    background: #
+    background: #0A2A43;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+footer a {
+    color: #CFE2F3;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+/* ================================
+   DARK MODE (AUTO-DETECT)
+   ================================ */
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background: #0F172A; /* deep slate */
+        color: #E2E8F0; /* light grey text */
+    }
+
+    nav {
+        background: #0A2A43; /* keep brand navy */
+        color: #fff;
+    }
+
+    nav .links a {
+        color: #E2E8F0;
+    }
+
+    nav .links a:hover {
+        color: #FFFFFF;
+    }
+
+    /* Boxed layout */
+    .block,
+    .case-card,
+    .blog-card,
+    .testimonial {
+        background: #1E293B; /* slate-800 */
+        color: #E2E8F0;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+
+    .block h1, .block h2, .block h3,
+    .case-card h3, .blog-card h3,
+    .testimonial h2 {
+        color: #93C5FD; /* soft blue */
+    }
+
+    .block p, .block ul,
+    .case-card p, .blog-card p,
+    .testimonial blockquote {
+        color: #CBD5E1; /* slate-300 */
+    }
+
+    .testimonial {
+        border-left-color: #3B82F6; /* blue-500 */
+    }
+
+    .testimonial blockquote {
+        border-left-color: #60A5FA; /* blue-400 */
+    }
+
+    /* Buttons */
+    .button, a.button {
+        background: #1E40AF; /* blue-800 */
+        color: #fff;
+    }
+
+    .button:hover, a.button:hover {
+        background: #3B82F6; /* blue-500 */
+    }
+
+    /* Hero sections */
+    .hero {
+        color: #E2E8F0;
+        text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    }
+
+    /* Blog post content */
+    .post-content img {
+        border: 2px solid #334155; /* slate-700 */
+    }
+
+    .post-nav {
+        border-top-color: #334155;
+    }
+
+    .post-nav a {
+        color: #93C5FD;
+    }
+
+    .post-nav a:hover {
+        color: #BFDBFE;
+    }
+
+    /* Footer */
+    footer {
+        background: #0A2A43; /* keep brand navy */
+        color: #E2E8F0;
+    }
+
+    footer a {
+        color: #93C5FD;
+    }
+
+    footer a:hover {
+        color: #FFFFFF;
+    }
+}
