@@ -342,6 +342,14 @@ footer a:hover {
         color: #BFDBFE;
     }
 
+    .icon {
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+        margin-right: 6px;
+        fill: #0A2A43;
+    }
+
     /* Footer */
     footer {
         background: #0A2A43; /* keep brand navy */
