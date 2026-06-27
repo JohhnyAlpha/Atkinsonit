@@ -1,158 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Networking & Infrastructure — Atkinson IT Ltd</title>
 
 <!-- Robots -->
-<meta name="robots" content="index, follow">
+<meta content="index, follow" name="robots"/>
 
 <!-- Canonical -->
-<link rel="canonical" href="https://www.atkinsonit.co.uk/services/networking-infrastructure">
+<link href="https://www.atkinsonit.co.uk/services/networking-infrastructure" rel="canonical"/>
 
 <!-- SEO -->
-<meta name="description" content="Design, installation and optimisation of SME networks across Surrey, including WiFi, routers, switches and servers.">
-<meta name="author" content="Atkinson IT Ltd">
+<meta content="Design, installation and optimisation of SME networks across Surrey, including WiFi, routers, switches and servers." name="description"/>
+<meta content="Atkinson IT Ltd" name="author"/>
 
 <!-- OpenGraph -->
-<meta property="og:title" content="Networking & Infrastructure — Atkinson IT Ltd">
-<meta property="og:description" content="Professional SME networking design, installation and optimisation across Surrey — WiFi, routers, switches, servers and cabling.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.atkinsonit.co.uk/services/networking-infrastructure">
-<meta property="og:image" content="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80">
-<meta property="og:image:width" content="1600">
-<meta property="og:image:height" content="900">
+<meta content="Networking & Infrastructure — Atkinson IT Ltd" property="og:title"/>
+<meta content="Professional SME networking design, installation and optimisation across Surrey — WiFi, routers, switches, servers and cabling." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://www.atkinsonit.co.uk/services/networking-infrastructure" property="og:url"/>
+<meta content="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" property="og:image"/>
 
 <!-- Preconnect -->
-<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://images.unsplash.com" rel="preconnect"/>
 
 <!-- Favicon -->
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="icon" type="image/png" href="/favicon.png">
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
 
-<!-- Styles -->
-<link rel="stylesheet" href="/styles.css">
+<link href="/assets/main.css" rel="stylesheet"/>
 
-<!-- Global Schema -->
-<script type="application/ld+json" src="/schema.json"></script>
+<style>
+/* Matches your modern service page styling */
+body { margin: 0; font-family: Arial, sans-serif; background: #F5F7FA; color: #333; }
+nav { background: #0A2A43; padding: 0.5rem 1rem; display: flex; align-items: center; justify-content: space-between; }
+nav .brand { display: flex; align-items: center; gap: 0.5rem; color: #fff; font-weight: bold; }
+nav img { height: 32px; }
+nav .links a { color: #CFE2F3; margin: 0 0.5rem; text-decoration: none; font-weight: bold; font-size: 0.95rem; }
+nav .links a:hover { color: #FFFFFF; }
 
-<!-- Page-Specific Service Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Networking & Infrastructure Setup",
-  "description": "SME networking design, installation and optimisation including WiFi, routers, switches, servers and cabling.",
-  "provider": {
-    "@type": "Organization",
-    "name": "Atkinson IT Ltd",
-    "url": "https://www.atkinsonit.co.uk"
-  },
-  "areaServed": {
-    "@type": "Place",
-    "name": "Surrey, Middlesex, Berkshire"
-  },
-  "url": "https://www.atkinsonit.co.uk/services/networking-infrastructure"
+.breadcrumbs {
+  background: #E8EEF3;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
 }
-</script>
+.breadcrumbs a { color: #0A2A43; text-decoration: none; }
+.breadcrumbs span { color: #555; }
 
-<!-- Breadcrumb Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.atkinsonit.co.uk/index.html"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "IT Services",
-      "item": "https://www.atkinsonit.co.uk/it-services"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Networking & Infrastructure",
-      "item": "https://www.atkinsonit.co.uk/services/networking-infrastructure"
-    }
-  ]
+.container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+
+.hero-service {
+  background: #0A2A43;
+  color: #FFFFFF;
+  padding: 3rem 1rem;
+  text-align: left;
 }
-</script>
+.hero-service h2 { margin: 0; font-size: 2rem; }
+.hero-service p { margin-top: 0.5rem; font-size: 1.1rem; }
 
+.service-block {
+  background: #FFFFFF;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.service-block h3 { margin-top: 0; }
+
+.button {
+  display: inline-block;
+  background: #0A2A43;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.button:hover { background: #0C3A5F; }
+
+footer {
+  background: #0A2A43;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+footer a { color: #CFE2F3; text-decoration: none; }
+footer a:hover { color: #FFFFFF; }
+</style>
 </head>
 
 <body>
 
-<header class="site-header">
-<div class="container">
-<p class="logo"><a href="/index.html">Atkinson IT Ltd</a></p>
-
 <nav>
 <div class="brand">
-<img src="logo.svg" alt="Atkinson IT logo" loading="lazy">
+<img alt="Atkinson IT logo" loading="lazy" src="/logo.svg"/>
 <span>Atkinson IT Ltd</span>
 </div>
-
 <div class="links">
-<a href="index.html">Home</a>
-<a href="it-services.html">Services</a>
-<a href="engineering-services.html">Engineering Services</a>
-<a href="about.html">About</a>
-<a href="capabilities.html">Capabilities</a>
-<a href="testimonials.html">Testimonials</a>
-<a href="casestudies">Case Studies</a>
-<a href="blogs">Blog</a>
-<a href="index.html#contact">Contact</a>
+<a href="/">Home</a>
+<a href="/it-services">Services</a>
+<a href="/engineering-services">Engineering Services</a>
+<a href="/about">About</a>
+<a href="/capabilities">Capabilities</a>
+<a href="/testimonials">Testimonials</a>
+<a href="/casestudies">Case Studies</a>
+<a href="/blogs">Blog</a>
+<a href="/#contact">Contact</a>
 </div>
 </nav>
-</div>
-</header>
 
 <!-- Breadcrumbs -->
-<nav>
-<div class="brand">
-<img src="logo.svg" alt="Atkinson IT logo" loading="lazy">
-<span>Atkinson IT Ltd</span>
+<div class="breadcrumbs">
+<a href="/">Home</a> ›
+<a href="/it-services">IT Services</a> ›
+<span>Networking &amp; Infrastructure</span>
 </div>
 
-<div class="links">
-<a href="index.html">Home</a>
-<a href="it-services.html">Services</a>
-<a href="engineering-services.html">Engineering Services</a>
-<a href="about.html">About</a>
-<a href="capabilities.html">Capabilities</a>
-<a href="testimonials.html">Testimonials</a>
-<a href="casestudies">Case Studies</a>
-<a href="blogs">Blog</a>
-<a href="index.html#contact">Contact</a>
-</div>
-</nav>
+<!-- Hidden hero image -->
+<img alt="" loading="lazy" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" style="display:none;"/>
 
-<!-- Hidden hero image for accessibility -->
-<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80"
-alt=""
-loading="lazy"
-style="display:none;">
-
-<main class="page">
-
-<section class="hero hero-service">
+<!-- Hero Section -->
+<section class="hero-service">
 <div class="container">
-<h2>Networking & Infrastructure Setup</h2>
+<h2>Networking &amp; Infrastructure Setup</h2>
 <p>Stable, well-designed networks for SMEs across Staines, Egham, Ashford, Chertsey and Surrey.</p>
 </div>
 </section>
 
-<section class="content container">
+<main class="container">
 
+<div class="service-block">
 <h3>What this service includes</h3>
 <ul>
 <li>WiFi design and optimisation</li>
@@ -162,10 +141,14 @@ style="display:none;">
 <li>Network troubleshooting and fault finding</li>
 <li>Performance tuning and documentation</li>
 </ul>
+</div>
 
+<div class="service-block">
 <h3>Who this is for</h3>
 <p>Businesses experiencing slow networks, poor WiFi coverage or unreliable infrastructure.</p>
+</div>
 
+<div class="service-block">
 <h3>Problems this solves</h3>
 <ul>
 <li>WiFi dead zones and weak signal areas</li>
@@ -173,7 +156,9 @@ style="display:none;">
 <li>Frequent network dropouts</li>
 <li>Misconfigured or undocumented equipment</li>
 </ul>
+</div>
 
+<div class="service-block">
 <h3>How the service works</h3>
 <ol>
 <li><strong>Site survey:</strong> Assess current layout, equipment and issues.</li>
@@ -181,115 +166,68 @@ style="display:none;">
 <li><strong>Installation:</strong> Deploy and configure equipment.</li>
 <li><strong>Testing and optimisation:</strong> Verify performance and refine settings.</li>
 </ol>
-
-<h3>Get started</h3>
-<p>Build a network that supports your business instead of holding it back.</p>
-<p><a class="button" href="/index.html#contact">Talk about your network</a></p>
-
-<!-- FAQ Section -->
-<h3>Frequently Asked Questions</h3>
-
-<div class="faq-block">
-
-  <h4>Can you improve poor WiFi coverage?</h4>
-  <p>Yes — we design WiFi layouts, reposition access points and optimise channels for reliable coverage.</p>
-
-  <h4>Do you work with multi‑site networks?</h4>
-  <p>Absolutely. We support VPNs, inter‑site links and centralised management for growing businesses.</p>
-
-  <h4>Can you fix slow or unstable networks?</h4>
-  <p>Yes — we diagnose bottlenecks, misconfigurations and failing hardware to restore performance.</p>
-
-  <h4>Do you document the network?</h4>
-  <p>Yes — every installation includes clear diagrams and configuration notes for future reference.</p>
-
 </div>
 
-<!-- FAQ Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Can you improve poor WiFi coverage?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — we design WiFi layouts, reposition access points and optimise channels for reliable coverage."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you work with multi‑site networks?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely. We support VPNs, inter‑site links and centralised management for growing businesses."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can you fix slow or unstable networks?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — we diagnose bottlenecks, misconfigurations and failing hardware to restore performance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you document the network?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — every installation includes clear diagrams and configuration notes for future reference."
-      }
-    }
-  ]
-}
-</script>
+<div class="service-block">
+<h3>Get started</h3>
+<p>Build a network that supports your business instead of holding it back.</p>
+<p><a class="button" href="/#contact">Talk about your network</a></p>
+</div>
 
-</section>
 </main>
 
+<!-- FAQ SECTION -->
 <section class="service-block">
-  <h2>Related Case Studies</h2>
-  <ul>
-    <li><a href="/casestudy/network-casestudy">Networking Case Study</a></li>
-    <li><a href="/casestudy/storage-casestudy">Storage Engineering Case Study</a></li>
-    <li><a href="/casestudy/DR-BCP-casestudy">Disaster Recovery & BCP Case Study</a></li>
-  </ul>
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>Can you improve poor WiFi coverage?</h3>
+  <p>Yes — we design WiFi layouts, reposition access points and optimise channels for reliable coverage.</p>
+
+  <h3>Do you work with multi‑site networks?</h3>
+  <p>Absolutely. We support VPNs, inter‑site links and centralised management for growing businesses.</p>
+
+  <h3>Can you fix slow or unstable networks?</h3>
+  <p>Yes — we diagnose bottlenecks, misconfigurations and failing hardware to restore performance.</p>
+
+  <h3>Do you document the network?</h3>
+  <p>Yes — every installation includes clear diagrams and configuration notes for future reference.</p>
 </section>
 
-
-<!-- Related Case Studies -->
+<!-- CONTACT BOX -->
 <section class="service-block">
-  <h2>Related Case Studies</h2>
-  <ul>
-    <li><a href="/casestudy/cloud-casestudy">Cloud Migration Case Study</a></li>
-    <li><a href="/casestudy/network-casestudy">Networking Case Study</a></li>
-    <li><a href="/casestudy/storage-casestudy">Storage Engineering Case Study</a></li>
-    <li><a href="/casestudy/virtualisation-casestudy">Virtualisation Case Study</a></li>
-    <li><a href="/casestudy/Legacy-casestudy">Legacy Hardware Case Study</a></li>
-    <li><a href="/casestudy/DR-BCP-casestudy">Disaster Recovery & BCP Case Study</a></li>
-  </ul>
+<h2>Get in Touch</h2>
+<p>If you'd like help improving or redesigning your network, you can reach us directly through our main contact section.</p>
+<p><a class="button" href="/#contact">Go to Contact Us</a></p>
 </section>
 
-<!-- Global Footer -->
+<!-- RELATED CASE STUDIES -->
+<section class="service-block">
+<h2>Related Case Studies</h2>
+<ul>
+<li><a href="/casestudy/cloud-casestudy">Cloud Migration Case Study</a></li>
+<li><a href="/casestudy/network-casestudy">Networking Case Study</a></li>
+<li><a href="/casestudy/storage-casestudy">Storage Engineering Case Study</a></li>
+<li><a href="/casestudy/virtualisation-casestudy">Virtualisation Case Study</a></li>
+<li><a href="/casestudy/Legacy-casestudy">Legacy Hardware Case Study</a></li>
+<li><a href="/casestudy/DR-BCP-casestudy">Disaster Recovery &amp; BCP Case Study</a></li>
+<li><a href="/casestudy/website-build">Website Build Case Study</a></li>
+</ul>
+</section>
+
 <footer>
-  <p>&copy; 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
-  <p>
-    <a href="index.html">Home</a> |
-    <a href="it-services.html">Services</a> |
-    <a href="engineering-services.html">Engineering Services</a> |
-    <a href="about.html">About</a> |
-    <a href="capabilities.html">Capabilities</a> |
-    <a href="testimonials.html">Testimonials</a> |
-    <a href="casestudies">Case Studies</a> |
-    <a href="blogs">Blog</a> |
-    <a href="index.html#contact">Contact</a> |
-    <a href="privacy.html">Privacy Policy</a>
-  </p>
+<p>© 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
+<p>
+<a href="/">Home</a> |
+<a href="/it-services">Services</a> |
+<a href="/engineering-services">Engineering Services</a> |
+<a href="/about">About</a> |
+<a href="/capabilities">Capabilities</a> |
+<a href="/testimonials">Testimonials</a> |
+<a href="/casestudies">Case Studies</a> |
+<a href="/blogs">Blog</a> |
+<a href="/privacy">Privacy Policy</a>
+</p>
 </footer>
-
 
 </body>
 </html>
