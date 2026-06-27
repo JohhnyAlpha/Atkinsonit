@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Small Business IT Support — Atkinson IT Ltd</title>
+<title>Linux Deployment & Automation — Atkinson IT Ltd</title>
+
 <!-- Robots -->
 <meta content="index, follow" name="robots"/>
+
 <!-- Canonical -->
-<link href="https://www.atkinsonit.co.uk/services/small-business-it-support" rel="canonical"/>
+<link href="https://www.atkinsonit.co.uk/services/linux-deployment-automation" rel="canonical"/>
+
 <!-- SEO -->
-<meta content="Practical, reliable small business IT support across Staines, Egham, Ashford, Chertsey and Surrey. Troubleshooting, maintenance, upgrades and optimisation." name="description"/>
+<meta content="Linux deployment, optimisation and automation for SMEs and scientific computing environments, including scripting and performance tuning." name="description"/>
 <meta content="Atkinson IT Ltd" name="author"/>
+
 <!-- OpenGraph -->
-<meta content="Small Business IT Support — Atkinson IT Ltd" property="og:title"/>
-<meta content="Reliable SME IT support across Surrey — troubleshooting, maintenance, upgrades, optimisation and ongoing assistance." property="og:description"/>
+<meta content="Linux Deployment & Automation — Atkinson IT Ltd" property="og:title"/>
+<meta content="Expert Linux deployment, optimisation and automation for SMEs and scientific computing workloads." property="og:description"/>
 <meta content="website" property="og:type"/>
-<meta content="https://www.atkinsonit.co.uk/services/small-business-it-support" property="og:url"/>
+<meta content="https://www.atkinsonit.co.uk/services/linux-deployment-automation" property="og:url"/>
 <meta content="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" property="og:image"/>
+
 <!-- Preconnect -->
 <link href="https://images.unsplash.com" rel="preconnect"/>
+
 <!-- Favicon -->
 <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/favicon.png" rel="icon" type="image/png"/>
+
 <link href="/assets/main.css" rel="stylesheet"/>
+
 <style>
 /* Matches your modern service page styling */
 body { margin: 0; font-family: Arial, sans-serif; background: #F5F7FA; color: #333; }
@@ -83,7 +90,9 @@ footer a { color: #CFE2F3; text-decoration: none; }
 footer a:hover { color: #FFFFFF; }
 </style>
 </head>
+
 <body>
+
 <nav>
 <div class="brand">
 <img alt="Atkinson IT logo" loading="lazy" src="/logo.svg"/>
@@ -101,80 +110,95 @@ footer a:hover { color: #FFFFFF; }
 <a href="/#contact">Contact</a>
 </div>
 </nav>
+
 <!-- Breadcrumbs -->
 <div class="breadcrumbs">
 <a href="/">Home</a> ›
 <a href="/it-services">IT Services</a> ›
-<span>Small Business IT Support</span>
+<span>Linux Deployment &amp; Automation</span>
 </div>
+
 <!-- Hidden hero image -->
 <img alt="" loading="lazy" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" style="display:none;"/>
+
 <!-- Hero Section -->
 <section class="hero-service">
 <div class="container">
-<h2>Small Business IT Support in Surrey</h2>
-<p>Reliable, practical IT support for SMEs across Staines, Egham, Ashford, Chertsey and the wider Surrey area.</p>
+<h2>Linux Deployment &amp; Automation</h2>
+<p>Expert Linux deployment, optimisation and automation for SMEs and scientific computing workloads.</p>
 </div>
 </section>
+
 <main class="container">
+
 <div class="service-block">
 <h3>What this service includes</h3>
 <ul>
-<li>Day-to-day troubleshooting</li>
-<li>System health checks</li>
-<li>Software updates and patching</li>
-<li>Hardware diagnostics</li>
-<li>Network performance improvements</li>
-<li>Remote and on-site support</li>
+<li>Linux installation and configuration</li>
+<li>System optimisation and tuning</li>
+<li>Bash and Python automation</li>
+<li>Server hardening and best practices</li>
+<li>Scientific computing and data processing setups</li>
 </ul>
 </div>
+
 <div class="service-block">
 <h3>Who this is for</h3>
-<p>Small and medium-sized businesses that need dependable IT support without hiring internal IT staff.</p>
+<p>Businesses and teams using Linux servers, scientific workloads or automation pipelines.</p>
 </div>
+
 <div class="service-block">
 <h3>Problems this solves</h3>
 <ul>
-<li>Slow or unreliable systems</li>
-<li>Frequent errors and crashes</li>
-<li>Outdated software and missing patches</li>
-<li>Network dropouts and poor performance</li>
-<li>Security gaps and unclear ownership of IT</li>
+<li>Slow or misconfigured Linux systems</li>
+<li>Manual, repetitive operational tasks</li>
+<li>Poor performance on compute-heavy workloads</li>
+<li>Inconsistent environments across servers</li>
 </ul>
 </div>
+
 <div class="service-block">
 <h3>How the service works</h3>
 <ol>
-<li><strong>Initial assessment:</strong> Review your current systems, pain points and priorities.</li>
-<li><strong>Stabilisation:</strong> Fix urgent issues and remove obvious bottlenecks.</li>
-<li><strong>Ongoing support:</strong> Provide remote and on-site help as needed.</li>
-<li><strong>Optional proactive monitoring:</strong> Regular health checks and recommendations.</li>
+<li><strong>Requirements analysis:</strong> Understand workloads, constraints and goals.</li>
+<li><strong>Deployment:</strong> Install and configure Linux systems.</li>
+<li><strong>Optimisation:</strong> Tune performance and resource usage.</li>
+<li><strong>Automation scripting:</strong> Build scripts to remove manual work.</li>
 </ol>
 </div>
+
 <div class="service-block">
 <h3>Get started</h3>
-<p>If you want dependable SME IT support with a single technical contact, get in touch.</p>
-<p><a class="button" href="/#contact">Contact Atkinson IT</a></p>
+<p>Make your Linux systems predictable, performant and easier to manage.</p>
+<p><a class="button" href="/#contact">Discuss your Linux environment</a></p>
 </div>
+
 </main>
+
 <!-- FAQ SECTION -->
 <section class="service-block">
-<h2>Frequently Asked Questions</h2>
-<h3>Do you support very small businesses?</h3>
-<p>Yes — many of our clients have between 1 and 10 staff and no internal IT team.</p>
-<h3>Can you provide on-site support?</h3>
-<p>Absolutely — we offer both remote and on-site visits depending on the issue.</p>
-<h3>Do you help with slow or unreliable systems?</h3>
-<p>Yes — we diagnose performance issues, apply updates and optimise systems for stability.</p>
-<h3>Can you manage our network as well?</h3>
-<p>Yes — we can troubleshoot, optimise and maintain your network alongside workstation support.</p>
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>Which Linux distributions do you support?</h3>
+  <p>We work with Ubuntu, Debian, Rocky/AlmaLinux, CentOS, RHEL, and most mainstream server distributions.</p>
+
+  <h3>Can you optimise scientific or compute-heavy workloads?</h3>
+  <p>Yes — including CPU/GPU tuning, parallelisation, dependency management and environment consistency.</p>
+
+  <h3>Do you build automation pipelines?</h3>
+  <p>Absolutely. We use Bash, Python and systemd automation to remove repetitive manual tasks.</p>
+
+  <h3>Can you harden Linux servers?</h3>
+  <p>Yes — we apply best practices for SSH, firewalling, permissions, auditing and secure configuration.</p>
 </section>
+
 <!-- CONTACT BOX -->
 <section class="service-block">
 <h2>Get in Touch</h2>
-<p>If you'd like reliable, practical IT support for your small business, you can reach us directly through our main contact section.</p>
+<p>If you'd like help deploying, optimising or automating Linux systems, you can reach us directly through our main contact section.</p>
 <p><a class="button" href="/#contact">Go to Contact Us</a></p>
 </section>
+
 <!-- RELATED CASE STUDIES -->
 <section class="service-block">
 <h2>Related Case Studies</h2>
@@ -188,6 +212,7 @@ footer a:hover { color: #FFFFFF; }
 <li><a href="/casestudy/website-build">Website Build Case Study</a></li>
 </ul>
 </section>
+
 <footer>
 <p>© 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
 <p>
@@ -202,5 +227,6 @@ footer a:hover { color: #FFFFFF; }
 <a href="/privacy">Privacy Policy</a>
 </p>
 </footer>
+
 </body>
 </html>

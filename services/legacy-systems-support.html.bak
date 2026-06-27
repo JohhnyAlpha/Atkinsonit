@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Small Business IT Support — Atkinson IT Ltd</title>
+<title>Legacy Hardware & System Support — Atkinson IT Ltd</title>
+
 <!-- Robots -->
 <meta content="index, follow" name="robots"/>
+
 <!-- Canonical -->
-<link href="https://www.atkinsonit.co.uk/services/small-business-it-support" rel="canonical"/>
+<link href="https://www.atkinsonit.co.uk/services/legacy-systems-support" rel="canonical"/>
+
 <!-- SEO -->
-<meta content="Practical, reliable small business IT support across Staines, Egham, Ashford, Chertsey and Surrey. Troubleshooting, maintenance, upgrades and optimisation." name="description"/>
+<meta content="Specialist support for legacy hardware and older POS or IT systems, including repair, stabilisation and migration planning." name="description"/>
 <meta content="Atkinson IT Ltd" name="author"/>
+
 <!-- OpenGraph -->
-<meta content="Small Business IT Support — Atkinson IT Ltd" property="og:title"/>
-<meta content="Reliable SME IT support across Surrey — troubleshooting, maintenance, upgrades, optimisation and ongoing assistance." property="og:description"/>
+<meta content="Legacy Hardware & System Support — Atkinson IT Ltd" property="og:title"/>
+<meta content="Specialist support for legacy hardware, POS systems, and older IT platforms — repair, stabilisation and migration planning." property="og:description"/>
 <meta content="website" property="og:type"/>
-<meta content="https://www.atkinsonit.co.uk/services/small-business-it-support" property="og:url"/>
+<meta content="https://www.atkinsonit.co.uk/services/legacy-systems-support" property="og:url"/>
 <meta content="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" property="og:image"/>
+
 <!-- Preconnect -->
 <link href="https://images.unsplash.com" rel="preconnect"/>
+
 <!-- Favicon -->
 <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/favicon.png" rel="icon" type="image/png"/>
+
 <link href="/assets/main.css" rel="stylesheet"/>
+
 <style>
 /* Matches your modern service page styling */
 body { margin: 0; font-family: Arial, sans-serif; background: #F5F7FA; color: #333; }
@@ -83,7 +90,9 @@ footer a { color: #CFE2F3; text-decoration: none; }
 footer a:hover { color: #FFFFFF; }
 </style>
 </head>
+
 <body>
+
 <nav>
 <div class="brand">
 <img alt="Atkinson IT logo" loading="lazy" src="/logo.svg"/>
@@ -101,80 +110,95 @@ footer a:hover { color: #FFFFFF; }
 <a href="/#contact">Contact</a>
 </div>
 </nav>
+
 <!-- Breadcrumbs -->
 <div class="breadcrumbs">
 <a href="/">Home</a> ›
 <a href="/it-services">IT Services</a> ›
-<span>Small Business IT Support</span>
+<span>Legacy Hardware &amp; System Support</span>
 </div>
+
 <!-- Hidden hero image -->
 <img alt="" loading="lazy" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" style="display:none;"/>
+
 <!-- Hero Section -->
 <section class="hero-service">
 <div class="container">
-<h2>Small Business IT Support in Surrey</h2>
-<p>Reliable, practical IT support for SMEs across Staines, Egham, Ashford, Chertsey and the wider Surrey area.</p>
+<h2>Legacy Hardware &amp; System Support</h2>
+<p>Repair, stabilise and repurpose older systems that still matter to your business.</p>
 </div>
 </section>
+
 <main class="container">
+
 <div class="service-block">
 <h3>What this service includes</h3>
 <ul>
-<li>Day-to-day troubleshooting</li>
-<li>System health checks</li>
-<li>Software updates and patching</li>
-<li>Hardware diagnostics</li>
-<li>Network performance improvements</li>
-<li>Remote and on-site support</li>
+<li>Diagnostics and fault finding</li>
+<li>Hardware repair where viable</li>
+<li>Operating system reinstalls and cleanup</li>
+<li>Data extraction and migration</li>
+<li>System repurposing for lighter roles</li>
+<li>Migration planning to modern platforms</li>
 </ul>
 </div>
+
 <div class="service-block">
 <h3>Who this is for</h3>
-<p>Small and medium-sized businesses that need dependable IT support without hiring internal IT staff.</p>
+<p>Businesses with older equipment or POS systems that still perform critical functions.</p>
 </div>
+
 <div class="service-block">
 <h3>Problems this solves</h3>
 <ul>
-<li>Slow or unreliable systems</li>
-<li>Frequent errors and crashes</li>
-<li>Outdated software and missing patches</li>
-<li>Network dropouts and poor performance</li>
-<li>Security gaps and unclear ownership of IT</li>
+<li>Failing or unstable legacy hardware</li>
+<li>Unsupported software with no vendor help</li>
+<li>Slow performance impacting operations</li>
+<li>No clear path to modern replacements</li>
 </ul>
 </div>
+
 <div class="service-block">
 <h3>How the service works</h3>
 <ol>
-<li><strong>Initial assessment:</strong> Review your current systems, pain points and priorities.</li>
-<li><strong>Stabilisation:</strong> Fix urgent issues and remove obvious bottlenecks.</li>
-<li><strong>Ongoing support:</strong> Provide remote and on-site help as needed.</li>
-<li><strong>Optional proactive monitoring:</strong> Regular health checks and recommendations.</li>
+<li><strong>Assessment:</strong> Evaluate hardware, software and business impact.</li>
+<li><strong>Repair or stabilisation:</strong> Get systems back to a reliable state.</li>
+<li><strong>Repurposing or migration:</strong> Decide whether to extend life or move on.</li>
 </ol>
 </div>
+
 <div class="service-block">
 <h3>Get started</h3>
-<p>If you want dependable SME IT support with a single technical contact, get in touch.</p>
-<p><a class="button" href="/#contact">Contact Atkinson IT</a></p>
+<p>Keep critical legacy systems running while you plan a sensible upgrade path.</p>
+<p><a class="button" href="/#contact">Talk about your legacy systems</a></p>
 </div>
+
 </main>
+
 <!-- FAQ SECTION -->
 <section class="service-block">
-<h2>Frequently Asked Questions</h2>
-<h3>Do you support very small businesses?</h3>
-<p>Yes — many of our clients have between 1 and 10 staff and no internal IT team.</p>
-<h3>Can you provide on-site support?</h3>
-<p>Absolutely — we offer both remote and on-site visits depending on the issue.</p>
-<h3>Do you help with slow or unreliable systems?</h3>
-<p>Yes — we diagnose performance issues, apply updates and optimise systems for stability.</p>
-<h3>Can you manage our network as well?</h3>
-<p>Yes — we can troubleshoot, optimise and maintain your network alongside workstation support.</p>
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>Can you repair very old hardware?</h3>
+  <p>In many cases, yes — especially where components are still obtainable or repairable.</p>
+
+  <h3>Do you support legacy POS systems?</h3>
+  <p>Yes, including fault finding, stabilisation and data extraction for older retail systems.</p>
+
+  <h3>Can you migrate data from obsolete systems?</h3>
+  <p>We specialise in extracting data from ageing platforms and moving it to modern systems.</p>
+
+  <h3>Is it better to repair or replace?</h3>
+  <p>We assess cost, risk and business impact to help you choose the most sensible path.</p>
 </section>
+
 <!-- CONTACT BOX -->
 <section class="service-block">
 <h2>Get in Touch</h2>
-<p>If you'd like reliable, practical IT support for your small business, you can reach us directly through our main contact section.</p>
+<p>If you'd like help stabilising or migrating legacy systems, you can reach us directly through our main contact section.</p>
 <p><a class="button" href="/#contact">Go to Contact Us</a></p>
 </section>
+
 <!-- RELATED CASE STUDIES -->
 <section class="service-block">
 <h2>Related Case Studies</h2>
@@ -188,6 +212,7 @@ footer a:hover { color: #FFFFFF; }
 <li><a href="/casestudy/website-build">Website Build Case Study</a></li>
 </ul>
 </section>
+
 <footer>
 <p>© 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
 <p>
@@ -202,5 +227,6 @@ footer a:hover { color: #FFFFFF; }
 <a href="/privacy">Privacy Policy</a>
 </p>
 </footer>
+
 </body>
 </html>

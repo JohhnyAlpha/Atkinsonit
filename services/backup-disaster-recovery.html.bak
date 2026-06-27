@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Small Business IT Support — Atkinson IT Ltd</title>
+<title>Backup & Disaster Recovery — Atkinson IT Ltd</title>
+
 <!-- Robots -->
 <meta content="index, follow" name="robots"/>
+
 <!-- Canonical -->
-<link href="https://www.atkinsonit.co.uk/services/small-business-it-support" rel="canonical"/>
+<link href="https://www.atkinsonit.co.uk/services/backup-disaster-recovery" rel="canonical"/>
+
 <!-- SEO -->
-<meta content="Practical, reliable small business IT support across Staines, Egham, Ashford, Chertsey and Surrey. Troubleshooting, maintenance, upgrades and optimisation." name="description"/>
+<meta content="Robust backup and disaster recovery planning for SMEs, including local and cloud backup, recovery testing and continuity planning." name="description"/>
 <meta content="Atkinson IT Ltd" name="author"/>
+
 <!-- OpenGraph -->
-<meta content="Small Business IT Support — Atkinson IT Ltd" property="og:title"/>
-<meta content="Reliable SME IT support across Surrey — troubleshooting, maintenance, upgrades, optimisation and ongoing assistance." property="og:description"/>
+<meta content="Backup & Disaster Recovery — Atkinson IT Ltd" property="og:title"/>
+<meta content="SME-focused backup and disaster recovery services including cloud backup, recovery testing and continuity planning." property="og:description"/>
 <meta content="website" property="og:type"/>
-<meta content="https://www.atkinsonit.co.uk/services/small-business-it-support" property="og:url"/>
+<meta content="https://www.atkinsonit.co.uk/services/backup-disaster-recovery" property="og:url"/>
 <meta content="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" property="og:image"/>
+
 <!-- Preconnect -->
 <link href="https://images.unsplash.com" rel="preconnect"/>
+
 <!-- Favicon -->
 <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/favicon.png" rel="icon" type="image/png"/>
+
 <link href="/assets/main.css" rel="stylesheet"/>
+
 <style>
 /* Matches your modern service page styling */
 body { margin: 0; font-family: Arial, sans-serif; background: #F5F7FA; color: #333; }
@@ -83,7 +90,9 @@ footer a { color: #CFE2F3; text-decoration: none; }
 footer a:hover { color: #FFFFFF; }
 </style>
 </head>
+
 <body>
+
 <nav>
 <div class="brand">
 <img alt="Atkinson IT logo" loading="lazy" src="/logo.svg"/>
@@ -101,80 +110,95 @@ footer a:hover { color: #FFFFFF; }
 <a href="/#contact">Contact</a>
 </div>
 </nav>
+
 <!-- Breadcrumbs -->
 <div class="breadcrumbs">
 <a href="/">Home</a> ›
 <a href="/it-services">IT Services</a> ›
-<span>Small Business IT Support</span>
+<span>Backup &amp; Disaster Recovery</span>
 </div>
+
 <!-- Hidden hero image -->
 <img alt="" loading="lazy" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" style="display:none;"/>
+
 <!-- Hero Section -->
 <section class="hero-service">
 <div class="container">
-<h2>Small Business IT Support in Surrey</h2>
-<p>Reliable, practical IT support for SMEs across Staines, Egham, Ashford, Chertsey and the wider Surrey area.</p>
+<h2>Backup &amp; Disaster Recovery</h2>
+<p>Protect your business from data loss, hardware failure and unexpected outages.</p>
 </div>
 </section>
+
 <main class="container">
+
 <div class="service-block">
 <h3>What this service includes</h3>
 <ul>
-<li>Day-to-day troubleshooting</li>
-<li>System health checks</li>
-<li>Software updates and patching</li>
-<li>Hardware diagnostics</li>
-<li>Network performance improvements</li>
-<li>Remote and on-site support</li>
+<li>Local and cloud backup design and setup</li>
+<li>Automated backup scheduling</li>
+<li>Recovery testing and verification</li>
+<li>Business continuity planning</li>
+<li>Secure storage configuration</li>
 </ul>
 </div>
+
 <div class="service-block">
 <h3>Who this is for</h3>
-<p>Small and medium-sized businesses that need dependable IT support without hiring internal IT staff.</p>
+<p>Any business that relies on critical data, applications or systems to operate.</p>
 </div>
+
 <div class="service-block">
 <h3>Problems this solves</h3>
 <ul>
-<li>Slow or unreliable systems</li>
-<li>Frequent errors and crashes</li>
-<li>Outdated software and missing patches</li>
-<li>Network dropouts and poor performance</li>
-<li>Security gaps and unclear ownership of IT</li>
+<li>Permanent data loss after incidents</li>
+<li>Ransomware impact with no recovery path</li>
+<li>Hardware failure with no backups</li>
+<li>Accidental deletion of important files</li>
 </ul>
 </div>
+
 <div class="service-block">
 <h3>How the service works</h3>
 <ol>
-<li><strong>Initial assessment:</strong> Review your current systems, pain points and priorities.</li>
-<li><strong>Stabilisation:</strong> Fix urgent issues and remove obvious bottlenecks.</li>
-<li><strong>Ongoing support:</strong> Provide remote and on-site help as needed.</li>
-<li><strong>Optional proactive monitoring:</strong> Regular health checks and recommendations.</li>
+<li><strong>Data audit:</strong> Identify critical systems, data and recovery objectives.</li>
+<li><strong>Backup design:</strong> Choose appropriate local and cloud solutions.</li>
+<li><strong>Implementation:</strong> Configure backups and monitoring.</li>
+<li><strong>Recovery testing:</strong> Prove that restore works before you need it.</li>
 </ol>
 </div>
+
 <div class="service-block">
 <h3>Get started</h3>
-<p>If you want dependable SME IT support with a single technical contact, get in touch.</p>
-<p><a class="button" href="/#contact">Contact Atkinson IT</a></p>
+<p>Put a realistic, tested recovery plan in place before you need it.</p>
+<p><a class="button" href="/#contact">Review your backup strategy</a></p>
 </div>
+
 </main>
+
 <!-- FAQ SECTION -->
 <section class="service-block">
-<h2>Frequently Asked Questions</h2>
-<h3>Do you support very small businesses?</h3>
-<p>Yes — many of our clients have between 1 and 10 staff and no internal IT team.</p>
-<h3>Can you provide on-site support?</h3>
-<p>Absolutely — we offer both remote and on-site visits depending on the issue.</p>
-<h3>Do you help with slow or unreliable systems?</h3>
-<p>Yes — we diagnose performance issues, apply updates and optimise systems for stability.</p>
-<h3>Can you manage our network as well?</h3>
-<p>Yes — we can troubleshoot, optimise and maintain your network alongside workstation support.</p>
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>How often should backups be tested?</h3>
+  <p>We recommend quarterly restore tests to ensure your data can be recovered reliably.</p>
+
+  <h3>Do you support hybrid backup setups?</h3>
+  <p>Yes — we design solutions combining local storage and cloud backup for maximum resilience.</p>
+
+  <h3>Can you recover data after ransomware?</h3>
+  <p>If backups exist, recovery is usually possible. We ensure you always have a clean restore point.</p>
+
+  <h3>Do you monitor backup success?</h3>
+  <p>Yes — automated monitoring alerts us to failures so issues can be fixed before they become critical.</p>
 </section>
+
 <!-- CONTACT BOX -->
 <section class="service-block">
 <h2>Get in Touch</h2>
-<p>If you'd like reliable, practical IT support for your small business, you can reach us directly through our main contact section.</p>
+<p>If you'd like to review your backup strategy or discuss continuity planning, you can reach us directly through our main contact section.</p>
 <p><a class="button" href="/#contact">Go to Contact Us</a></p>
 </section>
+
 <!-- RELATED CASE STUDIES -->
 <section class="service-block">
 <h2>Related Case Studies</h2>
@@ -188,6 +212,7 @@ footer a:hover { color: #FFFFFF; }
 <li><a href="/casestudy/website-build">Website Build Case Study</a></li>
 </ul>
 </section>
+
 <footer>
 <p>© 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
 <p>
@@ -202,5 +227,6 @@ footer a:hover { color: #FFFFFF; }
 <a href="/privacy">Privacy Policy</a>
 </p>
 </footer>
+
 </body>
 </html>
