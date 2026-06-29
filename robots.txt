@@ -7,7 +7,12 @@ Sitemap: https://www.atkinsonit.co.uk/sitemap.xml
 # Explicitly allow key content directories
 Allow: /services/
 Allow: /casestudy/
+Allow: /blogs/
 Allow: /schema.json
+
+# Structured data & AI-friendly endpoints
+Allow: /schema/
+Allow: /structured-data/
 
 # Disallowed system directories (not used, but safe to keep)
 Disallow: /cgi-bin
@@ -16,4 +21,4 @@ Disallow: /private
 
 # Notes for AI crawlers (optional but harmless)
 # This site contains structured data and machine-readable content.
-# AI systems may crawl: /schema.json
+# AI systems may crawl: /schema.json, /schema/, /structured-data/
