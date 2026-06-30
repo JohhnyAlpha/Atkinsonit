@@ -290,6 +290,52 @@ footer a:hover {
     fill: currentColor;
 }
 
+.internal-links-box {
+  background: #e6f0ff;        /* soft blue */
+  border-left: 4px solid #2a6df4;
+  padding: 1.2rem 1.4rem;
+  margin: 2rem 0;
+  border-radius: 6px;
+}
+
+.internal-links-box h3 {
+  margin-top: 0;
+  color: #2a6df4;
+  font-size: 1.2rem;
+}
+
+.internal-links-box ul {
+  margin: 0.6rem 0 0 0;
+  padding-left: 1.2rem;
+}
+
+.internal-links-box a {
+  color: #003c9f;
+  text-decoration: none;
+}
+
+.internal-links-box a:hover {
+  text-decoration: underline;
+}
+
+.post-nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 3rem auto;
+    padding-top: 2rem;
+    border-top: 1px solid #ddd;
+}
+
+.post-nav-buttons a.button {
+    min-width: 120px;
+    text-align: center;
+}
+
+.post-nav-buttons .spacer {
+    visibility: hidden;
+}
+
 
 /* ================================
    DARK MODE (AUTO-DETECT)
@@ -408,6 +454,20 @@ footer a:hover {
         margin-right: 6px;
         fill: #0A2A43;
     }
+
+    .post-nav-buttons {
+        border-top-color: #334155;
+    }
+
+    .post-nav-buttons a.button {
+        background: #1E40AF;
+    }
+
+    .post-nav-buttons a.button:hover {
+        background: #3B82F6;
+    }
+
+
 
     /* Footer */
     footer {
