@@ -44,6 +44,12 @@
     <priority>0.5</priority>
   </url>
 
+  <url>
+    <loc>https://www.atkinsonit.co.uk/contact</loc>
+    <lastmod>2026-06-25</lastmod>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Blog index -->
   <url>
     <loc>https://www.atkinsonit.co.uk/blogs</loc>
@@ -79,6 +85,12 @@
   <url>
     <loc>https://www.atkinsonit.co.uk/blog/2026-06-29</loc>
     <lastmod>2026-06-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.atkinsonit.co.uk/blog/2026-07-01</loc>
+    <lastmod>2026-07-01</lastmod>
     <priority>0.7</priority>
   </url>
 
@@ -171,6 +183,12 @@
 
   <url>
     <loc>https://www.atkinsonit.co.uk/services/legacy-systems-support</loc>
+    <lastmod>2026-06-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.atkinsonit.co.uk/services/web-development</loc>
     <lastmod>2026-06-25</lastmod>
     <priority>0.8</priority>
   </url>
