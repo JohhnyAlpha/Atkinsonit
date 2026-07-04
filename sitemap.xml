@@ -94,6 +94,12 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://www.atkinsonit.co.uk/blog/2026-07-05</loc>
+    <lastmod>2026-07-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Case studies index -->
   <url>
     <loc>https://www.atkinsonit.co.uk/casestudies</loc>
