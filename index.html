@@ -1,420 +1,511 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Atkinson IT Ltd</title>
-<!-- Robots -->
-<meta content="index, follow" name="robots"/>
-<!-- Canonical -->
-<link href="https://www.atkinsonit.co.uk/" rel="canonical"/>
-<!-- SEO -->
-<meta content="Atkinson IT Ltd — Practical, reliable IT and systems support for organisations of all sizes." name="description"/>
-<meta content="IT consultancy, systems engineering, infrastructure, CTO, reliability engineering, small business IT support, cloud migration" name="keywords"/>
-<meta content="Atkinson IT Ltd" name="author"/>
-<!-- OpenGraph -->
-<meta content="Atkinson IT Ltd" property="og:title"/>
-<meta content="Clear, dependable IT support and systems guidance for businesses of any size." property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="https://www.atkinsonit.co.uk/" property="og:url"/>
-<meta content="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" property="og:image"/>
-<!-- Preconnect -->
-<link href="https://images.unsplash.com" rel="preconnect"/>
-<!-- Favicon -->
-<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="favicon.png" rel="icon" type="image/png"/>
-<!-- Global Schema -->
-<!-- Page-Specific Schema -->
-<script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "WebSite",
-"name": "Atkinson IT Ltd",
-"url": "https://www.atkinsonit.co.uk/",
-"description": "Practical IT and systems support for organisations of any size.",
-"publisher": {
-"@type": "Organization",
-"name": "Atkinson IT Ltd",
-"url": "https://www.atkinsonit.co.uk"
-}
-}
-</script>
-<script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "Organization",
-"name": "Atkinson IT Ltd",
-"url": "https://www.atkinsonit.co.uk",
-"logo": "https://www.atkinsonit.co.uk/logo.svg",
-"contactPoint": {
-"@type": "ContactPoint",
-"telephone": "+44-7825-261499",
-"contactType": "customer service",
-"areaServed": "GB"
-}
-}
-</script>
-<!-- Offer Schema -->
-<script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "Offer",
-"name": "Free Initial Consultation",
-"description": "Atkinson IT Ltd provides a free, no-obligation consultation for SMEs in Surrey, Berkshire and West London.",
-"url": "https://www.atkinsonit.co.uk/#contact",
-"price": "0",
-"priceCurrency": "GBP",
-"eligibleRegion": [
-"Staines-upon-Thames",
-"Egham",
-"Ashford",
-"Chertsey",
-"Surrey",
-"Berkshire",
-"West London"
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-}
-</script>
-<style>
-body { margin: 0; font-family: Arial, sans-serif; background: #F5F7FA; color: #333; }
+  <title>Atkinson IT Ltd</title>
 
-nav { background: #0A2A43; padding: 0.5rem 1rem; display: flex; align-items: center; justify-content: space-between; }
-nav .brand { display: flex; align-items: center; gap: 0.5rem; color: #fff; font-weight: bold; }
-nav .brand span { font-size: 1.1rem; }
-nav img { height: 32px; }
-nav .links a { color: #CFE2F3; margin: 0 0.5rem; text-decoration: none; font-weight: bold; font-size: 0.95rem; }
-nav .links a:hover { color: #FFFFFF; }
+  <!-- Robots -->
+  <meta name="robots" content="index, follow"/>
 
-.hero { background: url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat; color: white; text-align: center; padding: 6rem 1rem; }
-.hero h1 { font-size: 3rem; margin: 0; text-shadow: 0 2px 6px rgba(0,0,0,0.4); }
-.hero p { font-size: 1.3rem; margin-top: 1rem; opacity: 0.95; }
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.atkinsonit.co.uk/"/>
 
-.container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+  <!-- SEO -->
+  <meta name="description" content="Atkinson IT Ltd — Practical, reliable IT and systems support for organisations of all sizes."/>
+  <meta name="keywords" content="IT consultancy, systems engineering, infrastructure, CTO, reliability engineering, small business IT support, cloud migration"/>
+  <meta name="author" content="Atkinson IT Ltd"/>
 
-.section { margin-bottom: 3rem; }
-.section h2 { color: #0A2A43; margin-bottom: 1rem; }
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Atkinson IT Ltd"/>
+  <meta property="og:description" content="Clear, dependable IT support and systems guidance for businesses of any size."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.atkinsonit.co.uk/"/>
+  <meta property="og:image" content="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80"/>
 
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://images.unsplash.com"/>
 
-.box { background: #FFFFFF; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-.box h3 { margin-top: 0; color: #0A2A43; }
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+  <link rel="icon" type="image/png" href="/favicon.png"/>
 
-table { width: 100%; border-collapse: collapse; background: #FFFFFF; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; }
-th, td { padding: 1rem; border-bottom: 1px solid #DDD; text-align: left; }
-th { background: #0A2A43; color: #FFFFFF; }
-tr:last-child td { border-bottom: none; }
+  <!-- WebSite Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Atkinson IT Ltd",
+    "url": "https://www.atkinsonit.co.uk/",
+    "description": "Practical IT and systems support for organisations of any size.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Atkinson IT Ltd",
+      "url": "https://www.atkinsonit.co.uk"
+    }
+  }
+  </script>
 
-.contact-box { background: #FFFFFF; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); line-height: 1.8; }
-.contact-box a { color: #0A2A43; text-decoration: none; font-weight: bold; }
-.contact-box a:hover { color: #E67E22; }
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Atkinson IT Ltd",
+    "url": "https://www.atkinsonit.co.uk",
+    "logo": "https://www.atkinsonit.co.uk/logo.svg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+44-7825-261499",
+      "contactType": "customer service",
+      "areaServed": "GB"
+    }
+  }
+  </script>
 
-.icon { width: 18px; height: 18px; vertical-align: middle; margin-right: 6px; fill: #0A2A43; }
+  <!-- Offer Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Offer",
+    "name": "Free Initial Consultation",
+    "description": "Atkinson IT Ltd provides a free, no-obligation consultation for SMEs in Surrey, Berkshire and West London.",
+    "url": "https://www.atkinsonit.co.uk/#contact",
+    "price": "0",
+    "priceCurrency": "GBP",
+    "eligibleRegion": [
+      "Staines-upon-Thames",
+      "Egham",
+      "Ashford",
+      "Chertsey",
+      "Surrey",
+      "Berkshire",
+      "West London"
+    ]
+  }
+  </script>
 
-footer { background: #0A2A43; color: #FFFFFF; text-align: center; padding: 1.5rem; margin-top: 3rem; }
-footer a { color: #CFE2F3; text-decoration: none; }
-footer a:hover { color: #FFFFFF; }
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #F5F7FA; color: #333; }
+    nav { background: #0A2A43; padding: 0.5rem 1rem; display: flex; align-items: center; justify-content: space-between; }
+    nav .brand { display: flex; align-items: center; gap: 0.5rem; color: #fff; font-weight: bold; }
+    nav .brand span { font-size: 1.1rem; }
+    nav img { height: 32px; }
+    nav .links a { color: #CFE2F3; margin: 0 0.5rem; text-decoration: none; font-weight: bold; font-size: 0.95rem; }
+    nav .links a:hover { color: #FFFFFF; }
 
-.block { background: #FFFFFF; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-</style>
+    .hero {
+      background: url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 6rem 1rem;
+    }
+    .hero h1 { font-size: 3rem; margin: 0; text-shadow: 0 2px 6px rgba(0,0,0,0.4); }
+    .hero p { font-size: 1.3rem; margin-top: 1rem; opacity: 0.95; }
+
+    .container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+    .section { margin-bottom: 3rem; }
+    .section h2 { color: #0A2A43; margin-bottom: 1rem; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    .box { background: #FFFFFF; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .box h2, .box h3 { margin-top: 0; color: #0A2A43; }
+
+    table { width: 100%; border-collapse: collapse; background: #FFFFFF; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; }
+    th, td { padding: 1rem; border-bottom: 1px solid #DDD; text-align: left; }
+    th { background: #0A2A43; color: #FFFFFF; }
+    tr:last-child td { border-bottom: none; }
+
+    .contact-box { background: #FFFFFF; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); line-height: 1.8; }
+    .contact-box a { color: #0A2A43; text-decoration: none; font-weight: bold; }
+    .contact-box a:hover { color: #E67E22; }
+
+    .icon { width: 18px; height: 18px; vertical-align: middle; margin-right: 6px; fill: #0A2A43; }
+
+    footer { background: #0A2A43; color: #FFFFFF; text-align: center; padding: 1.5rem; margin-top: 3rem; }
+    footer a { color: #CFE2F3; text-decoration: none; }
+    footer a:hover { color: #FFFFFF; }
+
+    .block { background: #FFFFFF; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+
+    .faq { max-width: 900px; margin: 2rem auto 3rem; padding: 0 1rem; }
+    .faq h2 { color: #0A2A43; }
+    .faq h3 { color: #0A2A43; margin-top: 1.5rem; }
+  </style>
 </head>
+
 <body>
-<nav>
-<div class="brand">
-<img alt="Atkinson IT logo" loading="lazy" src="/logo.svg"/>
-<span>Atkinson IT Ltd</span>
-</div>
-<div class="links">
-<a href="/index">Home</a>
-<a href="/it-services">Services</a>
-<a href="/engineering-services">Engineering Services</a>
-<a href="/about">About</a>
-<a href="/capabilities">Capabilities</a>
-<a href="/testimonials">Testimonials</a>
-<a href="/casestudies">Case Studies</a>
-<a href="/blogs">Blog</a>
-<a href="index#contact">Contact</a>
-</div>
-</nav>
-<!-- Hidden hero image -->
-<img alt="" loading="lazy" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" style="display:none;"/>
-<div class="hero">
-<h1>Clarity in complex systems</h1>
-<p>Practical IT and systems support for organisations of any size — from sole traders to established teams.</p>
-</div>
-<div class="container">
-<section class="section">
-<h2>What We Do</h2>
-<div class="grid">
-<div class="box"><h2>Systems &amp; Technical Guidance</h2><p>Clear, grounded advice to help you make confident decisions about your technology and infrastructure.</p></div>
-<div class="box"><h2>Infrastructure &amp; Reliability</h2><p>Networking, storage, servers, virtualisation, and dependable day‑to‑day operations.</p></div>
-<div class="box"><h2>Technical Leadership</h2><p>Calm, structured support for projects, teams, and situations where clarity matters.</p></div>
-<div class="box"><h2>Multi‑platform &amp; Automation</h2><p>Support across Windows, macOS, and Linux, with practical scripting and automation using Python, MATLAB, Bash, and PowerShell.</p></div>
-<div class="box"><h2>For Any Business Size</h2><p>No issue is too small — I work with sole traders, small businesses, charities, and larger organisations alike.</p></div>
-</div>
-</section>
-
-<section class="section">
-  <h2>Why Choose Us</h2>
-  <div class="grid">
-
-    <div class="box">
-      <h2>Cross‑disciplinary expertise</h2>
-      <p>Electrical, mechanical, software, and systems engineering experience in one consultancy.</p>
+  <nav>
+    <div class="brand">
+      <img src="/logo.svg" alt="Atkinson IT logo" loading="lazy"/>
+      <span>Atkinson IT Ltd</span>
     </div>
 
-    <div class="box">
-      <h2>Calm, structured leadership</h2>
-      <p>Clear thinking and disciplined decision‑making in high‑pressure or uncertain environments.</p>
+    <div class="links">
+      <a href="/">Home</a>
+      <a href="/it-services">Services</a>
+      <a href="/engineering-services">Engineering Services</a>
+      <a href="/about">About</a>
+      <a href="/capabilities">Capabilities</a>
+      <a href="/testimonials">Testimonials</a>
+      <a href="/casestudies">Case Studies</a>
+      <a href="/blogs">Blog</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hidden hero image for SEO/performance -->
+  <img
+    src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80"
+    alt=""
+    loading="lazy"
+    style="display:none;"
+  />
+
+  <div class="hero">
+    <h1>Clarity in complex systems</h1>
+    <p>Practical IT and systems support for organisations of any size — from sole traders to established teams.</p>
+  </div>
+
+  <div class="container">
+    <section class="section">
+      <h2>What We Do</h2>
+      <div class="grid">
+        <div class="box">
+          <h2>Systems &amp; Technical Guidance</h2>
+          <p>Clear, grounded advice to help you make confident decisions about your technology and infrastructure.</p>
+        </div>
+
+        <div class="box">
+          <h2>Infrastructure &amp; Reliability</h2>
+          <p>Networking, storage, servers, virtualisation, and dependable day‑to‑day operations.</p>
+        </div>
+
+        <div class="box">
+          <h2>Technical Leadership</h2>
+          <p>Calm, structured support for projects, teams, and situations where clarity matters.</p>
+        </div>
+
+        <div class="box">
+          <h2>Multi‑platform &amp; Automation</h2>
+          <p>Support across Windows, macOS, and Linux, with practical scripting and automation using Python, MATLAB, Bash, and PowerShell.</p>
+        </div>
+
+        <div class="box">
+          <h2>For Any Business Size</h2>
+          <p>No issue is too small — we work with sole traders, small businesses, charities, and larger organisations alike.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Why Choose Us</h2>
+      <div class="grid">
+        <div class="box">
+          <h2>Cross‑disciplinary expertise</h2>
+          <p>Electrical, mechanical, software, and systems engineering experience in one consultancy.</p>
+        </div>
+
+        <div class="box">
+          <h2>Calm, structured leadership</h2>
+          <p>Clear thinking and disciplined decision‑making in high‑pressure or uncertain environments.</p>
+        </div>
+
+        <div class="box">
+          <h2>Legacy &amp; modern systems</h2>
+          <p>From vintage infrastructure to modern cloud platforms — we understand how systems evolve.</p>
+        </div>
+
+        <div class="box">
+          <h2>Ethical, independent advice</h2>
+          <p>We prioritise reliability, safety, and long‑term value over short‑term fixes.</p>
+        </div>
+
+        <!-- Founder Story block -->
+        <div class="box" style="grid-column: span 2; display:flex; gap:1.5rem; align-items:flex-start;">
+          <img
+            src="/bernard-atkinson.jpg"
+            srcset="/bernard-atkinson.jpg 1x, /bernard-atkinson@2x.jpg 2x"
+            alt="Portrait of Bernard Atkinson"
+            style="width:140px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); flex-shrink:0;"
+          />
+
+          <div>
+            <h2>Founder Story</h2>
+            <p>
+              Atkinson IT Ltd was founded by <strong>Bernard Atkinson</strong>, a heritage‑grade systems engineer with
+              nearly four decades of experience across infrastructure, diagnostics, storage, networking, Linux, and
+              enterprise reliability.
+            </p>
+            <p>
+              Bernard’s engineering discipline — forged through hands‑on work with PRIMOS minis, early enterprise
+              networking, mission‑critical financial systems, and modern virtualisation platforms — underpins the
+              consultancy’s calm, structured approach to solving complex technical problems.
+            </p>
+            <p>
+              <a href="/about" style="font-weight:bold; color:#0A2A43;">Meet the Founder →</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="block highlight" style="background:#E8F3FF; padding:2rem; border-radius:8px; margin-top:2rem; border-left:6px solid #0A2A43;">
+      <h2 style="color:#0A2A43; margin-top:0;">Free Initial Consultation</h2>
+      <p>Atkinson IT Ltd offers a <strong>free, no‑obligation initial consultation</strong> for small and medium‑sized businesses in Staines, Egham, Ashford, Chertsey, Surrey and the surrounding areas.</p>
+      <p>Whether you need help with cloud migration, networking, storage, virtualisation, Linux systems or general IT support, we’ll review your current setup, identify risks, and outline practical next steps.</p>
+      <p><strong>No sales pressure. No commitment. Just clear technical guidance.</strong></p>
+      <a href="#contact" style="display:inline-block; margin-top:1rem; padding:0.75rem 1.5rem; background:#0A2A43; color:#fff; text-decoration:none; border-radius:4px; font-weight:bold;">Book Your Free Consultation</a>
     </div>
 
-    <div class="box">
-      <h2>Legacy &amp; modern systems</h2>
-      <p>From vintage infrastructure to modern cloud platforms — we understand how systems evolve.</p>
-    </div>
+    <section class="section">
+      <h2>Capabilities at a Glance</h2>
+      <table>
+        <tr>
+          <th>Capability</th>
+          <th>Experience</th>
+          <th>Summary</th>
+        </tr>
+        <tr>
+          <td><strong>Infrastructure Engineering</strong></td>
+          <td>25+ years</td>
+          <td>Networking, storage, servers, virtualisation, high‑availability systems, and disaster recovery planning.</td>
+        </tr>
+        <tr>
+          <td><strong>Technical Leadership</strong></td>
+          <td>8 years</td>
+          <td>Supporting teams, guiding decisions, and maintaining operational clarity in complex environments.</td>
+        </tr>
+        <tr>
+          <td><strong>Systems Thinking</strong></td>
+          <td>Advanced</td>
+          <td>Understanding how technology components interact — and how to make them work better together.</td>
+        </tr>
+        <tr>
+          <td><strong>Legacy Systems</strong></td>
+          <td>Expert</td>
+          <td>Electrical, industrial, and vintage computing platforms.</td>
+        </tr>
+        <tr>
+          <td><strong>Reliability &amp; Diagnostics</strong></td>
+          <td>Expert</td>
+          <td>Root‑cause analysis, stabilisation, and long‑term reliability engineering.</td>
+        </tr>
+        <tr>
+          <td><strong>Multi‑platform Expertise</strong></td>
+          <td>Advanced</td>
+          <td>Windows, macOS, and Linux environments, including automation and tooling across Python, MATLAB, Bash, and PowerShell.</td>
+        </tr>
+      </table>
+    </section>
 
-    <div class="box">
-      <h2>Ethical, independent advice</h2>
-      <p>We prioritise reliability, safety, and long‑term value over short‑term fixes.</p>
-    </div>
+    <section class="section">
+      <h2>Recent Case Studies</h2>
+      <div class="grid">
+        <div class="box">
+          <h2>Cloud Migration</h2>
+          <p>How we moved a multi‑site organisation to Microsoft 365 with zero downtime and a seamless hybrid identity rollout.</p>
+          <a href="/casestudy/cloud-casestudy" style="font-weight:bold; color:#0A2A43;">Read Case Study →</a>
+        </div>
 
-    <!-- ⭐ Correct Founder Story block -->
-    <div class="box" style="grid-column: span 2; display:flex; gap:1.5rem; align-items:flex-start;">
+        <div class="box">
+          <h2>Networking &amp; Infrastructure</h2>
+          <p>Stabilising a failing network, redesigning VLANs, and implementing secure firewall segmentation for a growing business.</p>
+          <a href="/casestudy/network-casestudy" style="font-weight:bold; color:#0A2A43;">Read Case Study →</a>
+        </div>
 
-      <img
-        src="/bernard-atkinson.jpg"
-        srcset="/bernard-atkinson.jpg 1x, /bernard-atkinson@2x.jpg 2x"
-        alt="Portrait of Bernard Atkinson"
-        style="width:140px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); flex-shrink:0;"
-      />
+        <div class="box">
+          <h2>Storage &amp; RAID Recovery</h2>
+          <p>Recovering a degraded RAID‑6 array, restoring critical data, and designing a resilient SAN architecture.</p>
+          <a href="/casestudy/storage-casestudy" style="font-weight:bold; color:#0A2A43;">Read Case Study →</a>
+        </div>
 
-      <div>
-        <h2>Founder Story</h2>
-
-        <p>
-          Atkinson IT Ltd was founded by <strong>Bernard Atkinson</strong>, a heritage‑grade systems engineer with
-          nearly four decades of experience across infrastructure, diagnostics, storage, networking, Linux, and
-          enterprise reliability.
-        </p>
-
-        <p>
-          Bernard’s engineering discipline — forged through hands‑on work with PRIMOS minis, early enterprise
-          networking, mission‑critical financial systems, and modern virtualisation platforms — underpins the
-          consultancy’s calm, structured approach to solving complex technical problems.
-        </p>
-
-        <p>
-          <a href="/about" style="font-weight:bold; color:#0A2A43;">Meet the Founder →</a>
-        </p>
+        <div class="box">
+          <h2>Virtualisation &amp; Server Consolidation</h2>
+          <p>Improving performance and reducing hardware footprint using VMware ESXi, vCenter, and structured consolidation.</p>
+          <a href="/casestudy/virtualisation-casestudy" style="font-weight:bold; color:#0A2A43;">Read Case Study →</a>
+        </div>
       </div>
 
-    </div>
+      <p style="margin-top:1.5rem;">
+        <a href="/casestudies" style="font-weight:bold; color:#0A2A43;">View all case studies →</a>
+      </p>
+    </section>
 
-  </div>
-</section>
+    <section class="section" id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-box">
+        <p>If you'd like to discuss a project or get some advice, you can reach me directly:</p>
+        <ul style="list-style:none; padding:0;">
+          <li>
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 22 2 13.93 2 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"></path>
+            </svg>
+            <strong>Call:</strong> <a href="tel:07825261499">07825 261499</a>
+          </li>
 
-<div class="block highlight" style="background:#E8F3FF; padding:2rem; border-radius:8px; margin-top:2rem; border-left:6px solid #0A2A43;">
-<h2 style="color:#0A2A43; margin-top:0;">Free Initial Consultation</h2>
-<p>Atkinson IT Ltd offers a <strong>free, no‑obligation initial consultation</strong> for small and medium‑sized businesses in Staines, Egham, Ashford, Chertsey, Surrey and the surrounding areas.</p>
-<p>Whether you need help with cloud migration, networking, storage, virtualisation, Linux systems or general IT support, we’ll review your current setup, identify risks, and outline practical next steps.</p>
-<p><strong>No sales pressure. No commitment. Just clear technical guidance.</strong></p>
-<a href="index#contact" style="display:inline-block; margin-top:1rem; padding:0.75rem 1.5rem; background:#0A2A43; color:#fff; text-decoration:none; border-radius:4px; font-weight:bold;">Book Your Free Consultation</a>
-</div>
-<section class="section">
-<h2>Capabilities at a Glance</h2>
-<table>
-<tr><th>Capability</th><th>Experience</th><th>Summary</th></tr>
-<tr><td><strong>Infrastructure Engineering</strong></td><td>25+ years</td><td>Networking, storage, servers, virtualisation, high‑availability systems, and disaster recovery planning.</td></tr>
-<tr><td><strong>Technical Leadership</strong></td><td>8 years</td><td>Supporting teams, guiding decisions, and maintaining operational clarity in complex environments.</td></tr>
-<tr><td><strong>Systems Thinking</strong></td><td>Advanced</td><td>Understanding how technology components interact — and how to make them work better together.</td></tr>
-<tr><td><strong>Legacy Systems</strong></td><td>Expert</td><td>Electrical, industrial, and vintage computing platforms.</td></tr>
-<tr><td><strong>Reliability &amp; Diagnostics</strong></td><td>Expert</td><td>Root‑cause analysis, stabilisation, and long‑term reliability engineering.</td></tr>
-<tr><td><strong>Multi‑platform Expertise</strong></td><td>Advanced</td><td>Windows, macOS, and Linux environments, including automation and tooling across Python, MATLAB, Bash, and PowerShell.</td></tr>
-</table>
-</section>
-<section class="section">
-<h2>Recent Case Studies</h2>
-<div class="grid">
-<div class="box">
-<h2>Cloud Migration</h2>
-<p>How we moved a multi‑site organisation to Microsoft 365 with zero downtime and a seamless hybrid identity rollout.</p>
-<a href="casestudy/cloud-casestudy" style="font-weight:bold; color:#0A2A43;">Read Case Study →</a>
-</div>
-<div class="box">
-<h2>Networking &amp; Infrastructure</h2>
-<p>Stabilising a failing network, redesigning VLANs, and implementing secure firewall segmentation for a growing business.</p>
-<a href="casestudy/network-casestudy" style="font-weight:bold; color:#0A2A43;">Read Case Study →</a>
-</div>
-<div class="box">
-<h2>Storage &amp; RAID Recovery</h2>
-<p>Recovering a degraded RAID‑6 array, restoring critical data, and designing a resilient SAN architecture.</p>
-<a href="casestudy/storage-casestudy" style="font-weight:bold; color:#0A2A43;">Read Case Study →</a>
-</div>
-<div class="box">
-<h2>Virtualisation &amp; Server Consolidation</h2>
-<p>Improving performance and reducing hardware footprint using VMware ESXi, vCenter, and structured consolidation.</p>
-<a href="casestudy/virtualisation-casestudy" style="font-weight:bold; color:#0A2A43;">Read Case Study →</a>
-</div>
-</div>
-<p style="margin-top:1.5rem;">
-<a href="/casestudies" style="font-weight:bold; color:#0A2A43;">View all case studies →</a>
-</p>
-</section>
-<section class="section" id="contact">
-<h2>Contact Us</h2>
-<div class="contact-box">
-<p>If you'd like to discuss a project or get some advice, you can reach me directly:</p>
-<ul style="list-style:none; padding:0;">
-<li>
-<svg class="icon" viewbox="0 0 24 24">
-<path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 22 2 13.93 2 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"></path>
-</svg>
-<strong>Call:</strong> <a href="tel:07825261499">07825 261499</a>
-</li>
-<li>
-<svg class="icon" viewbox="0 0 24 24">
-<path d="M20 4H4a2 2 0 00-2 2v1l10 6 10-6V6a2 2 0 00-2-2zm0 4.236l-8.445 5.067a1 1 0 01-1.11 0L4 8.236V18a2 2 0 002 2h12a2 2 0 002-2V8.236z"></path>
-</svg>
-<strong>Email:</strong> <a href="mailto:contact@atkinsonit.co.uk">contact@atkinsonit.co.uk</a>
-</li>
-<li>
-<svg class="icon" viewbox="0 0 24 24">
-<path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h7v-9h-3v-4h3v-3c0-3.07 1.87-4.75 4.6-4.75 1.31 0 2.43.1 2.76.14v3.2h-1.9c-1.49 0-1.78.71-1.78 1.75v2.66h3.56l-.46 4h-3.1v9h3.32c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5z"></path>
-</svg>
-<strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/bernie-atkinson-82bb251/" target="_blank">View my profile</a>
-</li>
-<li>
-<svg class="icon" viewbox="0 0 24 24">
-<path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"></path>
-</svg>
-<strong>Google:</strong> <a href="https://share.google/CFWGvGBobkF3CI4ZC" target="_blank">Google Business Profile</a>
-</li>
-<li>
-<svg class="icon" viewbox="0 0 24 24">
-<path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8v-6.93H7.5V12H10V9.8c0-2.49 1.49-3.87 3.77-3.87 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.87H13.1V21.8c4.56-.93 8-4.96 8-9.8z"></path>
-</svg>
-<strong>Facebook:</strong> <a href="https://www.facebook.com/61590161440339" target="_blank">Facebook Page</a>
-</li>
-</ul>
-<p>Whether you’re a sole trader, small business, or larger organisation — I’m happy to help with practical, reliable IT and systems support.</p>
-</div>
-</section>
-<section class="section">
-<h2>Latest Blog Posts</h2>
-<div class="grid">
-  <!-- NEW BLOG POST -->
-  <div class="box">
-  <h2>Blog Update — <!-- DATE --> 05 July 2026</h2>
-  <p><!-- SUMMARY --> VMWare's 500% price hike</p>
-  <a href="/blog/2026-07-05" style="font-weight:bold; color:#0A2A43;">Read more →</a>
-  </div>
-  <!-- NEW BLOG POST -->
-  <div class="box">
-  <h2>Blog Update — <!-- DATE --> 01 July 2026</h2>
-  <p><!-- SUMMARY --> Why Different Operating Systems Fit Different Niches Better Than Others</p>
-  <a href="/blog/2026-07-01" style="font-weight:bold; color:#0A2A43;">Read more →</a>
-</div>
-    <div class="box">
-    <h2>Weekly Update — <!-- DATE --> 29 June 2026</h2>
-    <p><!-- SUMMARY --> Why SMEs Keep Getting “AI SEO” Cold Emails — And How to Spot the Red Flags.</p>
-    <a href="/blog/2026-06-29" style="font-weight:bold; color:#0A2A43;">Read more →</a>
-  </div>
-<div class="box">
-<h2>Weekly Update — 22 June 2026</h2>
-<p>A look at recent client work, infrastructure improvements, and behind‑the‑scenes updates at Atkinson IT.</p>
-<a href="/blog/2026-06-22" style="font-weight:bold; color:#0A2A43;">Read more →</a>
-</div>
-<div class="box">
-<h2>Weekly Update — 15 June 2026</h2>
-<p>System upgrades, RAID diagnostics, and a deep dive into improving SME reliability and performance.</p>
-<a href="/blog/2026-06-15" style="font-weight:bold; color:#0A2A43;">Read more →</a>
-</div>
-<div class="box">
-<h2>Weekly Update — 2 June 2026</h2>
-<p>Cloud migration progress, networking fixes, and early‑summer engineering insights from the field.</p>
-<a href="/blog/2026-06-02" style="font-weight:bold; color:#0A2A43;">Read more →</a>
-</div>
-</div>
-<p style="margin-top:1.5rem;">
-<a href="/blogs" style="font-weight:bold; color:#0A2A43;">View all blog posts →</a>
-</p>
-</section>
-</div>
-<footer>
-<p>© 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
-<p>
-<a href="/index">Home</a> |
-<a href="/it-services">Services</a> |
-<a href="/engineering-services">Engineering Services</a> |
-<a href="/about">About</a> |
-<a href="/capabilities">Capabilities</a> |
-<a href="/testimonials">Testimonials</a> |
-<a href="/casestudies">Case Studies</a> |
-<a href="/blogs">Blog</a> |
-<a href="index#contact">Contact</a> |
-<a href="/privacy">Privacy Policy</a>
-</p>
-</footer>
-<section class="faq">
-<h2>Frequently Asked Questions</h2>
-<h3>What is the main purpose of this page?</h3>
-<p>This page focuses on systems, with supporting information related to case.</p>
-<h3>Who is this content intended for?</h3>
-<p>This content is aimed at SMEs, technical leads, and clients seeking practical IT guidance.</p>
-<h3>How does this page relate to Atkinson IT's services?</h3>
-<p>The topics discussed, such as atkinson and engineering, align with Atkinson IT's consultancy and engineering expertise.</p>
-<h3>What should I do if I need help with systems?</h3>
-<p>Atkinson IT provides support, troubleshooting, and consultancy for issues involving systems and related challenges.</p>
-<h3>Can Atkinson IT assist with case?</h3>
-<p>Yes. Atkinson IT regularly helps SMEs with case, offering practical solutions and hands-on support.</p>
-</section>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-{
-      "@type": "Question",
-      "name": "What is the main purpose of this page?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "This page focuses on systems, with supporting information related to case."
-      }
-    },
-{
-      "@type": "Question",
-      "name": "Who is this content intended for?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "This content is aimed at SMEs, technical leads, and clients seeking practical IT guidance."
-      }
-    },
-{
-      "@type": "Question",
-      "name": "How does this page relate to Atkinson IT's services?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The topics discussed, such as atkinson and engineering, align with Atkinson IT's consultancy and engineering expertise."
-      }
-    },
-{
-      "@type": "Question",
-      "name": "What should I do if I need help with systems?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Atkinson IT provides support, troubleshooting, and consultancy for issues involving systems and related challenges."
-      }
-    },
-{
-      "@type": "Question",
-      "name": "Can Atkinson IT assist with case?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Atkinson IT regularly helps SMEs with case, offering practical solutions and hands-on support."
-      }
-    }
+          <li>
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M20 4H4a2 2 0 00-2 2v1l10 6 10-6V6a2 2 0 00-2-2zm0 4.236l-8.445 5.067a1 1 0 01-1.11 0L4 8.236V18a2 2 0 002 2h12a2 2 0 002-2V8.236z"></path>
+            </svg>
+            <strong>Email:</strong> <a href="mailto:contact@atkinsonit.co.uk">contact@atkinsonit.co.uk</a>
+          </li>
 
-}
-</script>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h7v-9h-3v-4h3v-3c0-3.07 1.87-4.75 4.6-4.75 1.31 0 2.43.1 2.76.14v3.2h-1.9c-1.49 0-1.78.71-1.78 1.75v2.66h3.56l-.46 4h-3.1v9h3.32c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5z"></path>
+            </svg>
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/bernie-atkinson-82bb251/" target="_blank">View my profile</a>
+          </li>
+
+          <li>
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"></path>
+            </svg>
+            <strong>Google:</strong> <a href="https://share.google/CFWGvGBobkF3CI4ZC" target="_blank">Google Business Profile</a>
+          </li>
+
+          <li>
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8v-6.93H7.5V12H10V9.8c0-2.49 1.49-3.87 3.77-3.87 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.87H13.1V21.8c4.56-.93 8-4.96 8-9.8z"></path>
+            </svg>
+            <strong>Facebook:</strong> <a href="https://www.facebook.com/61590161440339" target="_blank">Facebook Page</a>
+          </li>
+        </ul>
+
+        <p>Whether you’re a sole trader, small business, or larger organisation — we’re happy to help with practical, reliable IT and systems support.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Latest Blog Posts</h2>
+      <div class="grid">
+        <div class="box">
+          <h2>Blog Update — 05 July 2026</h2>
+          <p>VMWare's 500% price hike.</p>
+          <a href="/blog/2026-07-05" style="font-weight:bold; color:#0A2A43;">Read more →</a>
+        </div>
+
+        <div class="box">
+          <h2>Blog Update — 01 July 2026</h2>
+          <p>Why Different Operating Systems Fit Different Niches Better Than Others.</p>
+          <a href="/blog/2026-07-01" style="font-weight:bold; color:#0A2A43;">Read more →</a>
+        </div>
+
+        <div class="box">
+          <h2>Weekly Update — 29 June 2026</h2>
+          <p>Why SMEs Keep Getting “AI SEO” Cold Emails — And How to Spot the Red Flags.</p>
+          <a href="/blog/2026-06-29" style="font-weight:bold; color:#0A2A43;">Read more →</a>
+        </div>
+
+        <div class="box">
+          <h2>Weekly Update — 22 June 2026</h2>
+          <p>A look at recent client work, infrastructure improvements, and behind‑the‑scenes updates at Atkinson IT.</p>
+          <a href="/blog/2026-06-22" style="font-weight:bold; color:#0A2A43;">Read more →</a>
+        </div>
+
+        <div class="box">
+          <h2>Weekly Update — 15 June 2026</h2>
+          <p>System upgrades, RAID diagnostics, and a deep dive into improving SME reliability and performance.</p>
+          <a href="/blog/2026-06-15" style="font-weight:bold; color:#0A2A43;">Read more →</a>
+        </div>
+
+        <div class="box">
+          <h2>Weekly Update — 2 June 2026</h2>
+          <p>Cloud migration progress, networking fixes, and early‑summer engineering insights from the field.</p>
+          <a href="/blog/2026-06-02" style="font-weight:bold; color:#0A2A43;">Read more →</a>
+        </div>
+      </div>
+
+      <p style="margin-top:1.5rem;">
+        <a href="/blogs" style="font-weight:bold; color:#0A2A43;">View all blog posts →</a>
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
+    <p>
+      <a href="/">Home</a> |
+      <a href="/it-services">Services</a> |
+      <a href="/engineering-services">Engineering Services</a> |
+      <a href="/about">About</a> |
+      <a href="/capabilities">Capabilities</a> |
+      <a href="/testimonials">Testimonials</a> |
+      <a href="/casestudies">Case Studies</a> |
+      <a href="/blogs">Blog</a> |
+      <a href="#contact">Contact</a> |
+      <a href="/privacy">Privacy Policy</a>
+    </p>
+  </footer>
+
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>What is the main purpose of this page?</h3>
+    <p>This page provides an overview of Atkinson IT’s services, capabilities, case studies, and contact information.</p>
+
+    <h3>Who is this content intended for?</h3>
+    <p>This content is aimed at SMEs, technical leads, and organisations seeking practical, reliable IT guidance.</p>
+
+    <h3>How does this page relate to Atkinson IT's services?</h3>
+    <p>It summarises the consultancy’s engineering approach, capabilities, and recent case studies.</p>
+
+    <h3>What should I do if I need help with systems?</h3>
+    <p>You can contact Atkinson IT directly for support, troubleshooting, and consultancy.</p>
+
+    <h3>Can Atkinson IT assist with legacy or hybrid environments?</h3>
+    <p>Yes. Atkinson IT regularly helps SMEs stabilise legacy systems, integrate modern platforms, and build resilient hybrid environments.</p>
+  </section>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the main purpose of this page?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "This page provides an overview of Atkinson IT’s services, capabilities, case studies, and contact information."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who is this content intended for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "This content is aimed at SMEs, technical leads, and organisations seeking practical, reliable IT guidance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does this page relate to Atkinson IT's services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It summarises the consultancy’s engineering approach, capabilities, and recent case studies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I do if I need help with systems?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can contact Atkinson IT directly for support, troubleshooting, and consultancy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Atkinson IT assist with legacy or hybrid environments?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Atkinson IT regularly helps SMEs stabilise legacy systems, integrate modern platforms, and build resilient hybrid environments."
+        }
+      }
+    ]
+  }
+  </script>
 </body>
 </html>
