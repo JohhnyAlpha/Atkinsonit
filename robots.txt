@@ -1,8 +1,10 @@
 User-agent: *
 Allow: /
 
-# Sitemap
+# Sitemaps
+Sitemap: https://www.atkinsonit.co.uk/sitemap-index.xml
 Sitemap: https://www.atkinsonit.co.uk/sitemap.xml
+Sitemap: https://www.atkinsonit.co.uk/sitemap-local.xml
 
 # Explicitly allow key content directories
 Allow: /services/
