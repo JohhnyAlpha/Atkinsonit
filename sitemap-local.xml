@@ -1,60 +1,65 @@
-<!-- Local IT Support Pages -->
-<url>
-  <loc>https://www.atkinsonit.co.uk/it-support-staines</loc>
-  <lastmod>2026-07-09</lastmod>
-  <priority>0.9</priority>
-</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-  <loc>https://www.atkinsonit.co.uk/it-support-egham</loc>
-  <lastmod>2026-07-09</lastmod>
-  <priority>0.9</priority>
-</url>
+  <!-- Local IT Support Pages -->
+  <url>
+    <loc>https://www.atkinsonit.co.uk/it-support-staines</loc>
+    <lastmod>2026-07-09</lastmod>
+    <priority>0.9</priority>
+  </url>
 
-<url>
-  <loc>https://www.atkinsonit.co.uk/it-support-chertsey</loc>
-  <lastmod>2026-07-09</lastmod>
-  <priority>0.9</priority>
-</url>
+  <url>
+    <loc>https://www.atkinsonit.co.uk/it-support-egham</loc>
+    <lastmod>2026-07-09</lastmod>
+    <priority>0.9</priority>
+  </url>
 
-<url>
-  <loc>https://www.atkinsonit.co.uk/it-support-woking</loc>
-  <lastmod>2026-07-09</lastmod>
-  <priority>0.9</priority>
-</url>
+  <url>
+    <loc>https://www.atkinsonit.co.uk/it-support-chertsey</loc>
+    <lastmod>2026-07-09</lastmod>
+    <priority>0.9</priority>
+  </url>
 
-<url>
-  <loc>https://www.atkinsonit.co.uk/it-support-windsor</loc>
-  <lastmod>2026-07-09</lastmod>
-  <priority>0.9</priority>
-</url>
+  <url>
+    <loc>https://www.atkinsonit.co.uk/it-support-woking</loc>
+    <lastmod>2026-07-09</lastmod>
+    <priority>0.9</priority>
+  </url>
 
-<url>
-  <loc>https://www.atkinsonit.co.uk/it-support-slough</loc>
-  <lastmod>2026-07-09</lastmod>
-  <priority>0.9</priority>
-</url>
+  <url>
+    <loc>https://www.atkinsonit.co.uk/it-support-windsor</loc>
+    <lastmod>2026-07-09</lastmod>
+    <priority>0.9</priority>
+  </url>
 
-<url>
-  <loc>https://www.atkinsonit.co.uk/it-support-heathrow</loc>
-  <lastmod>2026-07-09</lastmod>
-  <priority>0.9</priority>
-</url>
+  <url>
+    <loc>https://www.atkinsonit.co.uk/it-support-slough</loc>
+    <lastmod>2026-07-09</lastmod>
+    <priority>0.9</priority>
+  </url>
 
-<url>
-  <loc>https://www.atkinsonit.co.uk/it-support-surrey</loc>
-  <lastmod>2026-07-09</lastmod>
-  <priority>0.9</priority>
-</url>
+  <url>
+    <loc>https://www.atkinsonit.co.uk/it-support-heathrow</loc>
+    <lastmod>2026-07-09</lastmod>
+    <priority>0.9</priority>
+  </url>
 
-<url>
-  <loc>https://www.atkinsonit.co.uk/it-support-berkshire</loc>
-  <lastmod>2026-07-09</lastmod>
-  <priority>0.9</priority>
-</url>
+  <url>
+    <loc>https://www.atkinsonit.co.uk/it-support-surrey</loc>
+    <lastmod>2026-07-09</lastmod>
+    <priority>0.9</priority>
+  </url>
 
-<url>
-  <loc>https://www.atkinsonit.co.uk/local-it-support</loc>
-  <lastmod>2026-07-09</lastmod>
-  <priority>0.9</priority>
-</url>
+  <url>
+    <loc>https://www.atkinsonit.co.uk/it-support-berkshire</loc>
+    <lastmod>2026-07-09</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.atkinsonit.co.uk/local-it-support</loc>
+    <lastmod>2026-07-09</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
