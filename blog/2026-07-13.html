@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta property="og:title" content="Windows Profiles, Hidden Junk, and the New 500GB Storage Bug">
+  <meta property="og:description" content="13 July 2026">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.atkinsonit.co.uk/blog/2026-07-13.html">
+  <meta property="og:image" content="https://www.atkinsonit.co.uk/assets/logo.svg">
+  <meta property="og:site_name" content="Atkinson IT Ltd">
+  <meta name="description" content="13 July 2026">
+  <link rel="canonical" href="https://www.atkinsonit.co.uk/blogs"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Windows Profiles, Hidden Junk, and the New 500GB Storage Bug | Atkinson IT Ltd</title>
+  <link rel="stylesheet" href="/styles.css"/>
+
+  <!-- BlogPosting Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Windows Profiles, Hidden Junk, and the New 500GB Storage Bug",
+    "description": "Why Windows user profiles keep turning into junkyards, and how a new Windows 11 bug can silently consume up to 500GB of storage.",
+    "datePublished": "2026-07-13",
+    "dateModified": "2026-07-13",
+    "author": {
+      "@type": "Organization",
+      "name": "Atkinson IT Ltd",
+      "url": "https://www.atkinsonit.co.uk"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Atkinson IT Ltd",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.atkinsonit.co.uk/logo.svg"
+      }
+    },
+    "image": "https://www.atkinsonit.co.uk/logo.svg",
+    "mainEntityOfPage": "https://www.atkinsonit.co.uk/blogs/2026-07-13",
+    "articleSection": "Blog",
+    "keywords": [
+      "Windows 11",
+      "User profiles",
+      "Storage bug",
+      "CapabilityAccessManager",
+      "SME IT",
+      "Infrastructure",
+      "Cost optimisation",
+      "IT strategy"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <nav>
+    <div class="brand">
+      <img src="/logo.svg" alt="Atkinson IT logo"/>
+      <span>Atkinson IT Ltd</span>
+    </div>
+    <div class="links">
+      <a href="/">Home</a>
+      <a href="/it-services">Services</a>
+      <a href="/engineering-services">Engineering Services</a>
+      <a href="/about">About</a>
+      <a href="/capabilities">Capabilities</a>
+      <a href="/testimonials">Testimonials</a>
+      <a href="/casestudies">Case Studies</a>
+      <a href="/blogs">Blog</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="block">
+      <h1>Windows Profiles, Hidden Junk, and the New 500GB Storage Bug</h1>
+      <p>13 July 2026</p>
+    </div>
+
+    <div class="breadcrumbs">
+      <a href="/">Home</a> <span>›</span>
+      <a href="/blogs">Blog</a> <span>›</span>
+      <span>Windows Profiles, Hidden Junk, and the New 500GB Storage Bug</span>
+    </div>
+
+    <div class="block">
+      <h2>From Useful Profiles to Hidden Landfills</h2>
+      <p>
+        Windows user profiles have quietly become one of the biggest pain points for IT professionals.
+        What should be a tidy collection of user settings and documents has evolved into a sprawling landfill
+        of logs, caches, telemetry fragments, temporary files, and abandoned configuration data. The root cause
+        is architectural: Windows is built on a philosophy of continuity over cleanliness. Every upgrade preserves
+        everything — including debris created by applications that never bother to clean up after themselves.
+      </p>
+    </div>
+
+    <div class="block">
+      <h2>Modern Apps and the AppData Explosion</h2>
+      <p>
+        Modern applications make this dramatically worse. Anything built on Chromium or Electron behaves like a browser,
+        generating tens of thousands of tiny files inside <code>AppData</code>. Tools like Chrome, Teams, Slack, Discord,
+        Steam, and countless others treat the user profile as an infinite dumping ground. Developers use it for caches,
+        GPU data, crash dumps, update scaffolding, and telemetry. Almost none of it is ever removed.
+      </p>
+      <p>
+        For IT professionals, this creates a uniquely frustrating challenge. You can’t simply wipe <code>AppData</code>
+        because it contains authentication tokens, licensing files, user preferences, and critical application state.
+        Automated tools struggle because they can’t reliably distinguish between essential and abandoned data.
+        Cleanup becomes a slow, risk‑laden archaeological dig.
+      </p>
+      <p>
+        And the trend is accelerating. Each generation of Windows adds more compatibility layers, more cloud‑linked profile
+        data, more web‑style applications, and more diagnostic scaffolding. Cloud sync tools replicate junk across devices.
+        Electron apps multiply it. Windows preserves it. The result is exponential profile bloat.
+      </p>
+    </div>
+
+    <div class="block">
+      <article class="post-content">
+        <h2>Chrome, Electron, and Upgrade Debris</h2>
+
+        <h3>Chrome Profile Debris</h3>
+        <p>
+          Chrome is one of the worst offenders when it comes to profile bloat. Its architecture mirrors a full browser engine
+          inside each user profile, generating caches, GPU data, shader files, session backups, extension data, crash reports,
+          and telemetry fragments. Over time, this can grow into tens of thousands of files. Chrome updates also leave behind
+          scaffolding and temporary folders that are never cleaned up, making cleanup risky and time‑consuming for IT teams.
+        </p>
+
+        <h3>Electron App Bloat</h3>
+        <p>
+          Electron apps — Teams, Slack, Discord, WhatsApp Desktop, Steam’s new UI — behave like self‑contained web browsers.
+          Each instance stores its own Chromium cache, logs, GPU data, update fragments, and temporary files. Multiply this by
+          several Electron apps installed on a single machine and the profile becomes a maze of duplicated browser engines.
+          Because Electron apps update frequently, they generate even more leftover scaffolding, and automated cleanup tools
+          struggle because Electron stores critical state alongside junk.
+        </p>
+
+        <h3>Windows Upgrade Leftovers</h3>
+        <p>
+          Every Windows upgrade preserves the user profile to avoid breaking applications. Unfortunately, this means legacy
+          folders, compatibility shims, obsolete configuration files, and abandoned application data remain indefinitely.
+          Machines that have lived through multiple Windows versions accumulate layers of historical debris. Windows also adds
+          more diagnostic logs, telemetry, and update scaffolding with each release, so profiles grow larger and more fragmented
+          over time, making migrations slower and troubleshooting harder.
+        </p>
+
+        <h2>The New 500GB Storage Bug in Windows 11</h2>
+        <p>
+          As if background profile bloat wasn’t enough, Windows 11 has recently added a more dramatic problem: a storage bug
+          that can silently consume hundreds of gigabytes of disk space. Microsoft has confirmed that a hidden system file
+          linked to the Capability Access Manager can grow far beyond its intended size, with reports of it reaching
+          70–200GB and, in extreme cases, over 500GB on affected machines.
+        </p>
+        <p>
+          The culprit is a write‑ahead log file called <code>CapabilityAccessManager.db-wal</code>, located under:
+        </p>
+        <pre><code>C:\ProgramData\Microsoft\Windows\CapabilityAccessManager\</code></pre>
+        <p>
+          This component is responsible for logging app permission activity for privacy‑sensitive features such as the camera,
+          microphone, location, contacts, and screen capture. Under normal conditions, the WAL file should be compacted back
+          into the main database and remain only a few megabytes in size. On affected systems, it keeps growing and never
+          shrinks, quietly filling the system drive.
+        </p>
+
+        <h3>How to Check If You’re Affected</h3>
+        <p>
+          The first step is to look at Windows’ own storage view:
+        </p>
+        <ol>
+          <li><strong>Open:</strong> <em>Settings → System → Storage</em>.</li>
+          <li><strong>Click:</strong> <em>Show more categories</em>.</li>
+          <li><strong>Review:</strong> <em>System &amp; reserved → System files</em>.</li>
+        </ol>
+        <p>
+          If <strong>System files</strong> is showing usage in the hundreds of gigabytes, you may be affected by the bug.
+          TechSpot and Windows Latest both note that some users only discovered the issue after running tools such as
+          TreeSize or WizTree and finding <code>CapabilityAccessManager.db-wal</code> consuming tens or hundreds of gigabytes
+          of space.
+        </p>
+        <p>
+          For a more precise check, Windows Latest recommends a read‑only command from an elevated Command Prompt:
+        </p>
+        <pre><code>robocopy "C:\ProgramData\Microsoft\Windows\CapabilityAccessManager" "%TEMP%\CAMCheck" /L /B /R:0 /W:0 /BYTES /NP</code></pre>
+        <p>
+          This does not copy or delete anything; it simply lists the contents and sizes. If
+          <code>CapabilityAccessManager.db-wal</code> is only a few megabytes, you’re likely fine. If it is several gigabytes
+          and keeps growing, the bug has probably struck.
+        </p>
+
+        <h3>Fixing the 500GB Bug Safely</h3>
+        <p>
+          Microsoft has shipped a fix as part of the optional Windows 11 update <strong>KB5095093</strong>, which improves
+          disk space usage for the <code>CapabilityAccessManager.db-wal</code> file. The update is available via
+          <em>Settings → Windows Update → Advanced options → Optional updates</em>, and is expected to roll out more broadly
+          in the next Patch Tuesday cycle.
+        </p>
+        <p>
+          The important point is what <em>not</em> to do: don’t try to delete or forcibly modify the file yourself. Reports
+          from affected users show that manually removing it can break Wi‑Fi, screen capture, or other permission‑related
+          features. The safest route is to install the official update or wait for the scheduled automatic rollout, especially
+          on production machines.
+        </p>
+
+        <h2>What This Means for SMEs and IT Teams</h2>
+        <p>
+          For SMEs and mid‑market IT, this is another reminder that Windows environments rarely fail in obvious ways.
+          Profile bloat, hidden system logs, and now a runaway permission database can all combine to produce slow,
+          unreliable machines that look “fine” at first glance. The new bug particularly hurts smaller SSDs — 128GB or
+          256GB drives can be overwhelmed by a single misbehaving file long before anyone suspects a storage issue.
+        </p>
+        <p>
+          The practical takeaway is simple: treat profile health and system storage as part of your engineering discipline,
+          not an afterthought. Regularly review storage usage, profile sizes, and update behaviour. Build migration workflows
+          that avoid dragging a decade of debris into every new build. And when bugs like this appear, plan a controlled
+          remediation rather than a rushed, ad‑hoc fix.
+        </p>
+
+        <h3>Practical Next Steps for Your Estate</h3>
+        <p>
+          If you’re responsible for Windows 11 machines, especially in an SME or branch‑office environment, it’s worth
+          taking a structured approach:
+        </p>
+        <ul>
+          <li><strong>Baseline storage:</strong> Capture current <em>System &amp; reserved</em> usage across key devices.</li>
+          <li><strong>Identify outliers:</strong> Flag machines where <em>System files</em> are unusually large.</li>
+          <li><strong>Check for the bug:</strong> Use storage tools or the <code>robocopy</code> command to confirm
+            <code>CapabilityAccessManager.db-wal</code> size.</li>
+          <li><strong>Plan updates:</strong> Schedule KB5095093 or the relevant Patch Tuesday rollout in a controlled window.</li>
+          <li><strong>Review profiles:</strong> Use this as a trigger to audit profile bloat, roaming behaviour, and
+            migration practices.</li>
+        </ul>
+        <p>
+          This isn’t a moment for panic, but it is a moment for clarity. The combination of long‑term profile junk and
+          short‑term storage bugs is exactly the kind of thing that quietly erodes performance and reliability. Treat it
+          as an engineering problem with a clear plan, and it becomes manageable.
+        </p>
+
+        <p><a class="button" href="/contact">Talk to Us About Windows Profile & Storage Strategy</a></p>
+      </article>
+    </div>
+
+    <div class="post-nav-buttons">
+      <a class="button" href="/blog/2026-07-05">← Previous</a>
+      <span class="spacer"></span>
+    </div>
+
+    <p><a class="button" href="/blogs">← Back to Blog Index</a></p>
+
+    <section class="internal-links-box">
+      <h3>Related Services & Casestudies</h3>
+      <ul>
+        <li><a href="/services/networking-infrastructure">Infrastructure Review</a></li>
+        <li><a href="/casestudy/virtualisation-casestudy">Virtualisation Casestudy</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
+    <p>
+      <a href="/index">Home</a> |
+      <a href="/it-services">Services</a> |
+      <a href="/engineering-services">Engineering Services</a> |
+      <a href="/about">About</a> |
+      <a href="/capabilities">Capabilities</a> |
+      <a href="/testimonials">Testimonials</a> |
+      <a href="/casestudies">Case Studies</a> |
+      <a href="/blogs">Blog</a> |
+      <a href="/privacy">Privacy Policy</a>
+    </p>
+  </footer>
+
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>What is the main purpose of this page?</h3>
+    <p>
+      To explain why Windows user profiles accumulate so much hidden junk, and how a new Windows 11 storage bug
+      linked to <code>CapabilityAccessManager.db-wal</code> can silently consume up to hundreds of gigabytes of disk space.
+    </p>
+
+    <h3>Who is this content intended for?</h3>
+    <p>
+      SMEs, IT managers, consultants, and business owners who rely on Windows 10 and Windows 11 and need to understand
+      both long‑term profile bloat and the current 500GB storage bug.
+    </p>
+
+    <h3>How does this page relate to Atkinson IT's services?</h3>
+    <p>
+      This article supports Atkinson IT’s engineering‑led approach by helping clients make informed decisions about
+      Windows profile management, storage health, update strategy, and long‑term infrastructure planning.
+    </p>
+
+    <h3>What should I do if I need help with this topic?</h3>
+    <p>
+      If you need advice on assessing Windows profile health, checking for the storage bug, or planning remediation,
+      Atkinson IT can provide practical, real‑world guidance tailored to your estate.
+    </p>
+
+    <h3>Can Atkinson IT assist with related issues?</h3>
+    <p>
+      Yes — Atkinson IT can assist with Windows estate reviews, profile and storage audits, migration planning,
+      and ongoing infrastructure support across desktops, laptops, and virtualised environments.
+    </p>
+  </section>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the main purpose of this page?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To explain why Windows user profiles accumulate so much hidden junk, and how a new Windows 11 storage bug linked to CapabilityAccessManager.db-wal can silently consume up to hundreds of gigabytes of disk space."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who is this content intended for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SMEs, IT managers, consultants, and business owners who rely on Windows 10 and Windows 11 and need to understand both long-term profile bloat and the current 500GB storage bug."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does this page relate to Atkinson IT's services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "This article supports Atkinson IT’s engineering-led approach by helping clients make informed decisions about Windows profile management, storage health, update strategy, and long-term infrastructure planning."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I do if I need help with this topic?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you need advice on assessing Windows profile health, checking for the storage bug, or planning remediation, Atkinson IT can provide practical, real-world guidance tailored to your estate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Atkinson IT assist with related issues?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — Atkinson IT can assist with Windows estate reviews, profile and storage audits, migration planning, and ongoing infrastructure support across desktops, laptops, and virtualised environments."
+        }
+      }
+    ]
+  }
+  </script>
+</body>
+</html>
