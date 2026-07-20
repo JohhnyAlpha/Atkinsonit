@@ -13,7 +13,6 @@
       "email": "contact@atkinsonit.co.uk",
       "logo": "https://www.atkinsonit.co.uk/logo.svg",
       "image": "https://www.atkinsonit.co.uk/logo.svg",
-      "taxID": "17240782",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Staines-upon-Thames",
@@ -27,18 +26,27 @@
       },
       "openingHours": "Mo-Fr 09:00-17:00",
       "areaServed": [
-        "Staines-upon-Thames",
-        "Egham",
-        "Ashford",
-        "Chertsey",
-        "Surrey",
-        "Berkshire",
-        "West London",
-        "Heathrow"
+        "Staines-upon-Thames, Surrey",
+        "Egham, Surrey",
+        "Ashford, Surrey",
+        "Chertsey, Surrey",
+        "Woking, Surrey",
+        "Surrey County",
+        "Windsor, Berkshire",
+        "Slough, Berkshire",
+        "Berkshire County",
+        "Heathrow, West London"
       ],
       "sameAs": [
+        "https://maps.google.com/?cid=0xdf2c5c47132f3a3a",
         "https://www.linkedin.com/company/atkinson-it-ltd",
-        "https://www.facebook.com/atkinsonit"
+        "https://www.facebook.com/atkinsonit",
+        "https://www.yell.com/biz/atkinson-it-staines-upon-thames/",
+        "https://www.yelp.co.uk/biz/atkinson-it-staines-upon-thames",
+        "https://www.thomsonlocal.com/search/businesses?what=Atkinson%20IT",
+        "https://www.bingplaces.com/atkinson-it",
+        "https://businessconnect.apple.com/place/atkinson-it",
+        "https://uk.trustpilot.com/review/atkinsonit.co.uk"
       ],
       "founder": { "@id": "https://www.atkinsonit.co.uk/#person" },
       "knowsAbout": [
@@ -90,7 +98,7 @@
       "description": "SME IT support, server engineering, storage, RAID, cloud migration, networking, virtualisation and Linux deployment across Surrey, Berkshire and West London.",
       "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
       "about": { "@id": "https://www.atkinsonit.co.uk/#org" },
-      "mainEntity": { "@id": "https://www.atkinsonit.co.uk/#org" }
+      "mainEntity": { "@id": "https://www.atkinsonit.co.uk/#service-it-support" }
     },
 
     {
@@ -98,8 +106,17 @@
       "@id": "https://www.atkinsonit.co.uk/it-services.html#page",
       "url": "https://www.atkinsonit.co.uk/it-services.html",
       "name": "IT Services — Atkinson IT Ltd",
+      "description": "Small business IT support, troubleshooting, remote assistance, endpoint management and proactive SME IT services.",
       "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
-      "about": { "@id": "https://www.atkinsonit.co.uk/#service-it-support" },
+      "about": [
+        { "@id": "https://www.atkinsonit.co.uk/#service-it-support" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-cloud" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-networking" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-storage" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-virtualisation" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-linux" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-websites" }
+      ],
       "mainEntity": { "@id": "https://www.atkinsonit.co.uk/#service-it-support" }
     },
 
@@ -108,8 +125,13 @@
       "@id": "https://www.atkinsonit.co.uk/engineering-services.html#page",
       "url": "https://www.atkinsonit.co.uk/engineering-services.html",
       "name": "Engineering Services — Atkinson IT Ltd",
+      "description": "Server engineering, RAID recovery, SAN design, NetApp storage, VMware optimisation and disaster recovery planning.",
       "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
-      "about": { "@id": "https://www.atkinsonit.co.uk/#service-storage" },
+      "about": [
+        { "@id": "https://www.atkinsonit.co.uk/#service-storage" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-virtualisation" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-linux" }
+      ],
       "mainEntity": { "@id": "https://www.atkinsonit.co.uk/#service-storage" }
     },
 
@@ -118,8 +140,10 @@
       "@id": "https://www.atkinsonit.co.uk/about.html#page",
       "url": "https://www.atkinsonit.co.uk/about.html",
       "name": "About — Atkinson IT Ltd",
+      "description": "About Atkinson IT Ltd — SME IT support, engineering, storage, cloud migration, networking and virtualisation.",
       "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
-      "about": { "@id": "https://www.atkinsonit.co.uk/#org" }
+      "about": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "mainEntity": { "@id": "https://www.atkinsonit.co.uk/#org" }
     },
 
     {
@@ -127,8 +151,10 @@
       "@id": "https://www.atkinsonit.co.uk/capabilities.html#page",
       "url": "https://www.atkinsonit.co.uk/capabilities.html",
       "name": "Capabilities — Atkinson IT Ltd",
+      "description": "Capabilities overview including IT support, storage engineering, RAID recovery, cloud migration, networking, virtualisation and Linux deployment.",
       "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
-      "about": { "@id": "https://www.atkinsonit.co.uk/#org" }
+      "about": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "mainEntity": { "@id": "https://www.atkinsonit.co.uk/#org" }
     },
 
     {
@@ -136,10 +162,11 @@
       "@id": "https://www.atkinsonit.co.uk/testimonials.html#page",
       "url": "https://www.atkinsonit.co.uk/testimonials.html",
       "name": "Testimonials — Atkinson IT Ltd",
+      "description": "Client testimonials for SME IT support, engineering, storage, RAID recovery, cloud migration and networking.",
       "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
-      "about": { "@id": "https://www.atkinsonit.co.uk/#org" }
+      "about": { "@id": "https://www.atkinsonit.co.uk/#org" },
+      "mainEntity": { "@id": "https://www.atkinsonit.co.uk/#org" }
     },
-
     {
       "@type": "Service",
       "@id": "https://www.atkinsonit.co.uk/#service-it-support",
@@ -147,7 +174,11 @@
       "provider": { "@id": "https://www.atkinsonit.co.uk/#org" },
       "serviceType": "IT Support",
       "description": "Proactive IT support for SMEs including troubleshooting, remote assistance, system maintenance and endpoint management.",
-      "areaServed": ["Surrey", "Berkshire", "West London", "Heathrow"]
+      "areaServed": [
+        "Surrey County",
+        "Berkshire County",
+        "West London"
+      ]
     },
 
     {
@@ -157,7 +188,11 @@
       "provider": { "@id": "https://www.atkinsonit.co.uk/#org" },
       "serviceType": "Cloud Migration",
       "description": "Microsoft 365, hybrid identity, cloud migration and modern workplace deployment.",
-      "areaServed": ["Surrey", "Berkshire", "West London"]
+      "areaServed": [
+        "Surrey County",
+        "Berkshire County",
+        "West London"
+      ]
     },
 
     {
@@ -167,7 +202,11 @@
       "provider": { "@id": "https://www.atkinsonit.co.uk/#org" },
       "serviceType": "Networking",
       "description": "Infrastructure design, VLANs, DMZ, firewalls, WiFi optimisation and secure networking.",
-      "areaServed": ["Surrey", "Berkshire", "West London"]
+      "areaServed": [
+        "Surrey County",
+        "Berkshire County",
+        "West London"
+      ]
     },
 
     {
@@ -177,7 +216,11 @@
       "provider": { "@id": "https://www.atkinsonit.co.uk/#org" },
       "serviceType": "Storage Engineering",
       "description": "RAID recovery, SAN design, NetApp storage, backup strategy and disaster recovery planning.",
-      "areaServed": ["Surrey", "Berkshire", "West London"]
+      "areaServed": [
+        "Surrey County",
+        "Berkshire County",
+        "West London"
+      ]
     },
 
     {
@@ -187,7 +230,11 @@
       "provider": { "@id": "https://www.atkinsonit.co.uk/#org" },
       "serviceType": "Virtualisation",
       "description": "VMware ESXi, vCenter, vMotion, server consolidation and performance optimisation.",
-      "areaServed": ["Surrey", "Berkshire", "West London"]
+      "areaServed": [
+        "Surrey County",
+        "Berkshire County",
+        "West London"
+      ]
     },
 
     {
@@ -197,7 +244,11 @@
       "provider": { "@id": "https://www.atkinsonit.co.uk/#org" },
       "serviceType": "Linux Deployment",
       "description": "Linux server deployment, automation, scripting and scientific computing.",
-      "areaServed": ["Surrey", "Berkshire", "West London"]
+      "areaServed": [
+        "Surrey County",
+        "Berkshire County",
+        "West London"
+      ]
     },
 
     {
@@ -207,7 +258,11 @@
       "provider": { "@id": "https://www.atkinsonit.co.uk/#org" },
       "serviceType": "Website Development",
       "description": "High‑performance static websites with SEO optimisation, schema integration and AI‑friendly content.",
-      "areaServed": ["Surrey", "Berkshire", "West London"]
+      "areaServed": [
+        "Surrey County",
+        "Berkshire County",
+        "West London"
+      ]
     },
 
     {
@@ -248,7 +303,6 @@
         }
       ]
     },
-
     {
       "@type": "CreativeWork",
       "@id": "https://www.atkinsonit.co.uk/casestudy/cloud-casestudies#schema",
@@ -397,6 +451,221 @@
       "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
       "publisher": { "@id": "https://www.atkinsonit.co.uk/#org" },
       "about": { "@id": "https://www.atkinsonit.co.uk/#org" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.atkinsonit.co.uk/it-support-egham.html#page",
+      "url": "https://www.atkinsonit.co.uk/it-support-egham.html",
+      "name": "IT Support in Egham, Surrey",
+      "description": "Local IT support for SMEs in Egham, Surrey including troubleshooting, server support, storage, networking, cloud migration and virtualisation.",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "mainEntity": { "@id": "https://www.atkinsonit.co.uk/#service-it-support" },
+      "about": [
+        { "@id": "https://www.atkinsonit.co.uk/#service-it-support" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-cloud" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-networking" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-storage" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-virtualisation" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-linux" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-websites" }
+      ],
+      "sameAs": [
+        "https://maps.google.com/?cid=0xdf2c5c47132f3a3a",
+        "https://uk.trustpilot.com/review/atkinsonit.co.uk"
+      ],
+      "areaServed": "Egham, Surrey"
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://www.atkinsonit.co.uk/it-support-staines.html#page",
+      "url": "https://www.atkinsonit.co.uk/it-support-staines.html",
+      "name": "IT Support in Staines-upon-Thames, Surrey",
+      "description": "Local IT support for SMEs in Staines-upon-Thames, Surrey including troubleshooting, server support, storage, networking, cloud migration and virtualisation.",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "mainEntity": { "@id": "https://www.atkinsonit.co.uk/#service-it-support" },
+      "about": [
+        { "@id": "https://www.atkinsonit.co.uk/#service-it-support" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-cloud" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-networking" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-storage" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-virtualisation" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-linux" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-websites" }
+      ],
+      "sameAs": [
+        "https://maps.google.com/?cid=0xdf2c5c47132f3a3a",
+        "https://uk.trustpilot.com/review/atkinsonit.co.uk"
+      ],
+      "areaServed": "Staines-upon-Thames, Surrey"
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://www.atkinsonit.co.uk/it-support-chertsey.html#page",
+      "url": "https://www.atkinsonit.co.uk/it-support-chertsey.html",
+      "name": "IT Support in Chertsey, Surrey",
+      "description": "Local IT support for SMEs in Chertsey, Surrey including troubleshooting, server support, storage, networking, cloud migration and virtualisation.",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "mainEntity": { "@id": "https://www.atkinsonit.co.uk/#service-it-support" },
+      "about": [
+        { "@id": "https://www.atkinsonit.co.uk/#service-it-support" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-cloud" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-networking" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-storage" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-virtualisation" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-linux" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-websites" }
+      ],
+      "sameAs": [
+        "https://maps.google.com/?cid=0xdf2c5c47132f3a3a",
+        "https://uk.trustpilot.com/review/atkinsonit.co.uk"
+      ],
+      "areaServed": "Chertsey, Surrey"
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://www.atkinsonit.co.uk/it-support-woking.html#page",
+      "url": "https://www.atkinsonit.co.uk/it-support-woking.html",
+      "name": "IT Support in Woking, Surrey",
+      "description": "Local IT support for SMEs in Woking, Surrey including troubleshooting, server support, storage, networking, cloud migration and virtualisation.",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "mainEntity": { "@id": "https://www.atkinsonit.co.uk/#service-it-support" },
+      "about": [
+        { "@id": "https://www.atkinsonit.co.uk/#service-it-support" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-cloud" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-networking" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-storage" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-virtualisation" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-linux" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-websites" }
+      ],
+      "sameAs": [
+        "https://maps.google.com/?cid=0xdf2c5c47132f3a3a",
+        "https://uk.trustpilot.com/review/atkinsonit.co.uk"
+      ],
+      "areaServed": "Woking, Surrey"
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://www.atkinsonit.co.uk/it-support-windsor.html#page",
+      "url": "https://www.atkinsonit.co.uk/it-support-windsor.html",
+      "name": "IT Support in Windsor, Berkshire",
+      "description": "Local IT support for SMEs in Windsor, Berkshire including troubleshooting, server support, storage, networking, cloud migration and virtualisation.",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "mainEntity": { "@id": "https://www.atkinsonit.co.uk/#service-it-support" },
+      "about": [
+        { "@id": "https://www.atkinsonit.co.uk/#service-it-support" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-cloud" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-networking" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-storage" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-virtualisation" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-linux" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-websites" }
+      ],
+      "sameAs": [
+        "https://maps.google.com/?cid=0xdf2c5c47132f3a3a",
+        "https://uk.trustpilot.com/review/atkinsonit.co.uk"
+      ],
+      "areaServed": "Windsor, Berkshire"
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://www.atkinsonit.co.uk/it-support-slough.html#page",
+      "url": "https://www.atkinsonit.co.uk/it-support-slough.html",
+      "name": "IT Support in Slough, Berkshire",
+      "description": "Local IT support for SMEs in Slough, Berkshire including troubleshooting, server support, storage, networking, cloud migration and virtualisation.",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "mainEntity": { "@id": "https://www.atkinsonit.co.uk/#service-it-support" },
+      "about": [
+        { "@id": "https://www.atkinsonit.co.uk/#service-it-support" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-cloud" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-networking" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-storage" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-virtualisation" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-linux" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-websites" }
+      ],
+      "sameAs": [
+        "https://maps.google.com/?cid=0xdf2c5c47132f3a3a",
+        "https://uk.trustpilot.com/review/atkinsonit.co.uk"
+      ],
+      "areaServed": "Slough, Berkshire"
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://www.atkinsonit.co.uk/it-support-berkshire.html#page",
+      "url": "https://www.atkinsonit.co.uk/it-support-berkshire.html",
+      "name": "IT Support in Berkshire County",
+      "description": "Local IT support for SMEs across Berkshire County including troubleshooting, server support, storage, networking, cloud migration and virtualisation.",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "mainEntity": { "@id": "https://www.atkinsonit.co.uk/#service-it-support" },
+      "about": [
+        { "@id": "https://www.atkinsonit.co.uk/#service-it-support" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-cloud" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-networking" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-storage" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-virtualisation" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-linux" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-websites" }
+      ],
+      "sameAs": [
+        "https://maps.google.com/?cid=0xdf2c5c47132f3a3a",
+        "https://uk.trustpilot.com/review/atkinsonit.co.uk"
+      ],
+      "areaServed": "Berkshire County"
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://www.atkinsonit.co.uk/it-support-surrey.html#page",
+      "url": "https://www.atkinsonit.co.uk/it-support-surrey.html",
+      "name": "IT Support in Surrey County",
+      "description": "Local IT support for SMEs across Surrey County including troubleshooting, server support, storage, networking, cloud migration and virtualisation.",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "mainEntity": { "@id": "https://www.atkinsonit.co.uk/#service-it-support" },
+      "about": [
+        { "@id": "https://www.atkinsonit.co.uk/#service-it-support" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-cloud" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-networking" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-storage" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-virtualisation" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-linux" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-websites" }
+      ],
+      "sameAs": [
+        "https://maps.google.com/?cid=0xdf2c5c47132f3a3a",
+        "https://uk.trustpilot.com/review/atkinsonit.co.uk"
+      ],
+      "areaServed": "Surrey County"
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://www.atkinsonit.co.uk/it-support-heathrow.html#page",
+      "url": "https://www.atkinsonit.co.uk/it-support-heathrow.html",
+      "name": "IT Support in Heathrow, West London",
+      "description": "Local IT support for SMEs in the Heathrow, West London area including troubleshooting, server support, storage, networking, cloud migration and virtualisation.",
+      "isPartOf": { "@id": "https://www.atkinsonit.co.uk/#website" },
+      "mainEntity": { "@id": "https://www.atkinsonit.co.uk/#service-it-support" },
+      "about": [
+        { "@id": "https://www.atkinsonit.co.uk/#service-it-support" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-cloud" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-networking" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-storage" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-virtualisation" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-linux" },
+        { "@id": "https://www.atkinsonit.co.uk/#service-websites" }
+      ],
+      "sameAs": [
+        "https://maps.google.com/?cid=0xdf2c5c47132f3a3a",
+        "https://uk.trustpilot.com/review/atkinsonit.co.uk"
+      ],
+      "areaServed": "Heathrow, West London"
     }
 
   ]
