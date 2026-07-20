@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta property="og:title" content="How We Modernised a Legacy Microsoft 365 Tenant in Four Days">
+  <meta property="og:description" content="20 July 2026">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.atkinsonit.co.uk/blog/2026-07-20.html">
+  <meta property="og:image" content="https://www.atkinsonit.co.uk/assets/logo.svg">
+  <meta property="og:site_name" content="Atkinson IT Ltd">
+  <meta name="description" content="20 July 2026">
+  <link rel="canonical" href="https://www.atkinsonit.co.uk/blogs"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How We Modernised a Legacy Microsoft 365 Tenant in Four Days | Atkinson IT Ltd</title>
+  <link rel="stylesheet" href="/styles.css"/>
+
+  <!-- BlogPosting Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How We Modernised a Legacy Microsoft 365 Tenant in Four Days",
+    "description": "A real-world four-day modernisation of a legacy Microsoft 365 tenant: identity cleanup, DNS migration, email trust, security hardening, and device alignment.",
+    "datePublished": "2026-07-20",
+    "dateModified": "2026-07-20",
+    "author": {
+      "@type": "Organization",
+      "name": "Atkinson IT Ltd",
+      "url": "https://www.atkinsonit.co.uk"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Atkinson IT Ltd",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.atkinsonit.co.uk/logo.svg"
+      }
+    },
+    "image": "https://www.atkinsonit.co.uk/logo.svg",
+    "mainEntityOfPage": "https://www.atkinsonit.co.uk/blogs/2026-07-20",
+    "articleSection": "Blog",
+    "keywords": [
+      "Microsoft 365",
+      "Tenant modernisation",
+      "Cloudflare DNS",
+      "DKIM",
+      "Conditional Access",
+      "SME IT",
+      "Security",
+      "Identity management"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <nav>
+    <div class="brand">
+      <img src="/logo.svg" alt="Atkinson IT logo"/>
+      <span>Atkinson IT Ltd</span>
+    </div>
+    <div class="links">
+      <a href="/">Home</a>
+      <a href="/it-services">Services</a>
+      <a href="/engineering-services">Engineering Services</a>
+      <a href="/about">About</a>
+      <a href="/capabilities">Capabilities</a>
+      <a href="/testimonials">Testimonials</a>
+      <a href="/casestudies">Case Studies</a>
+      <a href="/blogs">Blog</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="block">
+      <h1>How We Modernised a Legacy Microsoft 365 Tenant in Four Days</h1>
+      <p>20 July 2026</p>
+    </div>
+
+    <div class="breadcrumbs">
+      <a href="/">Home</a> <span>›</span>
+      <a href="/blogs">Blog</a> <span>›</span>
+      <span>How We Modernised a Legacy Microsoft 365 Tenant in Four Days</span>
+    </div>
+
+    <div class="block">
+      <h2>A common SME challenge</h2>
+      <p>
+        Many small businesses run Microsoft 365 tenants that have grown organically over time. Old domains linger.
+        Login behaviour becomes inconsistent. Security falls behind modern standards. Devices drift out of alignment.
+        This project was exactly that scenario — a tenant that worked, but not smoothly.
+      </p>
+    </div>
+
+    <div class="block">
+      <article class="post-content">
+        <h2>What we found</h2>
+
+        <h3>The wrong domain was still in charge</h3>
+        <p>
+          The tenant still used a legacy domain as its default. This caused branding drift, DKIM misalignment,
+          and login inconsistency. Users saw different domains in different places — email addresses, login prompts,
+          and external communication — which made the business look less cohesive and introduced subtle trust issues
+          with customers and partners.
+        </p>
+
+        <h3>Duplicate user identities</h3>
+        <p>
+          The main user had multiple accounts across old domains. Over time, this had created a tangle of identities:
+          different usernames, overlapping mailboxes, and historic logins that still existed in Azure AD. We
+          consolidated everything into one clean identity, simplifying authentication, licensing, and day‑to‑day
+          access while reducing the risk of misdirected email or misconfigured permissions.
+        </p>
+
+        <h3>Security behind modern standards</h3>
+        <p>
+          MFA wasn’t enabled. Conditional Access wasn’t configured. Legacy protocols were still active. In practice,
+          this meant the tenant relied on passwords alone, allowed older mail clients to connect, and had no
+          structured way to enforce location, device, or risk‑based controls. For a modern Microsoft 365 environment,
+          that’s a significant gap — especially when the same tenant is used for finance, HR, and customer data.
+        </p>
+
+        <h3>DNS hosted on a legacy platform</h3>
+        <p>
+          DNS was still hosted on a legacy platform that lacked modern tooling, observability, and security features.
+          Changes were slow, visibility was limited, and there was no easy way to introduce protections such as DNSSEC
+          or modern caching behaviour. We migrated DNS to Cloudflare for stability, speed, and security, giving the
+          business a more resilient foundation for email, web, and future cloud services.
+        </p>
+
+        <h2>Our four‑day modernisation plan</h2>
+
+        <h3>Day 1 — DNS &amp; identity cleanup</h3>
+        <p>
+          On day one, we moved DNS to Cloudflare, set the correct domain as default, and cleaned up identities.
+          That meant updating MX, SPF, and other records to point to the right services, retiring unused domains,
+          and ensuring the primary business identity was consistently represented across Microsoft 365. We also
+          mapped existing accounts, removed duplicates, and aligned usernames and sign‑in addresses with the
+          chosen domain.
+        </p>
+
+        <h3>Day 2 — DKIM &amp; email trust</h3>
+        <p>
+          Day two focused on email trust. We regenerated DKIM and aligned all email authentication with the business
+          identity. By ensuring SPF, DKIM, and DMARC were correctly configured, we improved deliverability and reduced
+          the risk of spoofing. Outbound email now presents a consistent, authenticated identity, which is critical
+          for invoices, proposals, and customer communication.
+        </p>
+
+        <h3>Day 3 — Security modernisation</h3>
+        <p>
+          On day three, we modernised security. We enabled MFA, created Conditional Access policies, and blocked
+          legacy protocols. The tenant now enforces strong authentication, restricts access based on risk and
+          context, and prevents older, less secure clients from connecting. This brings the environment in line
+          with current Microsoft 365 security guidance and significantly reduces the attack surface.
+        </p>
+
+        <h3>Day 4 — Device alignment</h3>
+        <p>
+          The final day was about devices. We fixed Authenticator, cleaned Outlook profiles, registered devices in
+          Azure AD, and removed legacy artefacts. Users now have predictable sign‑in behaviour, Outlook is aligned
+          with the new identity structure, and devices are properly associated with the tenant. This makes future
+          management — from compliance to remote wipe — far more straightforward.
+        </p>
+
+        <h2>The outcome</h2>
+        <p>
+          At the end of the four days, the business had a clean identity structure, modern security, Cloudflare DNS,
+          reliable email flow, updated devices, and no legacy artefacts. In practical terms, that means fewer
+          surprises, smoother day‑to‑day work, and a tenant designed to last decades rather than just surviving
+          the next upgrade.
+        </p>
+        <p>
+          A modern Microsoft 365 environment doesn’t just improve security — it makes daily work smoother, more
+          predictable, and more professional. Staff log in the same way everywhere. Email behaves consistently.
+          Devices align with policy. And when the business grows, the tenant is ready rather than needing another
+          round of emergency fixes.
+        </p>
+
+        <h2>Why this matters for SMEs</h2>
+        <p>
+          For SMEs, Microsoft 365 is often the backbone of communication and collaboration. When tenants grow
+          organically, small misconfigurations accumulate: old domains, half‑finished security settings, devices
+          that were “just added quickly”. None of these issues are dramatic on their own, but together they create
+          friction, risk, and a sense that IT is always slightly out of step with the business.
+        </p>
+        <p>
+          Taking a structured, time‑boxed approach — like this four‑day modernisation — turns that drift into a
+          solvable engineering problem. By treating identity, DNS, email trust, security, and devices as one
+          coherent system, you get a tenant that supports growth instead of holding it back.
+        </p>
+
+        <h3>Practical next steps for your tenant</h3>
+        <p>
+          If your Microsoft 365 tenant feels “messy” or has grown over several years, it’s worth asking a few
+          simple questions:
+        </p>
+        <ul>
+          <li><strong>Identity clarity:</strong> Is there a single, consistent primary domain for logins and email?</li>
+          <li><strong>DNS posture:</strong> Is DNS on a modern, observable platform such as Cloudflare?</li>
+          <li><strong>Email trust:</strong> Are SPF, DKIM, and DMARC correctly aligned with your business identity?</li>
+          <li><strong>Security baseline:</strong> Is MFA enforced and Conditional Access in place for key roles?</li>
+          <li><strong>Device alignment:</strong> Are laptops, desktops, and mobiles properly registered and using
+            modern clients?</li>
+        </ul>
+        <p>
+          If the answer to several of these is “not yet”, a focused modernisation project can make a noticeable
+          difference in just a few days. The goal isn’t perfection — it’s a tenant that is clean, secure, and
+          ready for the next decade of business.
+        </p>
+
+        <p><a class="button" href="/contact">Talk to Us About Microsoft 365 Tenant Modernisation</a></p>
+      </article>
+    </div>
+
+    <div class="post-nav-buttons">
+      <a class="button" href="/blog/2026-07-13">← Previous</a>
+      <! <a class="button" href="/blog/2026-07-27">Next: </a>
+      <span class="spacer"></span>
+    </div>
+
+    <p><a class="button" href="/blogs">← Back to Blog Index</a></p>
+
+    <section class="internal-links-box">
+      <h3>Related Services & Casestudies</h3>
+      <ul>
+        <li><a href="/services/microsoft-365">Microsoft 365 Tenant Review</a></li>
+        <li><a href="/casestudy/m365-modernisation-casestudy">Microsoft 365 Modernisation Casestudy</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
+    <p>
+      <a href="/index">Home</a> |
+      <a href="/it-services">Services</a> |
+      <a href="/engineering-services">Engineering Services</a> |
+      <a href="/about">About</a> |
+      <a href="/capabilities">Capabilities</a> |
+      <a href="/testimonials">Testimonials</a> |
+      <a href="/casestudies">Case Studies</a> |
+      <a href="/blogs">Blog</a> |
+      <a href="/privacy">Privacy Policy</a>
+    </p>
+  </footer>
+
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>What is the main purpose of this page?</h3>
+    <p>
+      To show how a legacy Microsoft 365 tenant can be modernised in a structured four‑day project, covering
+      identity cleanup, DNS migration, email trust, security hardening, and device alignment.
+    </p>
+
+    <h3>Who is this content intended for?</h3>
+    <p>
+      SMEs, IT managers, consultants, and business owners who rely on Microsoft 365 and suspect their tenant has
+      grown organically, with old domains, inconsistent logins, and security that no longer matches modern standards.
+    </p>
+
+    <h3>How does this page relate to Atkinson IT's services?</h3>
+    <p>
+      This article illustrates Atkinson IT’s engineering‑led approach to Microsoft 365 by breaking down a real
+      modernisation project into clear phases, helping clients understand what’s involved in cleaning up identity,
+      DNS, email authentication, security, and devices.
+    </p>
+
+    <h3>What should I do if I need help with this topic?</h3>
+    <p>
+      If you need advice on assessing your Microsoft 365 tenant, planning a modernisation, or executing a similar
+      four‑day project, Atkinson IT can provide practical, real‑world guidance tailored to your environment.
+    </p>
+
+    <h3>Can Atkinson IT assist with related issues?</h3>
+    <p>
+      Yes — Atkinson IT can assist with Microsoft 365 tenant reviews, DNS migration to platforms like Cloudflare,
+      email authentication alignment, security baselining with MFA and Conditional Access, and device onboarding
+      across desktops, laptops, and mobile devices.
+    </p>
+  </section>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the main purpose of this page?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To show how a legacy Microsoft 365 tenant can be modernised in a structured four-day project, covering identity cleanup, DNS migration, email trust, security hardening, and device alignment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who is this content intended for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SMEs, IT managers, consultants, and business owners who rely on Microsoft 365 and suspect their tenant has grown organically, with old domains, inconsistent logins, and security that no longer matches modern standards."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does this page relate to Atkinson IT's services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "This article illustrates Atkinson IT’s engineering-led approach to Microsoft 365 by breaking down a real modernisation project into clear phases, helping clients understand what’s involved in cleaning up identity, DNS, email authentication, security, and devices."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I do if I need help with this topic?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you need advice on assessing your Microsoft 365 tenant, planning a modernisation, or executing a similar four-day project, Atkinson IT can provide practical, real-world guidance tailored to your environment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Atkinson IT assist with related issues?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — Atkinson IT can assist with Microsoft 365 tenant reviews, DNS migration to platforms like Cloudflare, email authentication alignment, security baselining with MFA and Conditional Access, and device onboarding across desktops, laptops, and mobile devices."
+        }
+      }
+    ]
+  }
+  </script>
+</body>
+</html>

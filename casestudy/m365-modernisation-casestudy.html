@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>Microsoft 365 Modernisation Case Study — Atkinson IT Ltd</title>
+
+<!-- Robots -->
+<meta content="index, follow" name="robots"/>
+
+<!-- Canonical -->
+<link href="https://www.atkinsonit.co.uk/casestudy/m365-modernisation-casestudy" rel="canonical"/>
+
+<!-- SEO -->
+<meta content="How Atkinson IT modernised a legacy Microsoft 365 tenant for a UK SME — identity consolidation, Cloudflare DNS migration, DKIM alignment, MFA, Conditional Access, and full device remediation." name="description"/>
+<meta content="Atkinson IT Ltd" name="author"/>
+
+<!-- OpenGraph -->
+<meta content="Microsoft 365 Modernisation Case Study — Atkinson IT Ltd" property="og:title"/>
+<meta content="A detailed case study showing how Atkinson IT modernised a legacy Microsoft 365 tenant with identity cleanup, DNS migration, DKIM alignment, MFA, Conditional Access, and device onboarding." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://www.atkinsonit.co.uk/casestudy/m365-modernisation-casestudy" property="og:url"/>
+<meta content="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" property="og:image"/>
+<meta content="1600" property="og:image:width"/>
+<meta content="900" property="og:image:height"/>
+
+<!-- Preconnect -->
+<link href="https://images.unsplash.com" rel="preconnect"/>
+
+<!-- Favicon -->
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+
+<!-- Styles -->
+<link href="/styles.css" rel="stylesheet"/>
+
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [
+{
+"@type": "ListItem",
+"position": 1,
+"name": "Home",
+"item": "https://www.atkinsonit.co.uk/"
+},
+{
+"@type": "ListItem",
+"position": 2,
+"name": "Case Studies",
+"item": "https://www.atkinsonit.co.uk/casestudy"
+},
+{
+"@type": "ListItem",
+"position": 3,
+"name": "Microsoft 365 Modernisation Case Study",
+"item": "https://www.atkinsonit.co.uk/casestudy/m365-modernisation-casestudy"
+}
+]
+}
+</script>
+</head>
+
+<body>
+
+<nav>
+<div class="brand">
+<img alt="Atkinson IT logo" loading="lazy" src="/logo.svg"/>
+<span>Atkinson IT Ltd</span>
+</div>
+
+<div class="links">
+<a href="/">Home</a>
+<a href="/it-services">Services</a>
+<a href="/engineering-services">Engineering Services</a>
+<a href="/about">About</a>
+<a href="/capabilities">Capabilities</a>
+<a href="/testimonials">Testimonials</a>
+<a href="/casestudies">Case Studies</a>
+<a href="/blogs">Blog</a>
+<a href="/#contact">Contact</a>
+</div>
+</nav>
+
+<div class="breadcrumbs">
+<a href="/">Home</a> <span>›</span>
+<a href="/casestudies">Case Studies</a> <span>›</span>
+<span>Microsoft 365 Modernisation Case Study</span>
+</div>
+
+<!-- Hidden hero image -->
+<img alt="" loading="lazy" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" style="display:none;"/>
+
+<main class="case-study">
+<div class="container">
+
+<h1>Microsoft 365 Modernisation Case Study</h1>
+<p><em>A case study by Atkinson IT Ltd</em></p>
+
+<!-- ===================================================== -->
+<!-- CASE STUDY CONTENT -->
+<!-- ===================================================== -->
+
+<div class="block"><section>
+<h2>Overview</h2>
+<p>
+A UK‑based SME approached Atkinson IT with a familiar challenge: a Microsoft 365 environment that had evolved
+over several years, carrying legacy domains, outdated identity structures, and incomplete security controls.
+Although functional, the system had accumulated friction — inconsistent login behaviour, outdated security,
+and branding drift.
+</p>
+
+<p>Two lines from the audit captured the situation clearly:</p>
+
+<p><em>“The environment shows signs of legacy configuration, outdated identity structure, and incomplete security posture.”</em></p>
+<p><em>“The tenant still uses a legacy domain as its default.”</em></p>
+
+<p>
+The business wanted a system that was secure, predictable, and aligned with its current identity — something
+that just works across PC, laptop, and phone.
+</p>
+</section></div>
+
+<div class="block"><section>
+<h2>Initial challenges</h2>
+
+<h3>1. Legacy domain still set as default</h3>
+<p>
+The Microsoft 365 tenant still treated an old domain as primary. This affected login behaviour, DKIM alignment,
+email routing, and branding consistency.
+</p>
+
+<h3>2. Fragmented identity structure</h3>
+<p>
+The main user had three separate identities across different domains, including an internal onmicrosoft.com
+address and a legacy Gmail technical contact. This caused duplication and inconsistent login behaviour.
+</p>
+
+<h3>3. Outdated security posture</h3>
+<p>
+MFA was not enabled. Conditional Access was not configured. Legacy protocols (POP/IMAP/SMTP AUTH) were still active.
+These left the business vulnerable to password‑based attacks, phishing, and account compromise.
+</p>
+
+<h3>4. DNS hosted on a legacy platform</h3>
+<p>
+DNS was still hosted on a registrar rather than a modern DNS provider, limiting stability, security,
+and email authentication performance.
+</p>
+
+<h3>5. Devices not registered or updated</h3>
+<p>
+Office apps were out of date, devices were not Azure AD joined, and no compliance baseline existed.
+</p>
+</section></div>
+
+<div class="block"><section>
+<h2>Modernisation approach</h2>
+<p>
+Atkinson IT delivered a structured 4‑day modernisation, combining offsite foundational work with onsite device alignment.
+</p>
+
+<h3>Day 1 — DNS migration & identity correction (Offsite)</h3>
+<ul>
+<li>Migrated DNS to Cloudflare</li>
+<li>Switched nameservers</li>
+<li>Verified MX/SPF/DMARC</li>
+<li>Set the correct business domain as default</li>
+<li>Consolidated user identities</li>
+<li>Retired unused legacy addresses</li>
+<li>Fixed Authenticator setup</li>
+<li>Tested login behaviour across devices</li>
+</ul>
+<p><strong>Outcome:</strong> A clean identity structure and Cloudflare as the single source of truth for DNS.</p>
+
+<h3>Day 2 — Email security alignment (Offsite)</h3>
+<ul>
+<li>Regenerated DKIM</li>
+<li>Added new selectors to Cloudflare</li>
+<li>Enabled DKIM once DNS propagated</li>
+<li>Confirmed SPF/MX/DMARC alignment</li>
+<li>Checked for residual legacy artefacts</li>
+</ul>
+<p><strong>Outcome:</strong> Modern, trusted email authentication aligned with the business identity.</p>
+
+<h3>Day 3 — Security modernisation (Offsite)</h3>
+<ul>
+<li>Enabled MFA for all users</li>
+<li>Created baseline Conditional Access policies</li>
+<li>Blocked legacy authentication</li>
+<li>Tested secure login across devices</li>
+</ul>
+<p><strong>Outcome:</strong> A Zero‑Trust baseline replacing legacy security.</p>
+
+<h3>Day 4 — Device updates, cleanup & final review (Onsite)</h3>
+<ul>
+<li>Fixed Authenticator on mobile devices</li>
+<li>Cleaned Outlook profiles</li>
+<li>Removed cached legacy credentials</li>
+<li>Registered devices in Azure AD</li>
+<li>Ran Windows & Office updates</li>
+<li>Offboarded unused accounts</li>
+<li>Removed legacy groups and artefacts</li>
+</ul>
+<p><strong>Outcome:</strong> All devices aligned with the new identity, security, and domain configuration.</p>
+</section></div>
+
+<div class="block"><section>
+<h2>Final result</h2>
+<p>
+The SME now operates on a stable, modern, future‑proof Microsoft 365 foundation:
+</p>
+
+<ul>
+<li>One clean identity structure</li>
+<li>Correct domain hierarchy</li>
+<li>Cloudflare DNS with aligned DKIM</li>
+<li>Modern security (MFA, CA, no legacy auth)</li>
+<li>Updated devices with consistent login behaviour</li>
+<li>Legacy artefacts removed</li>
+<li>A tenant designed to last decades without major rework</li>
+</ul>
+
+<p>
+If you want to explore any part of this process, you can jump into:
+</p>
+
+<ul>
+<li>Microsoft 365 modernisation</li>
+<li>Identity consolidation</li>
+<li>Cloudflare DNS migration</li>
+<li>Zero‑Trust security</li>
+</ul>
+</section></div>
+
+<!-- ===================================================== -->
+<!-- FAQ SECTION -->
+<!-- ===================================================== -->
+
+<div class="block"><section>
+<h2>Frequently asked questions</h2>
+
+<h3>How disruptive is a Microsoft 365 modernisation?</h3>
+<p>
+With structured planning, identity cleanup, and staged device alignment, most SMEs experience minimal disruption.
+</p>
+
+<h3>Do legacy domains cause long‑term issues?</h3>
+<p>
+Yes — they affect login behaviour, DKIM alignment, branding, and email trust. Correcting domain hierarchy is essential.
+</p>
+
+<h3>Is MFA and Conditional Access really necessary?</h3>
+<p>
+Absolutely. They form the backbone of modern Zero‑Trust security and protect SMEs from common attack vectors.
+</p>
+
+<h3>Can Atkinson IT help smaller organisations?</h3>
+<p>
+Yes — the same principles apply regardless of size, and smaller organisations often benefit even more from a clean,
+modern tenant.
+</p>
+
+<h3>How long does a typical modernisation take?</h3>
+<p>
+Most SMEs can be fully modernised in 3–5 days depending on device count and legacy complexity.
+</p>
+
+</section></div>
+
+<div class="block"><section>
+<h2>Planning a Microsoft 365 modernisation?</h2>
+<p>
+If your organisation needs identity cleanup, DNS migration, DKIM alignment, security modernisation, or device remediation,
+Atkinson IT Ltd can deliver a seamless, secure transition.
+</p>
+
+<p><a href="/#contact">Request a consultation</a></p>
+</section></div>
+
+</div>
+</main>
+
+<footer>
+<p>© 2026 Atkinson IT Ltd — Practical IT support for any organisation</p>
+<p>
+<a href="/">Home</a> |
+<a href="/it-services">Services</a> |
+<a href="/engineering-services">Engineering Services</a> |
+<a href="/about">About</a> |
+<a href="/capabilities">Capabilities</a> |
+<a href="/testimonials">Testimonials</a> |
+<a href="/casestudies">Case Studies</a> |
+<a href="/blogs">Blog</a> |
+<a href="/privacy">Privacy Policy</a>
+</p>
+</footer>
+
+<section class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<h3>What is the main purpose of this page?</h3>
+<p>This page explains how Atkinson IT modernised a legacy Microsoft 365 tenant for a UK SME.</p>
+
+<h3>Who is this content intended for?</h3>
+<p>SMEs, technical leads, and business owners seeking practical guidance on Microsoft 365 modernisation.</p>
+
+<h3>How does this page relate to Atkinson IT's services?</h3>
+<p>
+The topics discussed — identity consolidation, DNS migration, DKIM alignment, MFA, Conditional Access, and device onboarding —
+align directly with Atkinson IT’s consultancy and engineering expertise.
+</p>
+
+<h3>What should I do if I need help modernising my tenant?</h3>
+<p>Atkinson IT provides full Microsoft 365 modernisation, remediation, and long‑term support.</p>
+
+<h3>Can Atkinson IT assist with legacy environments?</h3>
+<p>Yes — Atkinson IT regularly helps SMEs clean up legacy tenants and transition to modern, secure configurations.</p>
+</section>
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"mainEntity": [
+{
+"@type": "Question",
+"name": "What is the main purpose of this page?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "This page explains how Atkinson IT modernised a legacy Microsoft 365 tenant for a UK SME."
+}
+},
+{
+"@type": "Question",
+"name": "Who is this content intended for?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "SMEs, technical leads, and business owners seeking practical guidance on Microsoft 365 modernisation."
+}
+},
+{
+"@type": "Question",
+"name": "How does this page relate to Atkinson IT's services?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "The topics discussed — identity consolidation, DNS migration, DKIM alignment, MFA, Conditional Access, and device onboarding — align directly with Atkinson IT’s consultancy and engineering expertise."
+}
+},
+{
+"@type": "Question",
+"name": "What should I do if I need help modernising my tenant?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Atkinson IT provides full Microsoft 365 modernisation, remediation, and long-term support."
+}
+},
+{
+"@type": "Question",
+"name": "Can Atkinson IT assist with legacy environments?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Yes — Atkinson IT regularly helps SMEs clean up legacy tenants and transition to modern, secure configurations."
+}
+}
+]
+}
+</script>
+
+</body>
+</html>

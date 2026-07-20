@@ -14,9 +14,26 @@
       "url": "https://www.atkinsonit.co.uk/blog/2026-06-02",
       "title": "Weekly SME IT Update — 2 June 2026",
       "content_html": "<p>The SME tech landscape is shifting again, and a few trends are worth keeping an eye on if you run or manage a business relying on cloud services, Microsoft 365, or hybrid infrastructure.</p><h3>🔐 Security first: ransomware tactics are changing</h3><p>Attackers are increasingly skipping encryption altogether and going straight for data theft and extortion. That means traditional “we have backups” thinking isn’t enough anymore.</p><ul><li>Strong identity protection</li><li>MFA everywhere</li><li>Reviewing vendor and third‑party access</li><li>Tightening email security</li></ul><h3>☁️ Cloud costs are quietly rising</h3><p>Azure, AWS, and Google have all made incremental pricing changes across storage, egress, and GPU workloads. Nothing dramatic individually, but it adds up.</p><h3>🛡️ Microsoft is pushing secure‑by‑default</h3><p>More services are moving to enforced MFA, improved Conditional Access templates, and automated patching.</p><h3>🌐 VPN appliances are becoming a liability</h3><p>Legacy VPN boxes continue to be a favourite target for attackers. If you’re still relying on one, it’s worth considering a move toward Zero Trust or modern cloud‑based access solutions.</p><p>If you want to talk through any of these changes — or you’re wondering what they mean for your business — I’m always happy to help.</p>",
-      "summary": "Ransomware tactics are shifting, cloud costs are rising, and Microsoft continues its secure‑by‑default push. Here’s what SMEs need to know this week.",
+      "summary": "Ransomware tactics are shifting, cloud costs are rising, and Microsoft continues its secure‑by‑default push.",
       "date_published": "2026-06-02T09:00:00+01:00"
+    },
+
+    {
+      "id": "https://www.atkinsonit.co.uk/blog/2026-07-13",
+      "url": "https://www.atkinsonit.co.uk/blog/2026-07-13",
+      "title": "Windows Profiles, Hidden Junk, and the New 500GB Storage Bug",
+      "content_html": "<p>Windows user profiles have quietly become one of the biggest pain points for IT professionals. Modern apps, Electron tools, and Windows’ own upgrade behaviour create sprawling profile debris that accumulates over years.</p><p>A newly confirmed Windows 11 bug makes things worse: <code>CapabilityAccessManager.db-wal</code> can silently grow to 70–200GB, and in extreme cases over 500GB, consuming entire SSDs.</p><p>Microsoft has released a fix via KB5095093, and SMEs should treat profile health and storage discipline as part of their engineering practice — not an afterthought.</p>",
+      "summary": "Why Windows profiles accumulate hidden junk — and how a new Windows 11 bug can silently consume up to 500GB of storage.",
+      "date_published": "2026-07-13T09:00:00+01:00"
+    },
+
+    {
+      "id": "https://www.atkinsonit.co.uk/blog/2026-07-20",
+      "url": "https://www.atkinsonit.co.uk/blog/2026-07-20",
+      "title": "How We Modernised a Legacy Microsoft 365 Tenant in Four Days",
+      "content_html": "<p>A UK SME approached Atkinson IT with a familiar challenge: a Microsoft 365 tenant that had grown organically, carrying legacy domains, outdated identity structures, and incomplete security controls.</p><p>Across four structured days, we migrated DNS to Cloudflare, consolidated identities, regenerated DKIM, enabled MFA and Conditional Access, blocked legacy protocols, and aligned all devices with modern authentication.</p><p>The result: a clean identity structure, modern security, reliable email flow, and a tenant designed to last decades.</p>",
+      "summary": "A structured four‑day modernisation of a legacy Microsoft 365 tenant — identity cleanup, DNS migration, DKIM alignment, MFA, Conditional Access, and device remediation.",
+      "date_published": "2026-07-20T09:00:00+01:00"
     }
   ]
 }
-
