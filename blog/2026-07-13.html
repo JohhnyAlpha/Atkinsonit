@@ -39,7 +39,7 @@
     "image": "https://www.atkinsonit.co.uk/logo.svg",
     "mainEntityOfPage": "https://www.atkinsonit.co.uk/blogs/2026-07-13",
     "articleSection": "Blog",
-    "keywords": [
+    "keywords": []
       "Windows 11",
       "User profiles",
       "Storage bug",
@@ -181,7 +181,7 @@
         <p>
           For a more precise check, Windows Latest recommends a read‑only command from an elevated Command Prompt:
         </p>
-        <pre><code>robocopy "C:\ProgramData\Microsoft\Windows\CapabilityAccessManager" "%TEMP%\CAMCheck" /L /B /R:0 /W:0 /BYTES /NP</code></pre>
+        <pre><code>robocopy "C:\ProgramData\Microsoft\Windows\CapabilityAccessManager" ", "%TEMP%\CAMCheck" /L /B /R:0 /W:0 /BYTES /NP</code></pre>
         <p>
           This does not copy or delete anything; it simply lists the contents and sizes. If
           <code>CapabilityAccessManager.db-wal</code> is only a few megabytes, you’re likely fine. If it is several gigabytes
@@ -316,7 +316,7 @@
         "name": "What is the main purpose of this page?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "To explain why Windows user profiles accumulate so much hidden junk, and how a new Windows 11 storage bug linked to CapabilityAccessManager.db-wal can silently consume up to hundreds of gigabytes of disk space."
+          "text": "To explain why Windows user profiles accumulate hidden junk, and how a new Windows 11 storage bug linked to CapabilityAccessManager.db-wal can silently consume hundreds of gigabytes of disk space."
         }
       },
       {
@@ -340,7 +340,7 @@
         "name": "What should I do if I need help with this topic?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "If you need advice on assessing Windows profile health, checking for the storage bug, or planning remediation, Atkinson IT can provide practical, real-world guidance tailored to your estate."
+          "text": "If you need advice on assessing Windows profile health, checking for the storage bug, or planning remediation, Atkinson IT can provide practical guidance tailored to your estate."
         }
       },
       {
@@ -354,5 +354,6 @@
     ]
   }
   </script>
+
 </body>
 </html>
