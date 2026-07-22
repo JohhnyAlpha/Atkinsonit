@@ -37,30 +37,99 @@
 <link href="/styles.css" rel="stylesheet"/>
 
 <!-- Breadcrumb Schema -->
+
 <script type="application/ld+json">
 {
-"@context": "https://schema.org",
-"@type": "BreadcrumbList",
-"itemListElement": []
-{
-"@type": "ListItem",
-"position": 1,
-"name": "Home",
-"item": "https://www.atkinsonit.co.uk/"
-},
-{
-"@type": "ListItem",
-"position": 2,
-"name": "Case Studies",
-"item": "https://www.atkinsonit.co.uk/casestudy"
-},
-{
-"@type": "ListItem",
-"position": 3,
-"name": "Microsoft 365 Modernisation Case Study",
-"item": "https://www.atkinsonit.co.uk/casestudy/m365-modernisation-casestudy"
+  "@context": "https://schema.org",
+  "@type": "CaseStudy",
+  "name": "Microsoft 365 Modernisation Case Study \u2014 Atkinson IT Ltd",
+  "headline": "Microsoft 365 Modernisation Case Study \u2014 Atkinson IT Ltd",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Atkinson IT Ltd",
+    "url": "https://www.atkinsonit.co.uk",
+    "logo": "https://www.atkinsonit.co.uk/favicon.svg"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "B T Atkinson",
+    "url": "https://www.atkinsonit.co.uk/about"
+  }
 }
-]
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the main purpose of this page?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This page explains who Atkinson IT is, how we work, and the heritage engineering background behind the consultancy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is this content intended for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This content is aimed at SMEs, technical leads, and clients seeking practical, reliable IT guidance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does this page relate to Atkinson IT's services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It provides the engineering context, philosophy, and experience that underpin all of Atkinson IT’s consultancy and support work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do if I need help with my systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Atkinson IT provides support, troubleshooting, and consultancy for issues involving infrastructure, reliability, legacy systems, and modernisation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Atkinson IT assist with legacy or hybrid environments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We regularly help SMEs stabilise legacy systems, integrate modern platforms, and build resilient hybrid environments."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.atkinsonit.co.uk"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Casestudy",
+      "item": "https://www.atkinsonit.co.uk/casestudy"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "M365 Modernisation Casestudy",
+      "item": "https://www.atkinsonit.co.uk/casestudy/m365-modernisation-casestudy.html"
+    }
+  ]
 }
 </script>
 </head>
@@ -322,54 +391,9 @@ align directly with Atkinson IT’s consultancy and engineering expertise.
 <p>Yes — Atkinson IT regularly helps SMEs clean up legacy tenants and transition to modern, secure configurations.</p>
 </section>
 
-<script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "FAQPage",
-"mainEntity": []
-{
-"@type": "Question",
-"name": "What is the main purpose of this page?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "This page explains how Atkinson IT modernised a legacy Microsoft 365 tenant for a UK SME."
-}
-},
-{
-"@type": "Question",
-"name": "Who is this content intended for?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "SMEs, technical leads, and business owners seeking practical guidance on Microsoft 365 modernisation."
-}
-},
-{
-"@type": "Question",
-"name": "How does this page relate to Atkinson IT's services?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "The topics discussed — identity consolidation, DNS migration, DKIM alignment, MFA, Conditional Access, and device onboarding — align directly with Atkinson IT’s consultancy and engineering expertise."
-}
-},
-{
-"@type": "Question",
-"name": "What should I do if I need help modernising my tenant?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Atkinson IT provides full Microsoft 365 modernisation, remediation, and long-term support."
-}
-},
-{
-"@type": "Question",
-"name": "Can Atkinson IT assist with legacy environments?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Yes — Atkinson IT regularly helps SMEs clean up legacy tenants and transition to modern, secure configurations."
-}
-}
-]
-}
-</script>
+
+
+
 
 </body>
 </html>
